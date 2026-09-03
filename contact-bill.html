@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Rev. Bill McDonald</title>
+<meta name="description" content="Get in touch with Rev. Bill McDonald for speaking invitations, retreats, veterans advocacy, mentorship, or general questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#182338; --ink-soft:#4E5A72; --ivory:#F8F4EC; --parchment:#F0E9D8;
+    --gold:#B79355; --gold-deep:#8F6B34; --charcoal:#3A3733; --sky:#7C93A8;
+    --amber:#C97A44; --olive:#6E6A4E; --label:#8A4E22; --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12); --max-w:700px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:900px){ .nav-links{ display:none; } }
+
+  main{ padding-top:5rem; }
+  .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:5rem 1.75rem 4rem; }
+  .page-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .page-hero h1{ font-size:clamp(2.2rem, 5vw, 3.4rem); color:var(--ivory); }
+  .page-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1rem; font-size:1.1rem; max-width:600px; margin-left:auto; margin-right:auto; }
+
+  section{ padding:5rem 1.75rem; }
+  .inner{ max-width:var(--max-w); margin:0 auto; }
+
+  .contact-form{ max-width:560px; margin:0 auto; }
+  .field-row{ margin-bottom:1.4rem; }
+  .field-row label{ display:block; font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--label); margin-bottom:0.5rem; }
+  .field-row input, .field-row select, .field-row textarea{
+    width:100%; padding:0.85rem 1rem; border:1px solid var(--line); border-radius:12px;
+    background:var(--parchment); font-family:'Work Sans', sans-serif; font-size:0.95rem; color:var(--ink);
+  }
+  .field-row select{ appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%238A4E22'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z' clip-rule='evenodd'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 1rem center; background-size:1.1rem; }
+  .field-row textarea{ min-height:140px; resize:vertical; font-family:'Work Sans', sans-serif; }
+  .field-row input:focus, .field-row select:focus, .field-row textarea:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+  .contact-form button{
+    width:100%; padding:0.95rem 1.6rem; background:var(--ink); color:var(--ivory); border:none; border-radius:12px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer;
+  }
+  .contact-form button:hover{ background:var(--gold-deep); }
+  .form-note{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); font-size:0.95rem; text-align:center; margin-top:1.6rem; }
+
+  .direct-band{ background:var(--parchment); text-align:center; }
+  .direct-band h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.7rem; color:var(--ink); margin-bottom:0.8rem; }
+  .direct-band p{ font-size:0.98rem; }
+
+  footer{ background:var(--ink); color:#8A93A5; text-align:center; padding:2.6rem 1.5rem; }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.05rem; color:var(--gold); margin-bottom:0.6rem; }
+  footer .fline{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-mark">Rev. Bill McDonald</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="journey.html">The Journey</a></li>
+    <li><a href="six-pillars.html">The Six Pillars</a></li>
+    <li><a href="workshops-events.html">Workshops &amp; Events</a></li>
+    <li><a href="mount-shasta-2026.html">Mount Shasta 2026</a></li>
+    <li><a href="authored-by-rev-bill.html">Authored by Rev Bill</a></li>
+    <li><a href="contact-bill.html">Contact Bill</a></li>
+    <li><a href="https://revbillmcdonald.com/donate-to-bills-mission" target="_blank" rel="noopener">Donate</a></li>
+    <li><a href="https://revbillmcdonald.com/veteran-resource-links" target="_blank" rel="noopener">Veteran Resources</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="page-hero">
+  <div class="eyebrow">Reach Out</div>
+  <h1 class="display">Get in Touch</h1>
+  <div class="sub">For speaking invitations, retreats, veterans advocacy, mentorship, or general questions</div>
+</section>
+
+<section>
+  <!-- TODO: wire up a real destination once Bill confirms which email(s) to route each category to. -->
+  <form class="contact-form" onsubmit="return false;">
+    <div class="field-row">
+      <label for="cf-name">Your Name</label>
+      <input id="cf-name" type="text" name="name" required />
+    </div>
+    <div class="field-row">
+      <label for="cf-email">Your Email</label>
+      <input id="cf-email" type="email" name="email" required />
+    </div>
+    <div class="field-row">
+      <label for="cf-reason">What can we help with?</label>
+      <select id="cf-reason" name="reason" required>
+        <option value="" disabled selected>Choose one&hellip;</option>
+        <option value="speaking">Speaking &amp; Media</option>
+        <option value="retreats">Retreats &amp; Workshops</option>
+        <option value="veterans">Veterans &amp; Advocacy</option>
+        <option value="mentorship">Mentorship</option>
+        <option value="general">General Inquiries</option>
+      </select>
+    </div>
+    <div class="field-row">
+      <label for="cf-message">Your Message</label>
+      <textarea id="cf-message" name="message" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+    <p class="form-note">This form is being finalized. For anything urgent in the meantime, please reach out through the channels below.</p>
+  </form>
+</section>
+
+<section class="direct-band">
+  <div class="inner">
+    <h2 class="display">Retreat Registration &amp; Questions</h2>
+    <p>For Mount Shasta 2026 retreat registration, see the <a href="mount-shasta-2026.html" style="color:var(--label);">retreat page</a> for direct contacts.</p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fname">Rev. Bill McDonald &middot; The Spiritual Warrior</div>
+  <div class="fline">Love is the foundation of everything.</div>
+</footer>
+
+</body>
+</html>
