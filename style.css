@@ -26,7 +26,7 @@
   .nav.scrolled{ background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); box-shadow:0 1px 12px rgba(24,35,56,0.08); border-bottom-color:var(--line); padding:1rem 2.2rem; }
   .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--gold); text-decoration:none; transition:color 0.3s ease; letter-spacing:0.01em; }
   .nav.scrolled .nav-mark{ color:var(--ink); }
-  .nav-links{ display:flex; align-items:center; gap:1.7rem; list-style:none; }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:1rem 1.7rem; list-style:none; }
   .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--parchment); text-decoration:none; transition:color 0.25s ease; }
   .nav.scrolled .nav-links a{ color:var(--ink-soft); }
   .nav-links a:hover{ color:var(--amber); }

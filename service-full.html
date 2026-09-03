@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service — Love in Motion — Rev. Bill McDonald</title>
+<meta name="description" content="Rev. Bill McDonald's full teaching on Service — Love in Motion, one of his Six Pillars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#182338; --ink-soft:#4E5A72; --ivory:#F8F4EC; --parchment:#F0E9D8;
+    --gold:#B79355; --gold-deep:#8F6B34; --charcoal:#3A3733; --sky:#7C93A8;
+    --amber:#C97A44; --olive:#6E6A4E; --label:#8A4E22; --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12); --max-w:700px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:900px){ .nav-links{ display:none; } }
+
+  main{ padding-top:5rem; }
+  .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:5rem 1.75rem 4rem; }
+  .page-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .page-hero h1{ font-size:clamp(2.2rem, 5vw, 3.4rem); color:var(--ivory); }
+  .page-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1rem; font-size:1.1rem; max-width:600px; margin-left:auto; margin-right:auto; }
+
+  section{ padding:5rem 1.75rem; }
+  .inner{ max-width:var(--max-w); margin:0 auto; }
+
+  .chapters{ max-width:720px; margin:0 auto; }
+  .chapter{ margin-bottom:3.4rem; }
+  .chapter:last-child{ margin-bottom:0; }
+  .chapter .tag{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.3rem 0.7rem; border-radius:99px; margin-bottom:0.8rem; }
+  .chapter h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.9rem; color:var(--ink); margin-bottom:1rem; }
+  .chapter p{ font-size:1rem; color:var(--ink-soft); font-weight:300; margin-bottom:1rem; }
+  .opening p{ font-size:1.08rem; font-family:'Cormorant Garamond', serif; font-style:normal; color:var(--ink-soft); margin-bottom:1.1rem; max-width:680px; margin-left:auto; margin-right:auto; }
+
+  .pillar-block{ max-width:680px; margin:0 auto 3.6rem; padding-bottom:3.2rem; border-bottom:1px solid var(--line); }
+  .pillar-block:last-of-type{ border-bottom:none; }
+  .pillar-block h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:2rem; color:var(--ink); }
+  .pillar-block .sub{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin:0.5rem 0 1.2rem; }
+  .pillar-block p{ font-size:1rem; color:var(--ink-soft); margin-bottom:1rem; }
+  .pillar-block .read-more{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .pillar-block .read-more:hover{ color:var(--amber); border-color:var(--amber); }
+  .pillar-block .read-more.soon{ color:#A9A296; border-color:#D8CFC0; cursor:default; pointer-events:none; }
+
+  .book-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; max-width:960px; margin:0 auto; }
+  .book-card{ background:var(--parchment); border-radius:3px; overflow:hidden; box-shadow:0 16px 34px -18px rgba(24,35,56,0.22); }
+  .book-cover{ aspect-ratio:2/3; background:linear-gradient(160deg, var(--ink) 0%, #26314A 100%); display:flex; align-items:center; justify-content:center; padding:1.2rem; border-bottom:2px solid var(--gold); }
+  .book-cover span{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1rem; color:var(--gold); text-align:center; line-height:1.3; }
+  .book-body{ padding:1.1rem 1rem; }
+  .book-body h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.02rem; color:var(--ink); margin-bottom:0.3rem; line-height:1.3; }
+  .book-body .year{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; color:var(--ink-soft); }
+  @media (max-width:820px){ .book-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .crisis-band{ background:var(--ink); color:var(--ivory); text-align:center; padding:3.5rem 1.75rem; }
+  .crisis-band .num{ font-family:'Cormorant Garamond', serif; font-size:2.6rem; color:var(--gold); }
+  .crisis-band p{ color:#D8CDB0; margin-top:0.6rem; font-size:0.95rem; }
+
+  .note-box{ background:var(--parchment); border-left:2px solid var(--gold); padding:1.6rem 1.8rem; max-width:680px; margin:2rem auto 0; border-radius:2px; }
+  .note-box p{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); font-size:0.98rem; }
+
+  .contact-cta{ text-align:center; background:var(--parchment); }
+  .contact-cta a{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+
+  footer{ background:var(--ink); color:#8A93A5; text-align:center; padding:2.6rem 1.5rem; }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.05rem; color:var(--gold); margin-bottom:0.6rem; }
+  footer .fline{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-mark">Rev. Bill McDonald</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="journey.html">The Journey</a></li>
+    <li><a href="six-pillars.html">The Six Pillars</a></li>
+    <li><a href="workshops-events.html">Workshops &amp; Events</a></li>
+    <li><a href="mount-shasta-2026.html">Mount Shasta 2026</a></li>
+    <li><a href="authored-by-rev-bill.html">Authored by Rev Bill</a></li>
+    <li><a href="index.html#contact">Contact Bill</a></li>
+    <li><a href="https://revbillmcdonald.com/donate-to-bills-mission" target="_blank" rel="noopener">Donate</a></li>
+    <li><a href="https://revbillmcdonald.com/veteran-resource-links" target="_blank" rel="noopener">Veteran Resources</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="page-hero">
+  <div class="eyebrow">The Six Pillars &middot; Full Teaching</div>
+  <h1 class="display">Service — Love in Motion</h1>
+</section>
+
+<section>
+  <div class="inner opening" style="text-align:left;">
+    <p>If LOVE is the first doorway, FORGIVENESS releases the heart, GRATITUDE teaches us to receive life, HEALING brings us toward wholeness, and ONENESS reveals that there is only One, then SERVICE is what naturally happens when that realization begins to move through our lives.</p>
+    <p>Service is more than charity, volunteering, or doing good things for others. It is not a religious obligation, nor is it a way to prove that we are more spiritual than someone else. At its deepest level, SERVICE is an expression of our Divine nature.</p>
+    <p>If there is only One, then there is ultimately no separate other to serve. There is only the Divine appearing in countless forms, the person before us, the animal beside us, the stranger, the family member, the mountain, the river, the Earth itself.</p>
+    <p>When we serve with Love and conscious intention, we are not simply serving another being. We are serving the Divine within that being.</p>
+    <p>The first five pillars prepare us for this understanding. LOVE teaches us to recognize what is sacred within ourselves. FORGIVENESS releases the resentment and hatred that keep the heart closed. GRATITUDE teaches us to receive life as a gift. HEALING brings the divided parts of ourselves back toward wholeness. And ONENESS reveals the deeper truth: beneath all appearances, there is only One Life.</p>
+    <p>Once this becomes more than an idea, service changes completely. The hand does not consider itself heroic because it helps the body. Each part belongs to the whole. Perhaps humanity is slowly learning the same lesson. We belong to one another because we belong to the One.</p>
+    <p>If the Divine is present everywhere, then every encounter has the possibility of becoming sacred. The lonely elderly person. The frightened child. The exhausted caregiver. The stranger who needs help. The neighbor who simply needs someone to listen. The injured animal. The person who is grieving.</p>
+    <p>Not because people are perfect. They are not. But the Divine is not dependent upon human perfection.</p>
+    <p>True service is also not about becoming a savior. The ego can hide even inside spirituality. It can say, I am the enlightened one. I am the giver. You are the one who needs me. But this is simply another form of separation.</p>
+    <p>One person may have more resources at a particular moment, greater strength, knowledge, or opportunity. But neither is more Divine. The One is present in both.</p>
+    <p>That is why genuine service carries humility. It does not require applause. It does not keep a record of its good deeds. It gives because giving has become natural.</p>
+    <p>Compassion is the heart of service. We can perform good deeds while remaining emotionally distant. Compassion asks us to come closer. To listen. To notice. To see the person rather than merely the problem.</p>
+    <p>We do not have to completely understand another person&#x27;s life in order to honor their humanity. We only have to recognize that their life is part of this same great mystery. Their suffering matters. Their joy matters. Their dignity matters.</p>
+    <p>Service must also begin within ourselves. We cannot continually destroy our own peace and call it spirituality. Sometimes service means resting. Sometimes it means saying no. Sometimes it means establishing a boundary. This is not selfishness. It is self-love.</p>
+    <p>If the Divine lives within us, then we too are worthy of care. We cannot separate reverence for the Divine in others from reverence for the Divine within ourselves.</p>
+    <p>And there is another mystery: the one who serves must also learn how to receive. We may arrive believing that we are the giver and discover that we have received something far greater. A child may teach us innocence. An elderly person may teach us patience. Then the question becomes: Who served whom? Perhaps it no longer matters. The Divine served the Divine.</p>
+    <p>This understanding naturally includes the animals with whom we share this Earth. They do not need our language, religion, or philosophy for us to recognize their sacredness. When we protect, feed, rescue, or care for them, we honor another expression of the One.</p>
+    <p>The same is true of the Earth itself. We are not separate from this planet. Our bodies come from its elements. We breathe its air, drink its water, and live because of what grows from its soil. To care for the Earth is therefore more than responsibility. It is reverence.</p>
+    <p>Perhaps the greatest challenge comes when we encounter people we do not like. It is easy to serve those we love and those who agree with us. But what about the person who irritates us? The person who has hurt us?</p>
+    <p>ONENESS does not ask us to approve of destructive behavior. It does not ask us to remain in unsafe relationships or abandon healthy boundaries. But it does ask us not to surrender our humanity to hatred.</p>
+    <p>Sometimes service means helping. Sometimes it means forgiving. Sometimes it means praying for someone from a distance. And sometimes service means simply refusing to add more anger and hatred to the world.</p>
+    <p>Love can have boundaries. Compassion can have discernment.</p>
+    <p>Divine service also asks us to let go of expectation. The ego wants recognition, gratitude, praise, or some evidence that we have done something important. But true service does not demand a receipt from Life.</p>
+    <p>You help because help is needed. You listen because someone needs to be heard. You comfort because someone is hurting. Then you release the act. You do not need to carry it around as evidence of your goodness.</p>
+    <p>Service does not require wealth, a title, an organization, or a large audience. It begins wherever we are. A kind word. A patient response. A meal shared. A listening ear. A visit to someone who is lonely. A moment of forgiveness. A gentle hand. Kindness toward an animal. Care for the natural world. Being present for someone who is grieving.</p>
+    <p>Sometimes the greatest acts of service are almost invisible. No one photographs them. No one applauds. No one may ever know. And perhaps that is enough. Because SERVICE is not about being seen. It is about seeing. Seeing the Divine where the ordinary mind sees only another person.</p>
+    <p>If there is only One, then service is ultimately always directed toward the Divine. When I serve a person, I serve the Divine. When I care for an animal, I serve the Divine. When I protect the Earth, I serve the Divine. When I care for myself with compassion, I honor the Divine within myself. The form changes. The One remains.</p>
+    <p>LOVE teaches us to recognize the Divine within ourselves. FORGIVENESS helps us release what prevents Love from flowing freely. GRATITUDE teaches us to receive the mystery of Life with an open heart. HEALING brings body, mind, heart, and spirit toward wholeness. ONENESS reveals that the Divine within us is not separate from the Divine within all. And SERVICE asks us to live that realization.</p>
+    <p>This is where spirituality leaves the meditation cushion and enters everyday life. The teaching becomes a life.</p>
+    <p>Perhaps the simplest definition of service is this: SERVICE is Love in motion.</p>
+    <p>Love is not meant to remain only an idea. Love wants to express itself. It wants to comfort, protect, heal, forgive, and bring peace. We are not the owners of Love. We are not its creators. We become its instruments.</p>
+    <p>The ego says, I am serving. The awakened heart says, Love is serving through me.</p>
+    <p>We begin with LOVE. We learn FORGIVENESS. We discover GRATITUDE. We enter HEALING. We awaken to ONENESS. And then we express that awakening through SERVICE. But service leads us back to Love. Because when we serve the Divine in another, we recognize the Divine again. That recognition deepens Love, and the journey continues.</p>
+    <p>Perhaps the greatest service we can offer the world is not always something we do with our hands. It is what we become. More compassionate. More forgiving. More grateful. More peaceful. More conscious. More willing to see the Divine where the ego sees an enemy.</p>
+    <p>A peaceful person brings peace. A loving person changes the quality of a moment. A forgiving person interrupts the cycle of resentment. A grateful person reminds others that Life is still a gift.</p>
+    <p>The Divine has given us hands. Let them help. The Divine has given us voices. Let them speak kindness. The Divine has given us minds. Let them seek wisdom. The Divine has given us hearts. Let them remain open. The Divine has given us lives. Let them become an offering.</p>
+    <p>Not an offering to a distant God, but to the Divine already present, in the person beside us, the animal before us, the Earth beneath us, the stranger crossing our path, and even within ourselves.</p>
+    <p>At the deepest level, there is no separate servant and no separate recipient. There is only the One. The One loving the One. The One helping the One. The One appearing as countless faces and forms.</p>
+    <p>We stop asking, What do I get for helping? Instead, we ask: Where is Love needed? We stop asking, Who deserves my compassion? Instead, we ask: Where is the Divine asking me to be present?</p>
+    <p>And then we serve. Quietly. Humbly. Without needing recognition.</p>
+    <p>We serve because this is what Love does when it awakens. We serve because ONENESS has become real. We serve because the Divine is everywhere. And ultimately, there is no other to serve. There is only the One.</p>
+    <p>God is there, in every face, every creature, every breath, and every moment of existence. And when we place our hands, our hearts, our minds, and our lives in service to that One, we are simply allowing the Divine to serve the Divine through us.</p>
+    <p>That is the sacred purpose of SERVICE. And that is where the Six Pillars become One.</p>
+    <p style="font-style:italic; color:var(--ink); margin-top:2rem;">&mdash; Rev. Bill McDonald</p>
+  </div>
+</section>
+
+<section style="text-align:center; background:var(--parchment);">
+  <div class="inner">
+    <a href="six-pillars.html" style="font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.35rem;">&larr; Back to The Six Pillars</a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fname">Rev. Bill McDonald &middot; The Spiritual Warrior</div>
+  <div class="fline">Love is the foundation of everything.</div>
+</footer>
+
+</body>
+</html>

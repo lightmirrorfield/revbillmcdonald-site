@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healing — Returning to the Wholeness Within — Rev. Bill McDonald</title>
+<meta name="description" content="Rev. Bill McDonald's full teaching on Healing — Returning to the Wholeness Within, one of his Six Pillars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#182338; --ink-soft:#4E5A72; --ivory:#F8F4EC; --parchment:#F0E9D8;
+    --gold:#B79355; --gold-deep:#8F6B34; --charcoal:#3A3733; --sky:#7C93A8;
+    --amber:#C97A44; --olive:#6E6A4E; --label:#8A4E22; --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12); --max-w:700px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:900px){ .nav-links{ display:none; } }
+
+  main{ padding-top:5rem; }
+  .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:5rem 1.75rem 4rem; }
+  .page-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .page-hero h1{ font-size:clamp(2.2rem, 5vw, 3.4rem); color:var(--ivory); }
+  .page-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1rem; font-size:1.1rem; max-width:600px; margin-left:auto; margin-right:auto; }
+
+  section{ padding:5rem 1.75rem; }
+  .inner{ max-width:var(--max-w); margin:0 auto; }
+
+  .chapters{ max-width:720px; margin:0 auto; }
+  .chapter{ margin-bottom:3.4rem; }
+  .chapter:last-child{ margin-bottom:0; }
+  .chapter .tag{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.3rem 0.7rem; border-radius:99px; margin-bottom:0.8rem; }
+  .chapter h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.9rem; color:var(--ink); margin-bottom:1rem; }
+  .chapter p{ font-size:1rem; color:var(--ink-soft); font-weight:300; margin-bottom:1rem; }
+  .opening p{ font-size:1.08rem; font-family:'Cormorant Garamond', serif; font-style:normal; color:var(--ink-soft); margin-bottom:1.1rem; max-width:680px; margin-left:auto; margin-right:auto; }
+
+  .pillar-block{ max-width:680px; margin:0 auto 3.6rem; padding-bottom:3.2rem; border-bottom:1px solid var(--line); }
+  .pillar-block:last-of-type{ border-bottom:none; }
+  .pillar-block h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:2rem; color:var(--ink); }
+  .pillar-block .sub{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin:0.5rem 0 1.2rem; }
+  .pillar-block p{ font-size:1rem; color:var(--ink-soft); margin-bottom:1rem; }
+  .pillar-block .read-more{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .pillar-block .read-more:hover{ color:var(--amber); border-color:var(--amber); }
+  .pillar-block .read-more.soon{ color:#A9A296; border-color:#D8CFC0; cursor:default; pointer-events:none; }
+
+  .book-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; max-width:960px; margin:0 auto; }
+  .book-card{ background:var(--parchment); border-radius:3px; overflow:hidden; box-shadow:0 16px 34px -18px rgba(24,35,56,0.22); }
+  .book-cover{ aspect-ratio:2/3; background:linear-gradient(160deg, var(--ink) 0%, #26314A 100%); display:flex; align-items:center; justify-content:center; padding:1.2rem; border-bottom:2px solid var(--gold); }
+  .book-cover span{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1rem; color:var(--gold); text-align:center; line-height:1.3; }
+  .book-body{ padding:1.1rem 1rem; }
+  .book-body h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.02rem; color:var(--ink); margin-bottom:0.3rem; line-height:1.3; }
+  .book-body .year{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; color:var(--ink-soft); }
+  @media (max-width:820px){ .book-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .crisis-band{ background:var(--ink); color:var(--ivory); text-align:center; padding:3.5rem 1.75rem; }
+  .crisis-band .num{ font-family:'Cormorant Garamond', serif; font-size:2.6rem; color:var(--gold); }
+  .crisis-band p{ color:#D8CDB0; margin-top:0.6rem; font-size:0.95rem; }
+
+  .note-box{ background:var(--parchment); border-left:2px solid var(--gold); padding:1.6rem 1.8rem; max-width:680px; margin:2rem auto 0; border-radius:2px; }
+  .note-box p{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); font-size:0.98rem; }
+
+  .contact-cta{ text-align:center; background:var(--parchment); }
+  .contact-cta a{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+
+  footer{ background:var(--ink); color:#8A93A5; text-align:center; padding:2.6rem 1.5rem; }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.05rem; color:var(--gold); margin-bottom:0.6rem; }
+  footer .fline{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-mark">Rev. Bill McDonald</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="journey.html">The Journey</a></li>
+    <li><a href="six-pillars.html">The Six Pillars</a></li>
+    <li><a href="workshops-events.html">Workshops &amp; Events</a></li>
+    <li><a href="mount-shasta-2026.html">Mount Shasta 2026</a></li>
+    <li><a href="authored-by-rev-bill.html">Authored by Rev Bill</a></li>
+    <li><a href="index.html#contact">Contact Bill</a></li>
+    <li><a href="https://revbillmcdonald.com/donate-to-bills-mission" target="_blank" rel="noopener">Donate</a></li>
+    <li><a href="https://revbillmcdonald.com/veteran-resource-links" target="_blank" rel="noopener">Veteran Resources</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="page-hero">
+  <div class="eyebrow">The Six Pillars &middot; Full Teaching</div>
+  <h1 class="display">Healing — Returning to the Wholeness Within</h1>
+</section>
+
+<section style="padding-top:0; padding-bottom:0;">
+  <img src="images/healing-gathering-blessing.jpg" alt="Rev. Bill offering a blessing during a healing gathering" style="width:100%; display:block;" />
+</section>
+
+<section>
+  <div class="inner opening" style="text-align:left;">
+    <p>If LOVE is the first doorway to the Divine, FORGIVENESS helps us release what we have carried, and GRATITUDE teaches us to receive the life before us, then HEALING is the journey of returning to wholeness.</p>
+    <p>Healing is not simply the absence of disease. It is not merely repairing the body, quieting the mind, or having a spiritual experience.</p>
+    <p>Healing asks us to look at the whole human being. Body and mind. Heart and emotions. Relationships and spirit.</p>
+    <p>All of these dimensions of our lives are connected. When one part of us suffers, the others are often affected. When one part begins to awaken, something else within us may begin to change as well.</p>
+    <p>We often separate things that were never truly separate. We treat the body as though it were a machine, emotions as though they existed somewhere outside the body, and spirituality as though it belonged to another world entirely.</p>
+    <p>We may call the deeper self the Divine, the Higher Self, Atman, Buddha-nature, the Inner Light, Pure Consciousness, or the Soul. The names may differ, but they point toward something within us that is deeper than personality and greater than the circumstances of the moment. And healing is, in part, the remembering of that deeper self.</p>
+    <p>Modern medicine has given humanity extraordinary gifts, and we should be grateful for them. Doctors, nurses, surgeons, therapists, medicines, technology, nutrition, movement, and rest can all be essential parts of caring for ourselves.</p>
+    <p>But healing becomes incomplete when we believe that the body is the only part of us that needs attention.</p>
+    <p>This is not an argument against medicine. It is an argument for wholeness. The body deserves care. The mind deserves care. The emotional life deserves care. And the spirit deserves care. Everything within us touches everything else.</p>
+    <p>There are wounds that do not appear on an X-ray or in a medical examination. The wounds of shame, hatred, fear, loneliness, unforgiven pain, and the belief that we are somehow unworthy of love.</p>
+    <p>When I speak of spiritual illness, I am not speaking of punishment, and I would never suggest that someone caused their physical illness by failing spiritually. Human illness is complex, and no one should ever be blamed for becoming sick.</p>
+    <p>But while moving through any difficult experience, there are still questions we can ask ourselves: What is happening within my spirit? Have I forgotten how to love myself? Am I living in fear? Have I become disconnected from meaning?</p>
+    <p>At the heart of many Eastern teachings is the understanding that much of human suffering comes from the experience of separation. But the mystical traditions point toward another possibility: perhaps the deepest truth is not separation. Perhaps it is ONENESS.</p>
+    <p>The spiritual journey is a return, not necessarily a return to a particular institution or doctrine, but a return inward, to the sacred Presence that has never truly left us.</p>
+    <p>When we begin remembering that connection, something changes. We become less interested in constantly proving our worth. We become more willing to forgive. More willing to love. More conscious of what we are putting into our minds and bodies.</p>
+    <p>This is why HEALING cannot be separated from the other pillars. Healing is not an isolated technique. It is a way of living. And like everything that has come before, healing begins with LOVE.</p>
+    <p>We cannot continually attack ourselves and expect peace to grow within us. The first medicine is compassion. Not indulgence. Not denial. Compassion. The willingness to look honestly at ourselves and still say: I am worthy of love. Even with my mistakes. Even with my wounds.</p>
+    <p>We become the compassionate witness of our own lives rather than our own executioner.</p>
+    <p>The mind also needs healing. It is constantly creating stories. The mind may tell us that it is too late, that we will never change, that we are alone, damaged, or somehow beyond hope. But thoughts are not always truth. They are experiences passing through consciousness.</p>
+    <p>Through meditation, breathing, and moments of silence, we begin to discover something important: I am not every thought that passes through my mind. There is an awareness behind the thought. A witness. A stillness. A Presence. And when we begin living from that deeper awareness, the mind no longer has complete authority over our lives.</p>
+    <p>We must also make peace with our emotional lives. Grief. Anger. Fear. Loneliness. Shame. Disappointment. Sometimes we imagine that becoming spiritual means rising above these emotions. But authentic spirituality does not require us to pretend that we are no longer human.</p>
+    <p>We sit with grief. We listen to what anger may be trying to tell us. We offer compassion to the wounded places within ourselves.</p>
+    <p>Healing is not always about making an emotion disappear. Sometimes it is about allowing an emotion to move through us without allowing it to become our identity. We feel. We understand. We release. We grow.</p>
+    <p>This does not mean that every disease is caused by our thoughts or emotions. That would place an unfair burden upon those who are suffering. It simply means that the whole person deserves care.</p>
+    <p>If the body is ill, care for the body. If the mind is suffering, care for the mind. If the heart is wounded, care for the heart. If the spirit feels empty, care for the spirit. Healing does not ask us to choose one and abandon the others.</p>
+    <p>And healing does not always mean cure. Sometimes the body returns to health. Sometimes healing means recovery. Sometimes it means learning to live differently with a condition that remains.</p>
+    <p>Wholeness is deeper than physical perfection.</p>
+    <p>The spiritual journey is not a guarantee that every illness will disappear. It is an invitation to discover that we are more than the condition of our bodies.</p>
+    <p>Healing requires us to become conscious of what we are continually pouring into ourselves, physically, emotionally, mentally, and spiritually. Because eventually, what we repeatedly take into our lives becomes part of the life we experience.</p>
+    <p>The deeper healing, I believe, is remembering that we were never truly abandoned by the Divine. We may have forgotten. We may have wandered far from our own center. But the Source remained. The Light remained. The Divine remained.</p>
+    <p>We do not create that Light. We learn to recognize it. And when we begin recognizing it within ourselves, we gradually begin seeing it in others.</p>
+    <p>There is a healer within each of us. Not a replacement for doctors. Not a substitute for medicine. Not a magical power that guarantees we will never suffer. Something deeper: the capacity to meet life consciously, the courage to seek help, the wisdom to change what can be changed, the humility to accept what cannot yet be changed.</p>
+    <p>Perhaps healing is not about becoming someone new. Perhaps it is about becoming less divided. Less divided between body and spirit. Less divided between mind and heart. Less divided between who we truly are and who we have pretended to be.</p>
+    <p>We listen. We become still. We care for the body. We educate the mind. We honor our emotions. We nourish the spirit. We forgive ourselves. We learn to love ourselves. And slowly, something begins to come back together.</p>
+    <p>We remember who we are. Not merely a body moving through time. Not merely a mind filled with thoughts. But a human expression of something infinitely greater. A living expression of the Divine Source.</p>
+    <p>And perhaps the deepest healing of all is this: beneath everything we have experienced, something within us has never been broken. The body may become wounded. The mind may become troubled. The heart may become exhausted. But beneath it all, the sacred Presence remains. Quietly. Patiently. Without judgment.</p>
+    <p>We are not simply trying to repair a life. We are learning to become whole within the life we have been given. And in that wholeness, the Light that has always lived within us begins to shine outward.</p>
+    <p style="font-style:italic; color:var(--ink); margin-top:2rem;">&mdash; Rev. Bill McDonald</p>
+  </div>
+</section>
+
+<section style="text-align:center; background:var(--parchment);">
+  <div class="inner">
+    <a href="six-pillars.html" style="font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.35rem;">&larr; Back to The Six Pillars</a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fname">Rev. Bill McDonald &middot; The Spiritual Warrior</div>
+  <div class="fline">Love is the foundation of everything.</div>
+</footer>
+
+</body>
+</html>

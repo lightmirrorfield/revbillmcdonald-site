@@ -4,23 +4,299 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rev. Bill McDonald — From War to Love</title>
-<meta name="description" content="Rev. Bill McDonald: Vietnam veteran, mystic, author, and teacher. A lifetime of war, near-death experiences, and spiritual searching, returning with one message: love.">
+<meta name="description" content="Rev. Bill McDonald: Vietnam veteran, mystic, minister, author, and lifelong spiritual seeker. Love is the foundation of everything.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+:root{
+    --ink:#182338;        /* deep midnight blue */
+    --ink-soft:#4E5A72;
+    --ivory:#F8F4EC;      /* warm ivory */
+    --parchment:#F0E9D8;  /* soft parchment */
+    --gold:#B79355;       /* muted antique gold */
+    --charcoal:#3A3733;   /* earthy charcoal */
+    --sky:#7C93A8;        /* himalayan sky blue, very subtle */
+    --amber:#C97A44;      /* warm sunrise amber */
+    --olive:#6E6A4E;      /* military olive/bronze, historical texture only */
+    --label:#8A4E22;
+    --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12);
+    --max-w:700px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; overflow-x:hidden; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1.5rem 2.2rem; background:transparent; border-bottom:1px solid rgba(183,147,85,0.16); transition:background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease; }
+  .nav.scrolled{ background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); box-shadow:0 1px 12px rgba(24,35,56,0.08); border-bottom-color:var(--line); padding:1rem 2.2rem; }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--gold); text-decoration:none; transition:color 0.3s ease; letter-spacing:0.01em; }
+  .nav.scrolled .nav-mark{ color:var(--ink); }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--parchment); text-decoration:none; transition:color 0.25s ease; }
+  .nav.scrolled .nav-links a{ color:var(--ink-soft); }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:960px){ .nav-links{ display:none; } }
+
+  section{ position:relative; padding:6rem 1.75rem; }
+  .inner{ max-width:700px; margin:0 auto; }
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 1s ease, transform 1s ease; }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+
+  /* ---------- hero (side-by-side: framed contained portrait + text, no full-bleed crop) ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(ellipse 60% 60% at 15% 30%, rgba(183,147,85,0.10) 0%, rgba(183,147,85,0) 60%),
+      var(--ink);
+    padding:9rem 3rem 5.5rem;
+    overflow:hidden;
+  }
+  .hero-grid{
+    max-width:1180px; margin:0 auto;
+    display:grid; grid-template-columns:0.85fr 1.15fr; gap:4.5rem; align-items:center;
+  }
+
+  .hero-portrait-wrap{
+    position:relative; width:100%; max-width:420px; margin:0 auto;
+    opacity:0; animation:riseIn 1.2s ease forwards 0.3s;
+  }
+  .hero-portrait-wrap::before{
+    content:''; position:absolute; top:-16px; left:16px; right:-16px; bottom:16px;
+    border:1px solid var(--gold); border-radius:2px; z-index:0;
+  }
+  .hero-portrait{
+    position:relative; z-index:1; border-radius:2px; overflow:hidden;
+    box-shadow:0 40px 70px -24px rgba(0,0,0,0.55);
+  }
+  .hero-portrait img{ width:100%; display:block; }
+  .hero-caption{
+    margin-top:1.2rem; text-align:center;
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.95rem; color:#B9AF95;
+    opacity:0; animation:riseIn 1.2s ease forwards 0.6s;
+  }
+
+  .hero-text{ text-align:left; }
+  .hero-eyebrow{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.26em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:1.6rem;
+    padding-bottom:0.5rem;
+    border-bottom:1px solid rgba(183,147,85,0.35);
+    opacity:0; animation:riseIn 1.1s ease forwards 0.2s;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 4.6vw, 4rem); line-height:1.08; color:var(--ivory); font-weight:500;
+    opacity:0; animation:riseIn 1.2s ease forwards 0.45s;
+  }
+  .hero .sub{
+    font-family:'Cormorant Garamond', serif; font-style:normal; font-weight:400;
+    font-size:clamp(1.05rem, 1.7vw, 1.3rem); line-height:1.6; color:#D8CDB0; margin-top:1.3rem; max-width:460px;
+    opacity:0; animation:riseIn 1.2s ease forwards 0.7s;
+  }
+  .hero .tags{
+    margin-top:1.2rem; font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; color:#9AA4B8;
+    opacity:0; animation:riseIn 1.2s ease forwards 0.95s;
+  }
+  .hero-ctas{
+    margin-top:2.2rem; display:flex; gap:2rem; flex-wrap:wrap;
+    opacity:0; animation:riseIn 1.2s ease forwards 1.2s;
+  }
+  .hero-ctas a{
+    color:var(--gold); text-decoration:none; font-family:'IBM Plex Mono', monospace; font-size:0.72rem;
+    letter-spacing:0.1em; text-transform:uppercase; border-bottom:1px solid rgba(183,147,85,0.5); padding-bottom:0.35rem;
+    transition:color 0.3s ease, border-color 0.3s ease;
+  }
+  .hero-ctas a:hover{ color:var(--ivory); border-color:var(--ivory); }
+  .hero-ctas a.secondary{ color:#C7CDD8; border-color:rgba(199,205,216,0.35); }
+  .hero-ctas a.secondary:hover{ color:var(--ivory); border-color:var(--ivory); }
+
+  @keyframes riseIn{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
+
+  @media (max-width:900px){
+    .hero{ padding:8rem 1.75rem 4rem; }
+    .hero-grid{ grid-template-columns:1fr; gap:2.6rem; }
+    .hero-text{ text-align:center; }
+    .hero-ctas{ justify-content:center; }
+  }
+
+  .intro{ background:var(--ivory); text-align:center; }
+  .intro .inner{ max-width:660px; }
+  .intro p{ font-family:'Cormorant Garamond', serif; font-size:clamp(1.15rem, 2.2vw, 1.45rem); font-style:normal; color:var(--ink-soft); margin-bottom:1rem; }
+  .intro p:last-child{ margin-bottom:0; }
+  .intro .lede{ color:var(--ink); font-weight:500; }
+
+  .transform{ background:var(--parchment); }
+  .transform .inner{ max-width:820px; }
+  .transform-grid{ display:grid; grid-template-columns:1fr auto 1fr; gap:2.5rem; align-items:start; }
+  .transform-col{ text-align:center; }
+  .transform-col .year{ font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.35rem 0.85rem; border-radius:99px; margin-bottom:1.1rem; }
+  .transform-col h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.5rem; color:var(--ink); margin-bottom:0.9rem; }
+  .transform-col p{ font-size:0.94rem; color:var(--ink-soft); font-weight:300; }
+  .transform-col ul{ list-style:none; text-align:left; max-width:280px; margin:0 auto; }
+  .transform-col li{ font-size:0.92rem; color:var(--ink-soft); font-weight:300; padding:0.3rem 0 0.3rem 1.1rem; position:relative; }
+  .transform-col li::before{ content:''; position:absolute; left:0; top:0.7rem; width:5px; height:5px; border-radius:50%; background:var(--gold); }
+  .transform-divider{ display:flex; align-items:center; justify-content:center; padding-top:2.2rem; }
+  .transform-divider .line{ width:1px; height:70px; background:linear-gradient(180deg, var(--gold), transparent); }
+  .transform-close{ text-align:center; margin-top:3.4rem; padding-top:2.4rem; border-top:1px solid var(--line); }
+  .transform-close p{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:clamp(1.2rem, 2.4vw, 1.55rem); color:var(--ink); }
+  @media (max-width:640px){ .transform-grid{ grid-template-columns:1fr; gap:1.6rem; } .transform-divider{ padding-top:0; } .transform-divider .line{ width:70px; height:1px; margin:0.4rem auto; } }
+
+  .journey{ background:var(--ivory); }
+  .journey .inner{ max-width:960px; }
+  .journey-head{ text-align:center; max-width:640px; margin:0 auto 4rem; }
+  .journey-head h2{ font-size:clamp(1.9rem, 4vw, 2.7rem); color:var(--ink); }
+  .chapters{ max-width:880px; margin:0 auto; position:relative; }
+  .chapters::before{ content:''; position:absolute; left:14px; top:8px; bottom:8px; width:1px; background:var(--line); }
+  @media (max-width:720px){ .chapters::before{ left:8px; } }
+  .chapter{ position:relative; padding-left:3.2rem; padding-bottom:3.4rem; }
+  .chapter:last-child{ padding-bottom:0; }
+  .chapter::before{ content:''; position:absolute; left:8px; top:6px; width:13px; height:13px; border-radius:50%; background:var(--ivory); border:2px solid var(--gold); }
+  @media (max-width:720px){ .chapter{ padding-left:2.2rem; } .chapter::before{ left:2px; } }
+  .chapter .tag{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.3rem 0.7rem; border-radius:99px; margin-bottom:0.7rem; }
+  .chapter h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.7rem; color:var(--ink); margin-bottom:0.7rem; }
+  .chapter p{ font-size:0.98rem; color:var(--ink-soft); font-weight:300; max-width:620px; }
+  .chapter-photo{ margin-top:1.2rem; max-width:440px; border-radius:2px; overflow:hidden; box-shadow:0 18px 36px -16px rgba(24,35,56,0.35); }
+  .chapter-photo img{ width:100%; display:block; filter:grayscale(12%); transition:filter 0.5s ease, transform 0.6s ease; }
+  .chapter-photo:hover img{ filter:grayscale(0%); transform:scale(1.03); }
+  .journey-more{ text-align:center; margin-top:3.4rem; }
+  .journey-more a{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.35rem; }
+  .journey-more a:hover{ color:var(--amber); border-color:var(--amber); }
+
+  .philosophy{ background:var(--ink); color:var(--ivory); text-align:center; }
+  .philosophy .inner{ max-width:720px; }
+  .philosophy .eyebrow{ color:var(--gold); background:none; padding:0; border-radius:0; }
+  .philosophy h2{ font-size:clamp(2rem, 4.4vw, 3rem); color:var(--ivory); margin:0 auto 1.8rem; line-height:1.22; }
+  .philosophy p{ font-size:1.02rem; color:#B9C0CC; font-weight:300; max-width:580px; margin:0 auto 1rem; }
+  .philosophy .pull{ margin-top:2.2rem; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:clamp(1.3rem, 2.6vw, 1.7rem); color:var(--gold); }
+
+  .teachings{ background:var(--parchment); }
+  .teachings-head{ text-align:center; max-width:640px; margin:0 auto 3.5rem; }
+  .teachings-head h2{ font-size:clamp(1.9rem, 4vw, 2.7rem); color:var(--ink); margin-bottom:0.5rem; }
+  .teachings-head .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); }
+  .pillars{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; max-width:1040px; margin:0 auto; }
+  .pillar-card{ background:var(--ivory); border-radius:3px; padding:2rem 1.8rem; box-shadow:0 18px 38px -20px rgba(24,35,56,0.22); border-top:2px solid var(--gold); }
+  .pillar-card h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.4rem; color:var(--ink); }
+  .pillar-card .subtitle{ font-family:'IBM Plex Mono', monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin:0.4rem 0 1.1rem; }
+  .pillar-card p{ font-size:0.88rem; color:var(--ink-soft); font-weight:300; margin-bottom:0.9rem; }
+  .pillar-card .pull-line{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.98rem; color:var(--ink); margin-bottom:1rem; }
+  .pillar-card .close-line{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.04em; color:var(--label); margin-bottom:1.1rem; }
+  .pillar-card a{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.25rem; }
+  .pillar-card a:hover{ color:var(--amber); border-color:var(--amber); }
+  @media (max-width:900px){ .pillars{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:600px){ .pillars{ grid-template-columns:1fr; max-width:400px; } }
+
+  .reflection{ background:var(--ink); text-align:center; padding:0; }
+  .reflection img{ width:100%; display:block; }
+
+  .watch{ background:var(--ivory); }
+  .watch .inner{ max-width:1040px; }
+  .watch-head{ text-align:center; max-width:640px; margin:0 auto 3rem; }
+  .watch-head h2{ font-size:clamp(1.9rem, 4vw, 2.7rem); color:var(--ink); }
+  .watch-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1.6rem; }
+  .watch-item{ background:var(--parchment); border-radius:3px; overflow:hidden; box-shadow:0 20px 40px -22px rgba(24,35,56,0.3); }
+  .watch-item.soon{ opacity:0.6; box-shadow:none; }
+  .watch-frame{ position:relative; width:100%; padding-top:56.25%; background:var(--charcoal); }
+  .watch-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .watch-frame.placeholder{ display:flex; align-items:center; justify-content:center; }
+  .watch-frame.placeholder span{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; text-align:center; }
+  .watch-caption{ padding:1.1rem 1.2rem; }
+  .watch-caption .k{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.3rem 0.65rem; border-radius:99px; margin-bottom:0.6rem; }
+  .watch-caption h4{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.05rem; color:var(--ink); line-height:1.3; }
+  @media (max-width:820px){ .watch-grid{ grid-template-columns:1fr; } }
+
+  .books{ background:var(--parchment); }
+  .books .inner{ max-width:1000px; }
+  .books-head{ text-align:center; max-width:640px; margin:0 auto 3rem; }
+  .books-head h2{ font-size:clamp(1.9rem, 4vw, 2.7rem); color:var(--ink); margin-bottom:0.5rem; }
+  .books-head .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); }
+  .book-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; }
+  .book-card{ background:var(--ivory); border-radius:3px; overflow:hidden; box-shadow:0 20px 40px -22px rgba(24,35,56,0.22); }
+  .book-cover{ aspect-ratio:2/3; overflow:hidden; border-bottom:2px solid var(--gold); }
+  .book-cover img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .book-cover span{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.15rem; color:var(--gold); text-align:center; line-height:1.3; }
+  .book-body{ padding:1.6rem 1.5rem; }
+  .book-body h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.2rem; color:var(--ink); margin-bottom:0.6rem; line-height:1.3; }
+  .book-body p{ font-size:0.86rem; color:var(--ink-soft); font-weight:300; margin-bottom:1rem; }
+  .book-body a{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.25rem; }
+  .book-body a:hover{ color:var(--amber); border-color:var(--amber); }
+  .books-more{ text-align:center; margin-top:2.6rem; }
+  .books-more a{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.35rem; }
+  .books-more a:hover{ color:var(--amber); border-color:var(--amber); }
+  @media (max-width:820px){ .book-grid{ grid-template-columns:1fr; max-width:340px; margin:0 auto; } }
+
+  .moments{ background:var(--ivory); }
+  .moments .inner{ max-width:980px; }
+  .moments-head{ text-align:center; margin-bottom:2.6rem; }
+  .moments-head h2{ font-size:clamp(1.7rem, 3.6vw, 2.3rem); color:var(--ink); }
+  .moments-head .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--amber); margin-top:0.4rem; }
+  .moments-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+  .moments-grid figure{ margin:0; border-radius:2px; overflow:hidden; filter:grayscale(15%); }
+  .moments-grid img{ width:100%; height:230px; object-fit:cover; display:block; transition:transform 0.6s ease, filter 0.6s ease; }
+  .moments-grid figure:hover img{ transform:scale(1.05); filter:grayscale(0%); }
+  @media (max-width:720px){ .moments-grid{ grid-template-columns:1fr; } .moments-grid img{ height:280px; } }
+
+  .legacy{ background:linear-gradient(180deg, var(--parchment) 0%, #E7DCC0 100%); text-align:center; }
+  .legacy .inner{ max-width:680px; }
+  .legacy h2{ font-size:clamp(2rem, 4.4vw, 3rem); color:var(--ink); margin:0 auto 1.4rem; line-height:1.25; }
+  .legacy p{ font-size:1.02rem; color:var(--ink-soft); margin:0 auto 1.1rem; font-weight:300; }
+  .legacy-photo{ max-width:520px; margin:2rem auto 2rem; border-radius:2px; overflow:hidden; box-shadow:0 24px 48px -20px rgba(24,35,56,0.3); }
+  .legacy-photo img{ width:100%; display:block; }
+  .legacy-actions{ display:flex; gap:1.4rem; flex-wrap:wrap; justify-content:center; margin-top:1.6rem; }
+  .legacy-actions a{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.35rem; }
+  .legacy-actions a:hover{ color:var(--amber); border-color:var(--amber); }
+
+  .shasta{ background:var(--ink); color:var(--ivory); text-align:center; }
+  .shasta .inner{ max-width:640px; }
+  .shasta .eyebrow{ color:var(--gold); background:none; padding:0; border-radius:0; }
+  .shasta h2{ font-size:clamp(1.9rem, 4vw, 2.7rem); color:var(--ivory); margin-bottom:0.5rem; }
+  .shasta .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-bottom:2rem; }
+  .shasta p{ font-size:0.98rem; color:#B9C0CC; font-weight:300; margin-bottom:1.1rem; }
+  .shasta-note{ margin-top:2rem; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--gold); }
+  .shasta-links{ margin-top:1.6rem; display:flex; gap:1.6rem; justify-content:center; flex-wrap:wrap; }
+  .shasta-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(183,147,85,0.5); padding-bottom:0.3rem; }
+  .shasta-links a:hover{ color:var(--ivory); border-color:var(--ivory); }
+
+  .connect{ background:var(--parchment); text-align:center; }
+  .connect h2{ font-size:clamp(1.7rem, 3.6vw, 2.2rem); color:var(--ink); margin-bottom:0.6rem; }
+  .connect .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); margin-bottom:2rem; }
+  .connect-form{ display:flex; gap:0.8rem; max-width:420px; margin:0 auto; flex-wrap:wrap; justify-content:center; }
+  .connect-form input{ flex:1; min-width:200px; padding:0.85rem 1.1rem; border:1px solid var(--line); border-radius:2px; background:var(--ivory); font-family:'Work Sans', sans-serif; font-size:0.9rem; color:var(--ink); }
+  .connect-form button{ padding:0.85rem 1.6rem; background:var(--ink); color:var(--ivory); border:none; border-radius:2px; font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; cursor:pointer; }
+
+  .contact{ background:var(--ivory); text-align:center; }
+  .contact .inner{ max-width:640px; }
+  .contact h2{ font-size:clamp(1.7rem, 3.6vw, 2.2rem); color:var(--ink); margin-bottom:1rem; }
+  .contact p{ font-size:0.96rem; color:var(--ink-soft); margin:0 auto 2rem; font-weight:300; }
+  .contact-grid{ display:flex; gap:1.6rem 2rem; flex-wrap:wrap; justify-content:center; }
+  .contact-grid a{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .contact-grid a:hover{ color:var(--amber); border-color:var(--amber); }
+
+  footer{ background:var(--ink); color:#B9C0CC; text-align:center; padding:2.8rem 1.5rem; }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.05rem; color:var(--gold); margin-bottom:0.6rem; }
+  footer .fline{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; }
+
+</style>
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <a href="index.html" class="nav-mark">Rev. Bill McDonald</a>
+  <a href="#" class="nav-mark">Rev. Bill McDonald</a>
   <ul class="nav-links">
-    <li><a href="journey.html">The Journey</a></li>
-    <li><a href="#teachings">Teachings</a></li>
-    <li><a href="books.html">Books</a></li>
+    <li><a href="#journey">The Journey</a></li>
+    <li><a href="#teachings">The Six Pillars</a></li>
     <li><a href="#watch">Watch &amp; Listen</a></li>
-    <li><a href="events.html">Events</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#books">Authored by Rev Bill</a></li>
+    <li><a href="#shasta">Mount Shasta 2026</a></li>
+    <li><a href="#legacy">Legacy</a></li>
+    <li><a href="#contact">Contact Bill</a></li>
+    <li><a href="https://revbillmcdonald.com/donate-to-bills-mission" target="_blank" rel="noopener">Donate</a></li>
+    <li><a href="https://revbillmcdonald.com/veteran-resource-links" target="_blank" rel="noopener">Veteran Resources</a></li>
   </ul>
 </nav>
 
@@ -37,18 +313,21 @@
     <div class="hero-text">
       <div class="hero-eyebrow">A Life Transformed by Love</div>
       <h1 class="display">From War to Love</h1>
-      <div class="sub">The journey of a Vietnam veteran, mystic, and lifelong seeker who discovered that the deepest spiritual teaching may also be the simplest.</div>
-      <div class="tags">Veteran &middot; Mystic &middot; Messenger of Love</div>
+      <div class="sub">The journey of a Vietnam veteran, mystic, minister, author, and lifelong spiritual seeker whose extraordinary experiences continually brought him back to one simple truth: Love is the foundation of everything.</div>
+      <div class="tags">Veteran &middot; Mystic &middot; Spiritual Teacher &middot; Messenger of Love</div>
       <div class="hero-ctas">
-        <a href="journey.html">Discover His Journey</a>
+        <a href="#journey">Discover His Journey</a>
         <a href="#watch" class="secondary">Watch His Story</a>
       </div>
     </div>
   </div>
 </section>
+
 <section class="intro">
   <div class="inner reveal">
-    <p>Rev. Bill&rsquo;s story cannot easily be placed into a single category. He has been a <strong>soldier</strong>, a decorated Vietnam veteran, a husband, a father, an author, a poet, a minister, a teacher, a spiritual seeker, and a mystic. Yet beneath all of these identities is a remarkably simple message: <strong>love, forgive, be grateful, heal, and remember our oneness.</strong></p>
+    <p class="lede">For more than seven decades, Rev. Bill McDonald has searched for the deeper meaning of life.</p>
+    <p>His journey has moved through childhood visions, near-death experiences, war, healing, meditation, India, encounters with saints and sages, spiritual awakening, writing, teaching, and decades of service.</p>
+    <p>Yet he does not describe himself as someone who has found all the answers. He remains a fellow traveler whose experiences continually lead him back to Love, Forgiveness, Gratitude, Healing, Oneness, and Service.</p>
   </div>
 </section>
 
@@ -56,19 +335,30 @@
   <div class="inner reveal">
     <div class="transform-grid">
       <div class="transform-col">
-        <div class="year">1968</div>
+        <div class="year">1966&ndash;1967</div>
         <h3 class="display">Vietnam</h3>
-        <p>A young helicopter crew chief and door gunner, confronting war, mortality, trauma, and the fragility of life.</p>
+        <p>A young Army helicopter crew chief and door gunner serving in combat in South Vietnam, confronting survival, fear, courage, loss, and the fragility of life.</p>
       </div>
       <div class="transform-divider" aria-hidden="true"><div class="line"></div></div>
       <div class="transform-col">
         <div class="year">Today</div>
         <h3 class="display">A Message of Love</h3>
-        <p>After decades of spiritual searching, mystical experience, healing, gratitude, forgiveness, service, and reflection, Rev. Bill&rsquo;s message has become remarkably simple: Love. Forgive. Be Grateful. Heal. Remember our Oneness.</p>
+        <p>After decades of spiritual searching, mystical experience, healing, meditation, writing, teaching, and service, Rev. Bill continues to return to the same essential message:</p>
+        <ul>
+          <li>Love yourself.</li>
+          <li>Forgive yourself.</li>
+          <li>Forgive others.</li>
+          <li>Practice gratitude.</li>
+          <li>Recognize the Divine in all life.</li>
+          <li>Serve where you can.</li>
+        </ul>
+        <div style="margin-top:1.4rem; border-radius:2px; overflow:hidden; box-shadow:0 16px 34px -16px rgba(24,35,56,0.3);">
+          <img src="images/spiritual-warrior-banner.jpg" alt="Rev. Bill McDonald, Spiritual Warrior" style="width:100%; display:block; filter:grayscale(10%);" />
+        </div>
       </div>
     </div>
     <div class="transform-close">
-      <p>Somewhere between those two moments lies an extraordinary journey.</p>
+      <p>Somewhere between those two moments lies the journey of a Spiritual Warrior.</p>
     </div>
   </div>
 </section>
@@ -81,41 +371,42 @@
     </div>
     <div class="chapters reveal">
       <div class="chapter">
-        <div class="tag">Vietnam, Late 1960s</div>
+        <div class="tag">1966&ndash;1967</div>
         <h3 class="display">The Warrior</h3>
-        <p>Military service, survival, courage, trauma, and mortality &mdash; a helicopter crew chief and door gunner confronting the fragility of life.</p>
+        <p>In 1966&ndash;1967, Rev. Bill served in Vietnam as a Huey helicopter crew chief and door gunner. His aircraft was shot down numerous times, and he was wounded during his service. The experiences of combat, death, survival, fear, courage, and loss became part of a spiritual transformation that would shape the remainder of his life.</p>
         <div class="chapter-photo"><img src="images/spiritual-warrior-banner.jpg" alt="Rev. Bill McDonald, Spiritual Warrior" /></div>
       </div>
       <div class="chapter">
         <div class="tag">The Years After</div>
         <h3 class="display">The Seeker</h3>
-        <p>The questions that followed: suffering, purpose, God, death, consciousness, and meaning &mdash; questions a return home alone could not answer.</p>
+        <p>Returning home did not end the journey. It deepened the questions. Rev. Bill began searching more deeply into meditation, spirituality, consciousness, healing, and the meaning of human existence, while also working with fellow Vietnam veterans carrying the psychological and emotional consequences of war. His search was never simply about collecting spiritual knowledge &mdash; it was about discovering what lies beneath the surface of human existence.</p>
       </div>
       <div class="chapter">
         <div class="tag">India &middot; Contemplation</div>
         <h3 class="display">The Mystic</h3>
-        <p>Near-death experiences, meditation, and journeys through India, including encounters with spiritual teachers and experiences Rev. Bill connects to Mahavatar Babaji &mdash; presented here as his own personal testimony.</p>
+        <p>Three near-death experiences, journeys through India, meditation, sacred places, encounters with teachers and holy people, and experiences connected in his own understanding with the Himalayan master Babaji became important chapters in Rev. Bill&rsquo;s spiritual life. Yet for Bill, these experiences were never simply about the extraordinary. Again and again, they brought him back to something remarkably simple: Love.</p>
         <div class="chapter-photo"><img src="images/fire-ceremony.jpg" alt="A firelit ceremony, part of the mystical tradition Rev. Bill draws from" /></div>
       </div>
       <div class="chapter">
         <div class="tag">Decades of Service</div>
         <h3 class="display">The Messenger</h3>
-        <p>Author, teacher, minister, poet, speaker, healer, and veterans advocate &mdash; each a different vessel for the same message of love, forgiveness, healing, and oneness.</p>
+        <p>Author, minister, meditation teacher, international speaker, energy worker, veterans advocate, and founder of The Spiritual Warrior Ministries, Rev. Bill has spent decades sharing teachings and experiences centered on Love, Forgiveness, Gratitude, Healing, Oneness, and Service. For him, this work has never simply been a business. It is his mission of Love.</p>
         <div class="chapter-photo"><img src="images/creek-blessing.jpg" alt="A blessing at the sacred creek" /></div>
       </div>
     </div>
     <div class="journey-more reveal">
       <a href="journey.html">Explore the Full Journey &rarr;</a>
     </div>
-</div>
+  </div>
 </section>
 
 <section class="philosophy">
   <div class="inner reveal">
     <div class="eyebrow">His Philosophy</div>
     <h2 class="display">The Message Is More Important Than the Messenger</h2>
-    <p>After a lifetime of extraordinary experiences, Rev. Bill does not ask people to believe in him or follow him. His invitation is simpler: discover love, forgiveness, healing, and the Divine within your own life.</p>
-    <div class="close-line">The teacher can point toward the door. The journey remains your own.</div>
+    <p>Rev. Bill does not present himself as someone who has arrived at the end of the spiritual journey. After more than seven decades of searching, he continues to describe himself as a fellow traveler sharing what life has taught him.</p>
+    <p>His hope is not to create followers. It is to keep the message alive.</p>
+    <div class="pull">&ldquo;It is all about the message, and not the messenger.&rdquo;</div>
   </div>
 </section>
 
@@ -123,17 +414,61 @@
   <div class="inner reveal">
     <div class="teachings-head">
       <div class="eyebrow">Core Teachings</div>
-      <h2 class="display">Six Pillars</h2>
+      <h2 class="display">The Six Pillars</h2>
+      <div class="sub">Six movements of one awakening</div>
+    </div>
+    <div style="max-width:640px; margin:0 auto 3rem; border-radius:3px; overflow:hidden; box-shadow:0 20px 44px -20px rgba(24,35,56,0.3);">
+      <img src="images/healing-gathering-blessing.jpg" alt="Rev. Bill offering a blessing during a healing gathering" style="width:100%; display:block;" />
     </div>
   </div>
   <div class="pillars reveal">
-    <div class="pillar"><div class="mark">L</div><h4>Love</h4><p>Love as the central transformative force.</p></div>
-    <div class="pillar"><div class="mark">F</div><h4>Forgiveness</h4><p>Liberation from what continues to bind us.</p></div>
-    <div class="pillar"><div class="mark">G</div><h4>Gratitude</h4><p>Meeting life with reverence, recognizing what remains sacred even through difficulty, and allowing the heart to stay open.</p></div>
-    <div class="pillar"><div class="mark">H</div><h4>Healing</h4><p>Reconnecting with our inner capacity for wholeness.</p></div>
-    <div class="pillar"><div class="mark">O</div><h4>Oneness</h4><p>The deeper unity beneath religion, background, or belief.</p></div>
-    <div class="pillar"><div class="mark">S</div><h4>Service</h4><p>Allowing what we learn to become useful to others.</p></div>
+    <div class="pillar-card">
+      <h3 class="display">Love</h3>
+      <div class="subtitle">The Foundation</div>
+      <p>Love is not simply one quality we develop on the spiritual path. Love is the path itself. It begins with learning to meet ourselves with compassion and expands into recognizing the same Divine Presence in others.</p>
+      <div class="close-line">Love is the foundation beneath them all.</div>
+      <a href="love-full.html">Explore the Teaching &rarr;</a>
+    </div>
+    <div class="pillar-card">
+      <h3 class="display">Forgiveness</h3>
+      <div class="subtitle">The Freedom to Set the Heart Free</div>
+      <p>Forgiveness does not mean forgetting, excusing harm, surrendering discernment, or abandoning healthy boundaries. It is the choice to stop allowing yesterday to occupy the sacred space of today.</p>
+      <div class="pull-line">&ldquo;Forgiveness is a gift we give ourselves.&rdquo;</div>
+      <a href="forgiveness-full.html">Explore the Teaching &rarr;</a>
+    </div>
+    <div class="pillar-card">
+      <h3 class="display">Gratitude</h3>
+      <div class="subtitle">Receiving Life With an Open Heart</div>
+      <p>Gratitude is more than saying thank you when life goes our way. It is a way of seeing, a way of receiving &mdash; a willingness to look more deeply at what life has placed before us.</p>
+      <div class="pull-line">&ldquo;Gratitude does not change the past. It changes the consciousness with which we enter the future.&rdquo;</div>
+      <a href="gratitude-full.html">Explore the Teaching &rarr;</a>
+    </div>
+    <div class="pillar-card">
+      <h3 class="display">Healing</h3>
+      <div class="subtitle">Returning to the Wholeness Within</div>
+      <p>Healing asks us to care for the whole human being: body, mind, heart, emotions, relationships, and spirit. It is not a rejection of medicine or a promise that illness will disappear. It is a deeper movement toward wholeness.</p>
+      <div class="close-line">Wholeness is deeper than physical perfection.</div>
+      <a href="healing-full.html">Explore the Teaching &rarr;</a>
+    </div>
+    <div class="pillar-card">
+      <h3 class="display">Oneness</h3>
+      <div class="subtitle">There Is Only One</div>
+      <p>Beneath our different names, bodies, histories, religions, cultures, and identities, Rev. Bill points toward one Divine Source expressing itself through countless forms. Many waves. One Ocean. Many lamps. One Light.</p>
+      <div class="close-line">Different in appearance. One in essence.</div>
+      <a href="oneness-full.html">Explore the Teaching &rarr;</a>
+    </div>
+    <div class="pillar-card">
+      <h3 class="display">Service</h3>
+      <div class="subtitle">Love in Motion</div>
+      <p>When spiritual understanding moves beyond ideas and enters everyday life, it becomes service: a kind word, a listening ear, helping someone who is suffering, caring for an animal, protecting the Earth, being fully present with another human being.</p>
+      <div class="close-line">Service is Love in motion.</div>
+      <a href="service-full.html">Explore the Teaching &rarr;</a>
+    </div>
   </div>
+</section>
+
+<section class="reflection">
+  <img src="images/six-pillars-reflection.jpg" alt="If Love is the first doorway, Forgiveness releases the heart, Gratitude teaches us to receive life, Healing brings us toward wholeness, and Oneness reveals that there is only One, then Service is what naturally happens when that realization begins to move through our lives. — Rev Bill McDonald" />
 </section>
 
 <section class="watch" id="watch">
@@ -145,19 +480,19 @@
     <div class="watch-grid">
       <div class="watch-item">
         <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/IGj-rUp7sD0" title="Rev. Bill McDonald: Spiritual Warrior, life story" loading="lazy" allowfullscreen></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/IGj-rUp7sD0" title="Rev. Bill McDonald: life story" loading="lazy" allowfullscreen></iframe>
         </div>
         <div class="watch-caption">
-          <div class="k">Life Story</div>
-          <h4>Spiritual Warrior: Vietnam, Transformation &amp; the Path Since</h4>
+          <div class="k">The Story</div>
+          <h4>Vietnam, Transformation &amp; the Spiritual Journey</h4>
         </div>
       </div>
-      <div class="watch-item">
+      <div class="watch-item soon">
         <div class="watch-frame placeholder">
-          <span>Teaching video<br>to be added</span>
+          <span>Coming Soon</span>
         </div>
         <div class="watch-caption">
-          <div class="k">Teaching</div>
+          <div class="k">The Message</div>
           <h4>On Love, Forgiveness &amp; Service</h4>
         </div>
       </div>
@@ -166,8 +501,8 @@
           <iframe src="https://www.youtube-nocookie.com/embed/IKOH3LSNuzA" title="Near-death experience and mystical journey" loading="lazy" allowfullscreen></iframe>
         </div>
         <div class="watch-caption">
-          <div class="k">Mystical Experience</div>
-          <h4>A Spiritual Odyssey: Near-Death &amp; the Journey Within</h4>
+          <div class="k">The Mystery</div>
+          <h4>Near-Death Experience, India &amp; Babaji</h4>
         </div>
       </div>
     </div>
@@ -179,33 +514,36 @@
     <div class="books-head">
       <div class="eyebrow">Books From the Journey</div>
       <h2 class="display">Stories, Reflections &amp; Wisdom</h2>
-      <div class="sub">Gathered across a lifetime</div>
+      <div class="sub">Poetry, mystical experiences, spiritual reflections, and wisdom gathered across a lifetime</div>
     </div>
     <div class="book-grid">
       <div class="book-card">
-        <div class="book-cover"><span>Warrior<br>A Spiritual Odyssey</span></div>
+        <div class="book-cover"><img src="images/book-warrior-spiritual-odyssey.jpg" alt="Warrior: A Spiritual Odyssey book cover" /></div>
         <div class="book-body">
           <h3>Warrior: A Spiritual Odyssey</h3>
-          <p>His memoir &mdash; a quest for love, understanding, forgiveness, and enlightenment, from Vietnam onward.</p>
-          <a href="https://www.amazon.com/Warrior-William-Rev-Bill-McDonald/dp/1515126641" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
+          <p>A spiritual autobiography tracing Rev. Bill&rsquo;s journey through childhood, military service, mystical experiences, spiritual awakening, and his lifelong search for meaning, love, and forgiveness.</p>
+          <a href="#">Explore the Book &rarr;</a>
         </div>
       </div>
       <div class="book-card">
-        <div class="book-cover"><span>Alchemy of a<br>Warrior&rsquo;s Heart</span></div>
+        <div class="book-cover"><img src="images/book-alchemy-warriors-heart.jpg" alt="Alchemy of a Warrior's Heart book cover" /></div>
         <div class="book-body">
           <h3>Alchemy of a Warrior&rsquo;s Heart</h3>
-          <p>Continues the mystical journey, including his travels through India and encounters with the Divine.</p>
-          <a href="https://www.amazon.com/Alchemy-Warriors-Heart-William-McDonald/dp/172337816X" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
+          <p>The journey continues through India, encounters with holy men, extraordinary experiences, additional near-death experiences, and his evolving relationship with the Divine.</p>
+          <a href="#">Explore the Book &rarr;</a>
         </div>
       </div>
       <div class="book-card">
-        <div class="book-cover"><span>I Remember<br>Tomorrow</span></div>
+        <div class="book-cover"><img src="images/book-i-remember-tomorrow.jpg" alt="I Remember Tomorrow book cover" /></div>
         <div class="book-body">
           <h3>I Remember Tomorrow</h3>
-          <p>Cancer, heart attacks, and a pandemic &mdash; held against the practice of self-love and self-forgiveness.</p>
-          <a href="https://www.amazon.com/Remember-Tomorrow-William-Rev-McDonald/dp/B0DNQ84B12" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
+          <p>A later chapter of Rev. Bill&rsquo;s story, bringing his journey forward and reflecting on the extraordinary experiences and spiritual insights that continued to shape his life.</p>
+          <a href="#">Explore the Book &rarr;</a>
         </div>
       </div>
+    </div>
+    <div class="books-more">
+      <a href="authored-by-rev-bill.html">Explore All Books &rarr;</a>
     </div>
   </div>
 </section>
@@ -214,7 +552,7 @@
   <div class="inner reveal">
     <div class="moments-head">
       <h2 class="display">Moments From the Journey</h2>
-      <div class="sub">Ministry, community, and the sacred</div>
+      <div class="sub">Real journeys. Real people. Real places.</div>
     </div>
     <div class="moments-grid">
       <figure><img src="images/gallery-fire-gathering.jpg" alt="Sacred fire gathering" /></figure>
@@ -228,37 +566,32 @@
   <div class="inner reveal">
     <div class="eyebrow">What Do We Leave Behind?</div>
     <h2 class="display">A Lifetime of Experience.<br>A Message for the Next Generation.</h2>
-    <div class="legacy-photo"><img src="images/legacy-community.jpg" alt="The community that gathers around Rev. Bill's message" /></div>
-    <p>After decades of extraordinary experience, Rev. Bill&rsquo;s work today is increasingly about passing forward what life has taught him: the stories, the experiences, the love, the forgiveness, the gratitude, and the call to serve.</p>
+    <div class="legacy-photo"><img src="images/legacy-community-gathering.jpg" alt="Rev. Bill with the community that gathers around his teaching" /></div>
+    <p>After decades of teaching, writing, traveling, serving, and spiritual exploration, Rev. Bill is increasingly turning his attention toward mentoring the next generation of spiritual teachers.</p>
+    <p>His hope is not to create followers. It is to help create teachers who can carry forward Love, Forgiveness, Gratitude, compassion, wisdom, and spiritual understanding in their own authentic way.</p>
+    <p>This is not about preserving a personality. It is about keeping the message alive.</p>
     <div class="legacy-actions">
       <a href="#watch">Watch His Teachings</a>
       <a href="#books">Read His Books</a>
-      <a href="#events">Attend a Gathering</a>
+      <a href="index.html#contact">Explore Mentorship</a>
       <a href="#contact">Invite Him to Speak</a>
     </div>
   </div>
 </section>
 
-<section class="events" id="events">
+<section class="shasta" id="shasta">
   <div class="inner reveal">
-    <div class="eyebrow">Gather With Rev. Bill</div>
-    <h2 class="display">Upcoming Talks &amp; Gatherings</h2>
-    <div class="sub">Workshops, interviews, and gatherings</div>
-
-    <div class="fb-embed">
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518960619857879%2F&amp;show_text=false&amp;width=560&amp;t=0"
-              title="Rev. Bill McDonald on the upcoming Mount Shasta retreat"
-              scrolling="no" frameborder="0" allowfullscreen="true" loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <div class="eyebrow">Mount Shasta</div>
+    <h2 class="display">A Deeper Space for the Journey Within</h2>
+    <div style="max-width:560px; margin:0 auto 2.2rem; border-radius:3px; overflow:hidden; box-shadow:0 24px 50px -20px rgba(0,0,0,0.5);">
+      <img src="images/retreat-participants-shasta.jpg" alt="Retreat participants at Mount Shasta" style="width:100%; display:block;" />
     </div>
-    <div class="fb-fallback">If the video doesn&rsquo;t load, <a href="https://www.facebook.com/reel/1518960619857879/" target="_blank" rel="noopener">watch it on Facebook &rarr;</a></div>
-
-    <div class="event-card">
-      <div class="k">Ashram-Style Retreat</div>
-      <h3 class="display">Mount Shasta Spiritual Retreat &mdash; Going Deeper</h3>
-      <div class="meta">November 6&ndash;10, 2026 &middot; Wisdom of the Heart Center, Mount Shasta, CA</div>
-      <p>A five-day immersion in meditation, sacred fire, and the awakening of the heart, led by Rev. Bill at the foot of Mount Shasta.</p>
-      <a class="cta" href="mount-shasta-retreat.html">View Retreat Details &rarr;</a>
+    <p>Rev. Bill&rsquo;s five-day Mount Shasta retreats offer an intimate space for meditation, contemplation, spiritual inquiry, self-discovery, healing, and connection with the Divine.</p>
+    <p>These retreats are designed for those who want to move beyond inspiration and enter more deeply into the spiritual path. His teachings there center on meditation, self-love, forgiveness, gratitude, healing, Divine Grace, Oneness, and the recognition that the sacred is present everywhere.</p>
+    <div class="shasta-note">Stay Connected for Future Retreats</div>
+    <div class="shasta-links">
+      <a href="mount-shasta-2026.html">View Current Retreat Details &rarr;</a>
+      <a href="#connect">Receive Updates</a>
     </div>
   </div>
 </section>
@@ -266,9 +599,9 @@
 <section class="connect" id="connect">
   <div class="inner reveal">
     <h2 class="display">Letters From the Journey</h2>
-    <div class="sub">Occasional reflections, stories, teachings, and upcoming gatherings</div>
+    <div class="sub">Occasional reflections, stories, teachings, writings, and upcoming gatherings from Rev. Bill</div>
     <form class="connect-form" onsubmit="return false;">
-      <label for="letters-email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
+      <label for="letters-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
       <input id="letters-email" type="email" placeholder="Your email address" aria-label="Email address" required />
       <button type="submit">Receive the Letters</button>
     </form>
@@ -278,22 +611,19 @@
 <section class="contact" id="contact">
   <div class="inner reveal">
     <h2 class="display">Get in Touch</h2>
-    <p>For speaking invitations, podcast interviews, documentaries and media, workshop invitations, veterans organizations, or spiritual communities.</p>
+    <p>For speaking invitations, podcast interviews, film and documentary requests, workshops, retreats, veterans organizations, spiritual communities, mentorship inquiries, or general questions.</p>
     <div class="contact-grid">
       <a href="#">Speaking &amp; Media</a>
       <a href="#">Veterans &amp; Advocacy</a>
+      <a href="index.html#contact">Mentorship</a>
       <a href="#">General Inquiries</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div style="margin-bottom:1rem;">
-    <a href="https://www.youtube.com/@rev.billmcdonald576" target="_blank" rel="noopener" style="color:#B79355; text-decoration:none; margin:0 0.8rem;">YouTube</a>
-    <a href="https://www.facebook.com/profile.php?id=100049901892095" target="_blank" rel="noopener" style="color:#B79355; text-decoration:none; margin:0 0.8rem;">Facebook</a>
-   
-  </div>
-  Rev. Bill McDonald &middot; Veteran &middot; Mystic &middot; Author &middot; Messenger of Love
+  <div class="fname">Rev. Bill McDonald &middot; The Spiritual Warrior</div>
+  <div class="fline">Love is the foundation of everything.</div>
 </footer>
 
 
