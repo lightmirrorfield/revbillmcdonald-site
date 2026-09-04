@@ -25,10 +25,16 @@
 
   .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
   .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; padding:0.4rem; flex-direction:column; gap:5px; }
+  .nav-toggle span{ display:block; width:22px; height:2px; background:var(--ink); }
   .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
   .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
   .nav-links a:hover{ color:var(--amber); }
-  @media (max-width:900px){ .nav-links{ display:none; } }
+  @media (max-width:900px){
+    .nav-toggle{ display:flex; }
+    .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--ivory); padding:1.4rem 2.2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.12); }
+    .nav-links.open{ display:flex; }
+  }
 
   main{ padding-top:5rem; }
   .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:4.5rem 1.75rem 3.5rem; }
@@ -70,9 +76,11 @@
 <body>
 <nav class="nav">
   <a href="/" class="nav-mark">Rev. Bill McDonald</a>
-  <ul class="nav-links">
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
     <li><a href="/workshops-%26-events/">Workshops &amp; Events</a></li>
+    <li><a href="/mount-shasta-2026/">Mount Shasta 2026</a></li>
     <li><a href="/authored-by-rev-bill/">Authored by Rev Bill</a></li>
     <li><a href="/resources-for-seekers.html">Resources for Seekers</a></li>
     <li><a href="/contact-bill/">Contact Bill</a></li>
@@ -158,5 +166,18 @@
   <div class="fcopy">&copy; 2026 Rev. Bill McDonald / Spiritual Warrior Ministries. All Rights Reserved.</div>
 </footer>
 
+<script>
+  var navToggleBtn = document.getElementById('navToggle');
+  var navLinksList = document.getElementById('navLinks');
+  if (navToggleBtn && navLinksList) {
+    navToggleBtn.addEventListener('click', function(){
+      var isOpen = navLinksList.classList.toggle('open');
+      navToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinksList.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinksList.classList.remove('open'); navToggleBtn.setAttribute('aria-expanded','false'); });
+    });
+  }
+</script>
 </body>
 </html>
