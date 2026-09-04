@@ -87,14 +87,14 @@
 </section>
 
 <section>
-  <form class="contact-form" id="contact-form">
+  <form class="contact-form" id="contact-form" action="https://formspree.io/f/mnpqzjzw" method="POST">
     <div class="field-row">
       <label for="cf-name">Your Name</label>
       <input id="cf-name" type="text" name="name" required />
     </div>
     <div class="field-row">
       <label for="cf-email">Your Email</label>
-      <input id="cf-email" type="email" name="email" required />
+      <input id="cf-email" type="email" name="_replyto" required />
     </div>
     <div class="field-row">
       <label for="cf-reason">What can we help with?</label>
@@ -106,24 +106,36 @@
         <option value="Mentorship">Mentorship</option>
         <option value="General Inquiries">General Inquiries</option>
       </select>
+      <input type="hidden" name="_subject" value="New message from revbillmcdonald.com" />
     </div>
     <div class="field-row">
       <label for="cf-message">Your Message</label>
       <textarea id="cf-message" name="message" required></textarea>
     </div>
     <button type="submit">Send Message</button>
-    <p class="form-note">Submitting opens your email app with this pre-filled, addressed to Rev. Bill.</p>
   </form>
+  <p class="form-note" id="form-note">Sent straight to Rev. Bill&rsquo;s inbox.</p>
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e){
+    var form = document.getElementById('contact-form');
+    var note = document.getElementById('form-note');
+    form.addEventListener('submit', function(e){
       e.preventDefault();
-      var name = document.getElementById('cf-name').value;
-      var email = document.getElementById('cf-email').value;
-      var reason = document.getElementById('cf-reason').value;
-      var message = document.getElementById('cf-message').value;
-      var subject = encodeURIComponent(reason + ' — message from ' + name);
-      var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:Huey576@gmail.com?subject=' + subject + '&body=' + body;
+      note.textContent = 'Sending…';
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res){
+        if (res.ok) {
+          form.reset();
+          form.style.display = 'none';
+          note.textContent = 'Thank you — your message has been sent to Rev. Bill.';
+        } else {
+          note.textContent = 'Something went wrong. Please try again, or email Huey576@gmail.com directly.';
+        }
+      }).catch(function(){
+        note.textContent = 'Something went wrong. Please try again, or email Huey576@gmail.com directly.';
+      });
     });
   </script>
 </section>
