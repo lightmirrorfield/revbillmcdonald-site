@@ -263,7 +263,7 @@
   footer .fsocial a{ color:var(--gold); text-decoration:none; }
   footer .fsocial a:hover{ color:var(--ivory); }
   footer .fsocial a:not(:last-child)::after{ content:' · '; color:#5A6478; }
-  footer .fcredit{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.88rem; color:#9AA4B8; line-height:1.6; margin-bottom:1.6rem; padding-top:1.6rem; border-top:1px solid rgba(183,147,85,0.15); max-width:420px; margin-left:auto; margin-right:auto; }
+  footer .fcredit{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.88rem; color:#9AA4B8; line-height:1.6; margin-top:1.6rem; padding-bottom:1.6rem; border-bottom:1px solid rgba(183,147,85,0.15); max-width:420px; margin-left:auto; margin-right:auto; }
   footer .fcredit a{ color:var(--gold); text-decoration:none; }
   footer .fcredit a:hover{ text-decoration:underline; }
   footer .flegal{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:0.8rem; }
