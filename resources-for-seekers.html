@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources for Seekers — Rev. Bill McDonald</title>
+<meta name="description" content="People, paths, and resources for the journey — guides, healers, and teachers whose work Rev. Bill has personally encountered along the way.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#182338; --ink-soft:#4E5A72; --ivory:#F8F4EC; --parchment:#F0E9D8;
+    --gold:#B79355; --gold-deep:#8F6B34; --charcoal:#3A3733; --sky:#7C93A8;
+    --amber:#C97A44; --olive:#6E6A4E; --label:#8A4E22; --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12); --max-w:700px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:900px){ .nav-links{ display:none; } }
+
+  main{ padding-top:5rem; }
+  .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:5.5rem 1.75rem 4.5rem; }
+  .page-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .page-hero h1{ font-size:clamp(2.2rem, 5vw, 3.4rem); color:var(--ivory); }
+  .page-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1rem; font-size:1.15rem; max-width:600px; margin-left:auto; margin-right:auto; }
+
+  section{ padding:5rem 1.75rem; }
+  .inner{ max-width:var(--max-w); margin:0 auto; }
+
+  .intro{ text-align:center; }
+  .intro p{ font-family:'Cormorant Garamond', serif; font-size:clamp(1.1rem, 2.1vw, 1.3rem); font-style:italic; color:var(--ink-soft); margin-bottom:1.2rem; }
+  .intro p:last-child{ margin-bottom:0; font-weight:600; color:var(--ink); }
+
+  .profiles{ background:var(--parchment); padding-top:1rem; }
+  .profile-grid{ max-width:820px; margin:0 auto; }
+  .profile{ background:var(--ivory); border:1px solid var(--line); border-radius:12px; padding:2.6rem 2.6rem; margin-bottom:1.8rem; box-shadow:0 20px 44px -26px rgba(24,35,56,0.2); }
+  .profile:last-child{ margin-bottom:0; }
+  .profile h2{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.7rem; color:var(--ink); margin-bottom:0.5rem; }
+  .profile .role{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--amber); margin-bottom:1.2rem; }
+  .profile p{ font-size:0.98rem; color:var(--ink-soft); margin-bottom:1rem; }
+  .profile p:last-of-type{ margin-bottom:1.4rem; }
+  .profile .explore{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .profile .explore:hover{ color:var(--amber); border-color:var(--amber); }
+
+  .note-section{ background:var(--ink); color:var(--ivory); text-align:center; }
+  .note-section h2{ font-size:clamp(1.9rem, 4vw, 2.4rem); color:var(--ivory); margin-bottom:2rem; }
+  .note-section p{ font-size:1rem; color:#C7CDD8; margin-bottom:1.2rem; }
+  .note-section p:last-of-type{ margin-bottom:2.2rem; }
+  .note-section .pull{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:clamp(1.25rem, 2.4vw, 1.6rem); color:var(--gold); border-top:1px solid rgba(183,147,85,0.3); padding-top:2rem; }
+
+  footer{ background:var(--ink); color:#8A93A5; text-align:center; padding:2.6rem 1.5rem; border-top:1px solid rgba(183,147,85,0.15); }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.05rem; color:var(--gold); margin-bottom:0.6rem; }
+  footer .fline{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="nav-mark">Rev. Bill McDonald</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/workshops-%26-events/">Workshops &amp; Events</a></li>
+    <li><a href="/authored-by-rev-bill/">Authored by Rev Bill</a></li>
+    <li><a href="/resources-for-seekers.html">Resources for Seekers</a></li>
+    <li><a href="/contact-bill/">Contact Bill</a></li>
+    <li><a href="/donate-to-bills-mission/">Donate</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="page-hero">
+  <div class="eyebrow">Resources for Seekers</div>
+  <h1 class="display">People, Paths &amp; Resources for the Journey</h1>
+  <div class="sub">Voices Rev. Bill has personally crossed paths with along the way</div>
+</section>
+
+<section class="intro">
+  <div class="inner">
+    <p>The spiritual journey is deeply personal. Over the years, Rev. Bill has crossed paths with people whose work offers different forms of guidance, healing, reflection, and support.</p>
+    <p>These resources are shared simply as invitations to explore.</p>
+    <p>Listen within. Use discernment. Take what resonates. And continue discovering your own relationship with the Divine.</p>
+  </div>
+</section>
+
+<section class="profiles">
+  <div class="profile-grid">
+
+    <div class="profile">
+      <h2>Ragini Mishra</h2>
+      <div class="role">Spiritual Guide &middot; Supporting Conscious Leaders &middot; Founder of Light Mirror Community</div>
+      <p>Ragini bridges inner clarity with outer expression. She supports individuals through intuitive guidance and purpose clarity, while helping spiritual teachers, healers, authors, and conscious leaders bring their work into the world through websites, content, social media, courses, and community-building.</p>
+      <p>Through Light Mirror Field, she is also creating spaces to Anchor Your Light. Remember Your Purpose. Raise Collective Consciousness.</p>
+      <a class="explore" href="https://lightmirrorfield.com" target="_blank" rel="noopener">Explore Ragini&rsquo;s Work &rarr;</a>
+    </div>
+
+    <div class="profile">
+      <h2>Vinita Dubey Pande</h2>
+      <div class="role">Naadi &middot; Ancient Wisdom &middot; Spiritual Guidance</div>
+      <p>Vinita is an author, Naadi expert, and spiritual guide whose work bridges ancient wisdom and modern life.</p>
+      <p>Her offerings include Naadi exploration, intuitive guidance, spiritual mentorship, past-life regression, future progression, and consciousness-based journeys. Through her books and guidance, she helps seekers explore deeper questions of purpose, karma, spiritual growth, and the wisdom preserved within India&rsquo;s ancient traditions.</p>
+      <a class="explore" href="https://www.vinitapande.com" target="_blank" rel="noopener">Explore Vinita&rsquo;s Work &rarr;</a>
+    </div>
+
+    <div class="profile">
+      <h2>Dr. Pontea Dianati</h2>
+      <div class="role">Soul Psychology &middot; Spiritual Mentorship &middot; Inner Transformation</div>
+      <p>Dr. Pontea Dianati brings together psychological insight, energy healing, intuitive awareness, and spiritual mentorship to support deeper personal and spiritual transformation.</p>
+      <p>Her work focuses on life transitions, spirituality, relationships, inner trust, soul-level healing, and helping people reconnect with clarity and inner sovereignty.</p>
+      <a class="explore" href="https://www.psychologytoday.com/us/therapists/pontea-dianati-san-diego-ca/283887" target="_blank" rel="noopener">Explore Dr. Pontea&rsquo;s Work &rarr;</a>
+    </div>
+
+    <div class="profile">
+      <h2>Kana Koinuma</h2>
+      <div class="role">Sound &middot; Energy &middot; The Path of the Heart</div>
+      <p>Kana&rsquo;s work is centered around sound, vibration, energy awareness, self-compassion, forgiveness, and the wisdom of the heart.</p>
+      <p>Through Angelic Sound Therapy, she offers sound recordings and private sessions designed to support relaxation, emotional release, inner connection, peace, and a deeper relationship with one&rsquo;s own inner guidance.</p>
+      <a class="explore" href="https://angelicsoundtherapy.com" target="_blank" rel="noopener">Explore Kana&rsquo;s Work &rarr;</a>
+    </div>
+
+    <div class="profile">
+      <h2>Tammy Lee Anderson</h2>
+      <div class="role">Love &middot; Grief &middot; Spiritual Connection &middot; Healing</div>
+      <p>Tammy Lee Anderson is the author of <em>Into Love</em> and offers work centered around spiritual mediumship, grief, wellness mentoring, healing, and personal empowerment.</p>
+      <p>Her own spiritual journey, including near-death experiences, has shaped her exploration of life, death, surrender, spiritual connection, and Love. Her work supports people navigating grief, transition, self-discovery, and deeper questions surrounding life and death.</p>
+      <a class="explore" href="https://healingwellness.com" target="_blank" rel="noopener">Explore Tammy&rsquo;s Work &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="note-section">
+  <div class="inner">
+    <h2 class="display">A Note for the Seeker</h2>
+    <p>No teacher, guide, healing method, or spiritual tradition needs to become the authority over your own inner knowing.</p>
+    <p>Different people may enter our lives at different moments and offer exactly the perspective, support, or reminder we need at that time.</p>
+    <p>Explore with openness. Ask questions. Keep your discernment. Notice what brings greater Love, compassion, clarity, and awareness into your life.</p>
+    <p>Teachers can point. Communities can support. Experiences can awaken us. But the journey remains our own.</p>
+    <div class="pull">&ldquo;It is all about the message, and not the messenger.&rdquo;</div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="fname">Rev. Bill McDonald &middot; The Spiritual Warrior</div>
+  <div class="fline">Love is the foundation of everything.</div>
+</footer>
+
+</body>
+</html>
