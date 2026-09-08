@@ -224,8 +224,13 @@
   .watch-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:1.6rem; }
   .watch-item{ background:var(--parchment); border-radius:12px; overflow:hidden; box-shadow:0 20px 40px -22px rgba(24,35,56,0.3); }
   .watch-item.soon{ opacity:0.6; box-shadow:none; }
-  .watch-frame{ position:relative; width:100%; padding-top:56.25%; background:var(--charcoal); }
+  .watch-frame{ position:relative; display:block; width:100%; margin:0; padding:0; padding-top:56.25%; background:var(--charcoal); border:none; cursor:pointer; font:inherit; }
   .watch-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .watch-frame img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+  .watch-frame .play-btn{ position:absolute; inset:0; margin:auto; width:60px; height:60px; border-radius:50%; background:rgba(24,35,56,0.55); border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; transition:background 0.25s ease, transform 0.25s ease; }
+  .watch-frame .play-btn::after{ content:''; border-style:solid; border-width:9px 0 9px 15px; border-color:transparent transparent transparent var(--ivory); margin-left:4px; transition:border-color 0.25s ease; }
+  .watch-frame:hover .play-btn{ background:var(--gold); transform:scale(1.08); }
+  .watch-frame:hover .play-btn::after{ border-left-color:var(--ink); }
   .watch-frame.placeholder{ display:flex; align-items:center; justify-content:center; }
   .watch-frame.placeholder span{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:#8A93A5; text-align:center; }
   .watch-caption{ padding:1.1rem 1.2rem; }
@@ -529,45 +534,50 @@
     </div>
     <div class="watch-grid">
       <div class="watch-item">
-        <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/IKOH3LSNuzA" title="Near-death experience and mystical journey" loading="lazy" allowfullscreen></iframe>
-        </div>
+        <button class="watch-frame" data-video-id="IKOH3LSNuzA" aria-label="Play: Near-Death Experience, India &amp; Babaji">
+          <img src="https://i.ytimg.com/vi/IKOH3LSNuzA/maxresdefault.jpg" alt="Near-death experience and mystical journey" loading="lazy" />
+          <span class="play-btn" aria-hidden="true"></span>
+        </button>
         <div class="watch-caption">
           <div class="k">The Mystery</div>
           <h4>Near-Death Experience, India &amp; Babaji</h4>
         </div>
       </div>
       <div class="watch-item">
-        <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/DOGXahvgZMc" title="The Truth About Mahavatar Babaji, Spiritual Tourism & Quantum Healing" loading="lazy" allowfullscreen></iframe>
-        </div>
+        <button class="watch-frame" data-video-id="DOGXahvgZMc" aria-label="Play: Mahavatar Babaji, Spiritual Tourism &amp; Quantum Healing">
+          <img src="https://i.ytimg.com/vi/DOGXahvgZMc/maxresdefault.jpg" alt="The Truth About Mahavatar Babaji, Spiritual Tourism & Quantum Healing" loading="lazy" />
+          <span class="play-btn" aria-hidden="true"></span>
+        </button>
         <div class="watch-caption">
           <div class="k">The Teaching</div>
           <h4>Mahavatar Babaji, Spiritual Tourism &amp; Quantum Healing</h4>
         </div>
       </div>
       <div class="watch-item">
-        <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/5G06kxX650k" title="Rev. Bill's Nadi Palm Leaf Reading" loading="lazy" allowfullscreen></iframe>
-        </div>
+        <button class="watch-frame" data-video-id="5G06kxX650k" aria-label="Play: His Personal Nadi Palm Leaf Reading">
+          <img src="https://i.ytimg.com/vi/5G06kxX650k/hqdefault.jpg" alt="Rev. Bill's Nadi Palm Leaf Reading" loading="lazy" />
+          <span class="play-btn" aria-hidden="true"></span>
+        </button>
         <div class="watch-caption">
           <div class="k">The Reading</div>
           <h4>His Personal Nadi Palm Leaf Reading</h4>
         </div>
       </div>
       <div class="watch-item">
-        <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/kOCieqRbgAo" title="Aloha Rev Bill - a song of tribute" loading="lazy" allowfullscreen></iframe>
-        </div>
+        <button class="watch-frame" data-video-id="kOCieqRbgAo" aria-label="Play: &ldquo;Aloha Rev Bill&rdquo; &mdash; A Song by Kana Koinuma">
+          <img src="https://i.ytimg.com/vi/kOCieqRbgAo/maxresdefault.jpg" alt="Aloha Rev Bill - a song of tribute" loading="lazy" />
+          <span class="play-btn" aria-hidden="true"></span>
+        </button>
         <div class="watch-caption">
           <div class="k">A Tribute</div>
           <h4>&ldquo;Aloha Rev Bill&rdquo; &mdash; A Song by Kana Koinuma</h4>
         </div>
       </div>
       <div class="watch-item">
-        <div class="watch-frame">
-          <iframe src="https://www.youtube-nocookie.com/embed/IGj-rUp7sD0" title="Rev. Bill McDonald: life story" loading="lazy" allowfullscreen></iframe>
-        </div>
+        <button class="watch-frame" data-video-id="IGj-rUp7sD0" aria-label="Play: Vietnam, Transformation &amp; the Spiritual Journey">
+          <img src="https://i.ytimg.com/vi/IGj-rUp7sD0/maxresdefault.jpg" alt="Rev. Bill McDonald: life story" loading="lazy" />
+          <span class="play-btn" aria-hidden="true"></span>
+        </button>
         <div class="watch-caption">
           <div class="k">The Story</div>
           <h4>Vietnam, Transformation &amp; the Spiritual Journey</h4>
@@ -735,6 +745,20 @@
       a.addEventListener('click', () => { navLinksList.classList.remove('open'); navToggleBtn.setAttribute('aria-expanded','false'); });
     });
   }
+  document.querySelectorAll('.watch-frame[data-video-id]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-video-id');
+      const wrap = document.createElement('div');
+      wrap.className = 'watch-frame';
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1`;
+      iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      wrap.appendChild(iframe);
+      btn.replaceWith(wrap);
+    });
+  });
 </script>
 
 </body>
