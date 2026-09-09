@@ -63,8 +63,8 @@
   .inner a:hover{ color:var(--amber); }
 
   .donate-box{ margin-top:2.8rem; padding-top:2.6rem; border-top:1px solid var(--line); }
-  .inner a.donate-btn{ display:inline-flex; align-items:center; gap:0.6rem; background:var(--ink); color:var(--ivory); text-decoration:none; padding:1rem 2rem; border-radius:12px; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; }
-  .inner a.donate-btn:hover{ background:var(--gold-deep); color:var(--ivory); }
+  .donate-btn{ display:inline-flex; align-items:center; gap:0.6rem; background:var(--ink); color:var(--ivory); text-decoration:none; padding:1rem 2rem; border-radius:12px; border:none; cursor:pointer; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; }
+  .donate-btn:hover{ background:var(--gold-deep); color:var(--ivory); }
   .donate-note{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.92rem; color:var(--ink-soft); margin-top:1rem; }
   .badges{ margin-top:1.2rem; opacity:0.85; }
   .badges img{ height:26px; }
@@ -123,7 +123,15 @@
     <p>Donations are always welcomed. Thank you in advance for your support and help!</p>
 
     <div class="donate-box">
-      <a class="donate-btn" href="https://revbillmcdonald.com/donate-to-bills-mission" target="_blank" rel="noopener">Donate Now via PayPal &rarr;</a>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_donations" />
+        <input type="hidden" name="business" value="Huey576@gmail.com" />
+        <input type="hidden" name="item_name" value="Rev Bill Mcdonald" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="return" value="https://revbillmcdonald.com/donate-to-bills-mission/" />
+        <input type="hidden" name="cancel_return" value="https://revbillmcdonald.com/donate-to-bills-mission/" />
+        <button type="submit" class="donate-btn">Donate Now via PayPal &rarr;</button>
+      </form>
       <div class="donate-note">Opens Rev. Bill&rsquo;s secure PayPal donation portal in a new tab</div>
       <div class="badges"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Pay with PayPal or a debit/credit card" /></div>
     </div>
