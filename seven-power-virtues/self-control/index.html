@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self-Control: The Freedom to Choose | Rev. Bill McDonald</title>
+<meta name="description" content="Rev. Bill McDonald reframes self-control as freedom rather than repression — mastering impulse, anger, attention and desire to choose our response instead of reacting.">
+<link rel="canonical" href="https://revbillmcdonald.com/seven-power-virtues/self-control/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Rev. Bill McDonald">
+<meta property="og:title" content="Self-Control: The Freedom to Choose | Rev. Bill McDonald">
+<meta property="og:description" content="Rev. Bill McDonald reframes self-control as freedom rather than repression — mastering impulse, anger, attention and desire to choose our response instead of reacting.">
+<meta property="og:url" content="https://revbillmcdonald.com/seven-power-virtues/self-control/">
+<meta property="og:image" content="https://revbillmcdonald.com/images/creek-blessing.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Self-Control: The Freedom to Choose | Rev. Bill McDonald">
+<meta name="twitter:description" content="Rev. Bill McDonald reframes self-control as freedom rather than repression — mastering impulse, anger, attention and desire to choose our response instead of reacting.">
+<meta name="twitter:image" content="https://revbillmcdonald.com/images/creek-blessing.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#182338; --ink-soft:#4E5A72; --ivory:#F8F4EC; --parchment:#F0E9D8;
+    --gold:#B79355; --gold-deep:#8F6B34; --charcoal:#3A3733; --sky:#7C93A8;
+    --amber:#C97A44; --olive:#6E6A4E; --label:#8A4E22; --label-bg:rgba(183,147,85,0.14);
+    --line:rgba(24,35,56,0.12); --max-w:700px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Work Sans', sans-serif; font-weight:300; background:var(--ivory); color:var(--ink-soft); line-height:1.75; }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+  .display{ font-family:'Cormorant Garamond', serif; font-weight:500; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:0.74rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); background:var(--label-bg); display:inline-block; padding:0.4rem 0.9rem; border-radius:99px; margin-bottom:1.4rem; }
+
+  .nav{ position:fixed; top:0; left:0; right:0; z-index:90; display:flex; align-items:center; justify-content:space-between; padding:1rem 2.2rem; background:rgba(248,244,236,0.96); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+  .nav-mark{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.1rem; color:var(--ink); text-decoration:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; padding:0.4rem; flex-direction:column; gap:5px; }
+  .nav-toggle span{ display:block; width:22px; height:2px; background:var(--ink); }
+  .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
+  .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
+  .nav-links a:hover{ color:var(--amber); }
+  @media (max-width:900px){
+    .nav-toggle{ display:flex; }
+    .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--ivory); padding:1.4rem 2.2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.12); }
+    .nav-links.open{ display:flex; }
+  }
+
+  main{ padding-top:5rem; }
+  .page-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:5.5rem 1.75rem 4.5rem; }
+  .page-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .page-hero h1{ font-size:clamp(2.2rem, 5vw, 3.4rem); color:var(--ivory); }
+  .page-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1rem; font-size:1.15rem; max-width:640px; margin-left:auto; margin-right:auto; }
+
+  section{ padding:5rem 1.75rem; }
+  .inner{ max-width:var(--max-w); margin:0 auto; }
+
+  .breadcrumb{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); text-align:center; padding:1.3rem 1.75rem 0; }
+  .breadcrumb a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px solid var(--line); }
+  .breadcrumb a:hover{ color:var(--amber); border-color:var(--amber); }
+  .breadcrumb span{ color:#B9B2A0; margin:0 0.4rem; }
+
+  .article-hero{ background:var(--ink); color:var(--ivory); text-align:center; padding:2.6rem 1.75rem 3rem; }
+  .article-hero .eyebrow{ color:var(--gold); background:none; padding:0; }
+  .article-hero h1{ font-size:clamp(2.1rem, 5vw, 3.3rem); color:var(--ivory); line-height:1.2; }
+  .article-hero .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; margin-top:1.1rem; font-size:1.2rem; max-width:640px; margin-left:auto; margin-right:auto; }
+  .article-hero .meta{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:#9AA4B8; margin-top:1.6rem; }
+
+  /* series navigator */
+  .series-nav{ background:var(--parchment); border-bottom:1px solid var(--line); padding:0.9rem 1.75rem; text-align:center; }
+  .series-nav .rail{ display:flex; flex-wrap:wrap; justify-content:center; gap:0.4rem 0; max-width:980px; margin:0 auto; font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.04em; text-transform:uppercase; }
+  .series-nav .rail a{ color:var(--ink-soft); text-decoration:none; padding:0.3rem 0.7rem; }
+  .series-nav .rail a:hover{ color:var(--amber); }
+  .series-nav .rail .current{ color:var(--ink); font-weight:600; background:rgba(183,147,85,0.18); border-radius:99px; padding:0.3rem 0.9rem; }
+  .series-nav .rail .sep{ color:#C9BFA8; }
+  .series-nav-mobile{ display:none; }
+  @media (max-width:820px){
+    .series-nav .rail{ display:none; }
+    .series-nav-mobile{ display:flex; align-items:center; justify-content:space-between; max-width:480px; margin:0 auto; font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; }
+    .series-nav-mobile a{ color:var(--ink); text-decoration:none; }
+    .series-nav-mobile .count{ color:var(--ink-soft); }
+  }
+
+  .article-photo{ max-width:820px; margin:0 auto; border-radius:12px; overflow:hidden; box-shadow:0 20px 44px -20px rgba(24,35,56,0.3); aspect-ratio:16/9; }
+  .article-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+  .about-box{ background:var(--parchment); border-left:2px solid var(--gold); padding:1.6rem 1.9rem; max-width:680px; margin:0 auto; border-radius:2px; }
+  .about-box .k{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin-bottom:0.7rem; display:block; }
+  .about-box p{ font-size:0.98rem; color:var(--ink-soft); font-style:italic; font-family:'Cormorant Garamond', serif; }
+
+  .opening{ max-width:680px; margin:0 auto; }
+  .opening p{ font-size:1.08rem; font-family:'Cormorant Garamond', serif; font-style:normal; color:var(--ink-soft); margin-bottom:1.15rem; }
+
+  .pull-quote{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:clamp(1.3rem,2.6vw,1.7rem); color:var(--ink); text-align:center; max-width:600px; margin:2.8rem auto; padding:1.8rem 0; border-top:1px solid var(--gold); border-bottom:1px solid var(--gold); line-height:1.5;}
+
+  .related-pillars{ text-align:center; max-width:680px; margin:0 auto; }
+  .related-pillars .k{ font-family:'IBM Plex Mono', monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin-bottom:0.9rem; display:block; }
+  .related-pillars .chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:0.8rem; }
+  .related-pillars a{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink); text-decoration:none; border:1px solid var(--line); padding:0.55rem 1.1rem; border-radius:99px; }
+  .related-pillars a:hover{ border-color:var(--gold); color:var(--amber); }
+
+  .carry-question{ background:var(--parchment); border-left:2px solid var(--gold); padding:2rem 2.2rem; max-width:640px; margin:0 auto; border-radius:2px; }
+  .carry-question .k{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin-bottom:0.8rem; }
+  .carry-question p{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.15rem; color:var(--ink); }
+
+  .continue-journey{ background:var(--parchment); }
+  .continue-journey .head{ text-align:center; margin-bottom:2.6rem; }
+  .continue-journey .head h2{ font-size:clamp(1.5rem,3vw,1.9rem); color:var(--ink); }
+  .continue-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; max-width:980px; margin:0 auto; }
+  .continue-card{ background:var(--ivory); border:1px solid var(--line); border-radius:12px; padding:1.7rem 1.6rem; box-shadow:0 16px 34px -18px rgba(24,35,56,0.2); }
+  .continue-card a{ text-decoration:none; color:inherit; display:block; }
+  .continue-card .k{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin-bottom:0.7rem; }
+  .continue-card h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.12rem; color:var(--ink); line-height:1.35; }
+  @media (max-width:820px){ .continue-grid{ grid-template-columns:1fr; } }
+
+  .back-link{ text-align:center; background:var(--ivory); padding-top:0; }
+  .back-link a{ font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .back-link a:hover{ color:var(--amber); border-color:var(--amber); }
+
+  /* landing page */
+  .v-intro{ text-align:center; }
+  .v-intro p{ font-family:'Cormorant Garamond', serif; font-size:clamp(1.1rem, 2.1vw, 1.3rem); font-style:italic; color:var(--ink-soft); margin-bottom:1.2rem; max-width:700px; margin-left:auto; margin-right:auto; }
+  .v-intro .words{ font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--amber); margin-top:1.6rem; }
+
+  .v-section-head{ text-align:center; max-width:680px; margin:0 auto 3rem; }
+  .v-section-head h2{ font-size:clamp(1.7rem, 3.6vw, 2.3rem); color:var(--ink); }
+  .v-section-head .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--amber); margin-top:0.5rem; }
+
+  .path-wrap{ max-width:760px; margin:0 auto; position:relative; }
+  .path-wrap::before{ content:''; position:absolute; left:29px; top:20px; bottom:20px; width:1px; background:linear-gradient(var(--gold), var(--gold) 80%, transparent); opacity:0.5; }
+  @media (max-width:600px){ .path-wrap::before{ left:23px; } }
+  .path-card{ position:relative; display:flex; gap:1.6rem; align-items:flex-start; padding:0 0 2.6rem; }
+  .path-card:last-child{ padding-bottom:0; }
+  .path-num{ flex:none; width:60px; height:60px; border-radius:50%; background:var(--ink); border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.4rem; color:var(--gold); position:relative; z-index:1; }
+  @media (max-width:600px){ .path-num{ width:48px; height:48px; font-size:1.15rem; } }
+  .path-body{ flex:1; background:var(--ivory); border:1px solid var(--line); border-radius:12px; padding:1.6rem 1.8rem; box-shadow:0 16px 34px -20px rgba(24,35,56,0.22); margin-top:4px; }
+  .path-body a{ text-decoration:none; color:inherit; display:block; }
+  .path-body h3{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.3rem; color:var(--ink); margin-bottom:0.3rem; }
+  .path-body .desc{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--amber); margin-bottom:0.6rem; }
+  .path-body p.essence{ font-size:0.95rem; color:var(--ink-soft); }
+  .path-body .rv{ display:inline-block; margin-top:0.9rem; font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); border-bottom:1px solid var(--gold); padding-bottom:0.2rem; }
+
+  .weave-wrap{ max-width:640px; margin:0 auto; text-align:center; }
+  .weave-line{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.15rem; color:var(--ink-soft); margin-bottom:0.5rem; }
+  .weave-arrow{ color:var(--gold); margin:0.6rem 0; font-size:1rem; }
+
+  .v-bridge{ background:var(--ink); color:var(--ivory); text-align:center; }
+  .v-bridge h2{ font-size:clamp(1.8rem, 3.8vw, 2.3rem); color:var(--ivory); margin-bottom:1.1rem; }
+  .v-bridge p{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#D8CDB0; font-size:1.08rem; max-width:600px; margin:0 auto 2rem; }
+  .v-bridge a.cta{ font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(183,147,85,0.4); padding-bottom:0.3rem; }
+  .v-bridge a.cta:hover{ color:var(--ivory); }
+
+  .v-closing{ text-align:center; }
+  .v-closing h2{ font-size:clamp(1.9rem, 4vw, 2.4rem); color:var(--ink); margin-bottom:1.1rem; }
+  .v-closing p{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); font-size:1.08rem; max-width:600px; margin:0 auto 2rem; }
+  .v-closing a.cta{ font-family:'IBM Plex Mono', monospace; font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:0.3rem; }
+  .v-closing a.cta:hover{ color:var(--amber); border-color:var(--amber); }
+
+  footer{ background:var(--ink); color:#8A93A5; text-align:center; padding:3.2rem 1.5rem 2.4rem; }
+  footer .fname{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:1.2rem; color:var(--gold); margin-bottom:0.5rem; }
+  footer .fpillars{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:#9AA4B8; margin-bottom:1.8rem; }
+  footer .fnav{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:1.2rem; }
+  footer .fnav a{ color:#C7CDD8; text-decoration:none; }
+  footer .fnav a:hover{ color:var(--gold); }
+  footer .fnav a:not(:last-child)::after{ content:' · '; color:#5A6478; }
+  footer .fsocial{ font-family:'IBM Plex Mono', monospace; font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:2rem; }
+  footer .fsocial a{ color:var(--gold); text-decoration:none; }
+  footer .fsocial a:hover{ color:var(--ivory); }
+  footer .fsocial a:not(:last-child)::after{ content:' · '; color:#5A6478; }
+  footer .fcredit{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:0.88rem; color:#9AA4B8; line-height:1.6; margin-top:1.6rem; padding-bottom:1.6rem; border-bottom:1px solid rgba(183,147,85,0.15); max-width:420px; margin-left:auto; margin-right:auto; }
+  footer .fcredit a{ color:var(--gold); text-decoration:none; }
+  footer .fcredit a:hover{ text-decoration:underline; }
+  footer .flegal{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.06em; text-transform:uppercase; margin-bottom:0.8rem; }
+  footer .flegal a{ color:#7A8394; text-decoration:none; }
+  footer .flegal a:hover{ color:var(--gold); }
+  footer .flegal a:not(:last-child)::after{ content:' · '; color:#5A6478; }
+  footer .fcopy{ font-family:'IBM Plex Mono', monospace; font-size:0.6rem; letter-spacing:0.06em; color:#5A6478; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../../index.html" class="nav-mark">Rev. Bill McDonald</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../six-pillars.html">Teachings</a></li>
+    <li><a href="../../seven-power-virtues/">Seven Power Virtues</a></li>
+    <li><a href="../../workshops-%26-events/">Events &amp; Retreats</a></li>
+    <li><a href="../../mount-shasta-2026/">Mount Shasta 2026</a></li>
+    <li><a href="../../authored-by-rev-bill/">Authored by Rev Bill</a></li>
+    <li><a href="../../reflections/">Reflections</a></li>
+    <li><a href="../../resources-for-seekers.html">Resources for Seekers</a></li>
+    <li><a href="../../contact-bill/">Contact Bill</a></li>
+    <li><a href="../../donate-to-bills-mission/">Donate</a></li>
+  </ul>
+</nav>
+
+<main>
+<div class="breadcrumb"><a href="../../index.html">Home</a><span>&rsaquo;</span><a href="../../seven-power-virtues/">Seven Power Virtues</a><span>&rsaquo;</span><span>Self-Control</span></div>
+
+<section class="article-hero">
+  <div class="eyebrow">The Seven Power Virtues &middot; 06</div>
+  <h1 class="display">Self-Control</h1>
+  <div class="sub">The Freedom to Choose Our Response</div>
+  <div class="meta">By Rev. Bill McDonald &middot; 16 min read</div>
+</section>
+
+<section class="series-nav" style="padding:0;">
+  <div class="rail"><a href="../humility/">01 HUMILITY</a><span class="sep">|</span><a href="../loyalty/">02 LOYALTY</a><span class="sep">|</span><a href="../courage/">03 COURAGE</a><span class="sep">|</span><a href="../positive-living/">04 POSITIVE LIVING</a><span class="sep">|</span><a href="../truthfulness/">05 TRUTHFULNESS</a><span class="sep">|</span><span class="current">06 SELF-CONTROL</span><span class="sep">|</span><a href="../purity/">07 PURITY</a></div>
+  <div class="series-nav-mobile">
+      <a href="../truthfulness/">&larr; Previous</a>
+      <a href="../" class="count">Virtue 6 of 7</a>
+      <a href="../purity/">Next &rarr;</a>
+    </div>
+</section>
+
+<div class="article-photo" style="margin-top:3rem;"><img src="../../images/creek-blessing.jpg" alt="Rev. Bill practicing a slow, disciplined martial-arts movement outdoors" /></div>
+
+<section>
+  <div class="about-box">
+    <span class="k">About This Reflection</span>
+    <p>Rev. Bill is explicit that this is not repression. Self-control, he writes, is the space between impulse and action — and freedom lives in that space, not in denying what we feel.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="opening">
+    <p>If Humility teaches us to bow, Loyalty teaches us to remain faithful, Courage teaches us to stand, Positive Living teaches us to keep our hearts open, and Truthfulness teaches us to see clearly, then Self-Control asks us what we are going to do with what we see. It is one thing to recognize our weaknesses. It is another thing to become their master.</p>
+    <p>Self-Control is not about becoming rigid, joyless or afraid of life. It is not about denying every pleasure or becoming obsessed with rules. The Eastern spiritual traditions have understood something very important: freedom does not come from giving every desire what it wants. Freedom comes when desire no longer controls us.</p>
+    <p>There is a great difference between choosing something and being driven by it.</p>
+    <p>The hungry person who chooses to eat is different from the person who cannot stop eating.</p>
+    <p>The person who enjoys a drink is different from the person who needs alcohol to escape.</p>
+    <p>The person who experiences sexual desire is different from the person whose desires control their behavior.</p>
+    <p>The person who feels anger is different from the person who becomes anger.</p>
+    <p>The person who enjoys entertainment is different from the person who cannot tolerate a moment of silence.</p>
+    <div class="pull-quote">Self-Control is the space between the impulse and the action. That space is where freedom lives.</div>
+    <p>The ancient yogic teachings understood that the mind and senses can become powerful forces when they are allowed to run without direction. The Bhagavad Gita repeatedly speaks of mastering the senses and the mind rather than allowing them to carry us wherever desire happens to lead. Buddhism similarly places great emphasis on mindful awareness, restraint and the understanding of craving. These teachings were not created because pleasure is evil. They were created because attachment can become a form of bondage.</p>
+    <div class="pull-quote">The question is not, “Can I have this?” The deeper question is, “Does this have me?”</div>
+    <p>That question can be applied to almost everything in modern life.</p>
+    <p>Does food have me?</p>
+    <p>Does anger have me?</p>
+    <p>Does money have me?</p>
+    <p>Does sex have me?</p>
+    <p>Does television have me?</p>
+    <p>Does my telephone have me?</p>
+    <p>Does social media have me?</p>
+    <p>Does pornography have me?</p>
+    <p>Does alcohol have me?</p>
+    <p>Does some other substance have me?</p>
+    <p>Does my need for attention have me?</p>
+    <p>Does my resentment have me?</p>
+    <p>Does my fear have me?</p>
+    <p>Does my desire to be right have me?</p>
+    <p>We live in a world designed to stimulate appetite. Almost everywhere we turn, something is asking for our attention, our money, our desire or our emotional energy. We are encouraged to consume more, watch more, buy more, eat more, click more and react more.</p>
+    <p>The modern marketplace understands the power of an uncontrolled appetite.</p>
+    <p>Spiritual wisdom asks us to understand it too.</p>
+    <p>What we consume is not limited to food.</p>
+    <p>We consume information.</p>
+    <p>We consume images.</p>
+    <p>We consume entertainment.</p>
+    <p>We consume the emotional energy of other people.</p>
+    <p>We consume news, arguments, gossip, fear and outrage.</p>
+    <p>We consume hours of our lives without always noticing where they went.</p>
+    <p>Self-Control asks us to become conscious of what we are putting into ourselves.</p>
+    <p>What we read matters.</p>
+    <p>What we watch matters.</p>
+    <p>What we listen to matters.</p>
+    <p>What we repeatedly think about matters.</p>
+    <p>The mind is like a garden. Whatever we continually plant has a better chance of taking root.</p>
+    <p>If we spend hours filling the mind with anger, fear, violence, gossip and negativity, we should not be surprised when our inner world becomes agitated.</p>
+    <p>If we feed the mind with wisdom, beauty, compassion, silence and uplifting ideas, we create a different inner environment.</p>
+    <p>This does not mean hiding from the realities of the world. It means becoming selective about what we allow to occupy our consciousness.</p>
+    <p>We do not need to know everything that happens.</p>
+    <p>We do not need to react to everything we hear.</p>
+    <p>We do not need to have an opinion about every subject.</p>
+    <p>We do not need to participate in every argument.</p>
+    <p>Sometimes Self-Control is simply saying, "I am not going to give my peace to this."</p>
+    <p>That may be one of the greatest freedoms available to us.</p>
+    <p>Anger is another great teacher.</p>
+    <p>Anger itself is not necessarily wrong. It is a human emotion, and sometimes it signals that something needs attention. But anger becomes destructive when we allow it to take control of our words and actions.</p>
+    <p>How many relationships have been damaged by one sentence spoken in anger?</p>
+    <p>How many marriages have been wounded by words that could never be taken back?</p>
+    <p>How many friendships have ended because someone allowed a moment of rage to become a permanent decision?</p>
+    <p>The ability to pause is a spiritual power.</p>
+    <p>When anger rises, breathe.</p>
+    <p>Wait.</p>
+    <p>Listen.</p>
+    <p>Walk away if necessary.</p>
+    <p>Do not send the message.</p>
+    <p>Do not make the decision.</p>
+    <p>Do not say the thing that you will spend the next ten years wishing you had not said.</p>
+    <p>Self-Control gives us a moment in which wisdom can enter.</p>
+    <p>This is not weakness.</p>
+    <p>It is strength.</p>
+    <p>Anyone can explode.</p>
+    <p>It takes discipline to remain centered.</p>
+    <p>The same is true of sexual energy. Sexuality is a natural and powerful part of human life. It is not something that spirituality requires us to hate or fear. But desire, like every other powerful force, can either be integrated consciously or allowed to control us.</p>
+    <p>When sexual desire becomes disconnected from respect, responsibility, love and truth, it can cause enormous suffering.</p>
+    <p>Self-Control asks us to honor our bodies and the bodies of others.</p>
+    <p>It asks us not to use another person simply to satisfy an appetite.</p>
+    <p>It asks us to understand the difference between love and possession, intimacy and exploitation, desire and genuine connection.</p>
+    <p>A spiritual life does not require us to deny our humanity.</p>
+    <p>It asks us to become responsible for our humanity.</p>
+    <p>The same principle applies to food.</p>
+    <p>Eating is necessary.</p>
+    <p>Overeating is not.</p>
+    <p>Food can nourish us, bring people together and give us pleasure. But food can also become a way of managing emotions. We may eat when we are lonely, bored, angry, anxious or unhappy. Sometimes we are not hungry at all. We are trying to feed something inside us that food cannot satisfy.</p>
+    <p>The same is true of many forms of consumption.</p>
+    <p>We buy something because we feel empty.</p>
+    <p>We drink because we do not want to feel.</p>
+    <p>We watch television because we do not want to be alone with our thoughts.</p>
+    <p>We scroll endlessly because silence makes us uncomfortable.</p>
+    <p>We sleep because facing the day feels difficult.</p>
+    <p>We stay busy because stillness might reveal something we have been avoiding.</p>
+    <p>Self-Control asks us to look underneath the behavior.</p>
+    <p>What am I really hungry for?</p>
+    <p>What am I really trying to escape?</p>
+    <p>What am I trying not to feel?</p>
+    <p>That is where Truthfulness returns.</p>
+    <p>The previous virtue asked us to tell the truth about ourselves.</p>
+    <p>Self-Control asks us to act on that truth.</p>
+    <p>If I know that something is harming me and I continue doing it without attempting to change, I am not yet free from it.</p>
+    <p>This is not a reason for shame.</p>
+    <p>It is an invitation to awareness.</p>
+    <p>Change usually happens one choice at a time.</p>
+    <p>We do not have to become a completely different person tomorrow.</p>
+    <p>We can begin with the next meal.</p>
+    <p>The next drink.</p>
+    <p>The next conversation.</p>
+    <p>The next hour.</p>
+    <p>The next angry response.</p>
+    <p>The next time we reach for the telephone.</p>
+    <p>The next time we want to say something hurtful.</p>
+    <p>The next time we feel an impulse and decide to pause.</p>
+    <p>That pause is where the spiritual muscle grows.</p>
+    <p>Self-Control also means learning how to manage our time.</p>
+    <p>Time is one of the most precious things we possess because we cannot get it back.</p>
+    <p>Money can be earned again.</p>
+    <p>Possessions can be replaced.</p>
+    <p>Time cannot.</p>
+    <p>How much of our lives disappears into meaningless activity?</p>
+    <p>How many hours do we spend watching things we do not even remember?</p>
+    <p>How much time is lost to gossip?</p>
+    <p>How much is lost to worry?</p>
+    <p>How much is lost to arguing with people we will never convince?</p>
+    <p>How much is lost endlessly looking at a screen?</p>
+    <p>There is nothing wrong with rest or entertainment. The problem begins when we surrender our lives to them without consciousness.</p>
+    <p>Sleeping too much can become avoidance.</p>
+    <p>Sleeping too little can become self-neglect.</p>
+    <p>Working constantly can become another form of escape.</p>
+    <p>Doing nothing all day can become another form of escape.</p>
+    <p>Balance is part of Self-Control.</p>
+    <p>The spiritual life is not about squeezing every minute of productivity out of ourselves. It is about using our time consciously.</p>
+    <p>Rest when you need to rest.</p>
+    <p>Work when it is time to work.</p>
+    <p>Play when it is time to play.</p>
+    <p>Meditate when it is time to become still.</p>
+    <p>Serve when someone needs you.</p>
+    <p>Sleep when your body needs sleep.</p>
+    <p>And when it is time to live, be present for your life.</p>
+    <p>One of the great problems of modern life is that we are physically in one place and mentally somewhere else.</p>
+    <p>We eat while looking at a screen.</p>
+    <p>We talk while looking at our phones.</p>
+    <p>We drive while thinking about yesterday.</p>
+    <p>We sit with our family while thinking about tomorrow.</p>
+    <p>Self-Control brings us back.</p>
+    <p>Here.</p>
+    <p>Now.</p>
+    <p>This moment.</p>
+    <p>This person.</p>
+    <p>This breath.</p>
+    <p>This life.</p>
+    <p>There is also Self-Control over our speech.</p>
+    <p>Truthfulness taught us to make our words trustworthy. Self-Control teaches us that not every thought needs to become a sentence.</p>
+    <p>Some people talk because silence makes them uncomfortable.</p>
+    <p>Some talk because they want attention.</p>
+    <p>Some talk because they want to control the conversation.</p>
+    <p>Some talk because they are afraid of being forgotten.</p>
+    <p>Sometimes the most powerful thing we can say is nothing.</p>
+    <p>Listen.</p>
+    <p>Let another person finish.</p>
+    <p>Do not interrupt.</p>
+    <p>Do not immediately tell your own story.</p>
+    <p>Do not turn every conversation back toward yourself.</p>
+    <p>There is enormous spiritual discipline in listening.</p>
+    <p>And when we do speak, let the words have purpose.</p>
+    <p>Truthful.</p>
+    <p>Kind.</p>
+    <p>Necessary.</p>
+    <p>Useful.</p>
+    <p>The world does not need more noise.</p>
+    <p>It needs more presence.</p>
+    <p>Self-Control also applies to our emotional life.</p>
+    <p>We cannot prevent emotions from arising. We can learn how to relate to them.</p>
+    <p>Sadness may come.</p>
+    <p>Fear may come.</p>
+    <p>Anger may come.</p>
+    <p>Jealousy may come.</p>
+    <p>Sexual desire may come.</p>
+    <p>Loneliness may come.</p>
+    <p>Even despair may come.</p>
+    <p>The emotion is not necessarily the problem.</p>
+    <p>What we do with it is the question.</p>
+    <p>We can observe it without becoming it.</p>
+    <p>"I am angry" can become "Anger is moving through me."</p>
+    <p>"I am afraid" can become "Fear is present."</p>
+    <p>"I am sad" can become "Sadness is here."</p>
+    <p>There is something powerful in that small change of language.</p>
+    <p>It creates space.</p>
+    <p>We are not every emotion that passes through us.</p>
+    <p>We are the awareness that can witness those emotions.</p>
+    <p>This is very close to the heart of Eastern spiritual practice.</p>
+    <p>Meditation teaches us to observe thoughts without automatically following them. A thought appears. We notice it. We allow it to pass. Another thought comes. We notice that one too.</p>
+    <p>The same practice can be brought into ordinary life.</p>
+    <p>Someone insults us.</p>
+    <p>Pause.</p>
+    <p>A craving appears.</p>
+    <p>Pause.</p>
+    <p>A frightening thought arises.</p>
+    <p>Pause.</p>
+    <p>We want to react.</p>
+    <p>Pause.</p>
+    <p>In that space, we remember who we are.</p>
+    <p>We are not merely the impulse.</p>
+    <p>We are the consciousness capable of choosing.</p>
+    <p>This is why Self-Control is not repression.</p>
+    <div class="pull-quote">Repression says, “I must not feel this.” Self-Control says, “I can feel this without allowing it to control me.”</div>
+    <p>That is a profound difference.</p>
+    <p>We do not have to be afraid of our emotions.</p>
+    <p>We need to become responsible for them.</p>
+    <p>And this includes depression and emotional suffering. A person who is depressed should not be told simply to "think positive" or to exercise more self-control. Serious depression can involve medical, psychological and biological factors and may require professional care. Spiritual practice can be supportive, but it should not become an excuse for ignoring suffering or refusing appropriate help.</p>
+    <p>Self-Control means knowing when we need help.</p>
+    <p>That too requires humility.</p>
+    <p>Sometimes the strongest thing we can do is say, "I cannot handle this alone."</p>
+    <p>There is no shame in that.</p>
+    <p>The spiritual path is not a competition to see who can suffer without assistance.</p>
+    <p>It is a journey toward wholeness.</p>
+    <p>Self-Control also teaches us to distinguish between pleasure and fulfillment.</p>
+    <p>Pleasure comes and goes.</p>
+    <p>Fulfillment goes deeper.</p>
+    <p>We eat something delicious, and the pleasure disappears.</p>
+    <p>We buy something new and eventually it becomes ordinary.</p>
+    <p>We receive praise and soon want more.</p>
+    <p>We satisfy one desire, and another appears.</p>
+    <p>The ego says, "More."</p>
+    <p>The awakened heart begins asking, "Enough."</p>
+    <p>Enough is a beautiful word.</p>
+    <p>It does not mean deprivation.</p>
+    <p>It means freedom from endless hunger.</p>
+    <p>This is where Positive Living and Self-Control meet.</p>
+    <p>A positive life does not require constant stimulation.</p>
+    <p>Sometimes joy is found in simplicity.</p>
+    <p>A quiet morning.</p>
+    <p>A walk.</p>
+    <p>A conversation.</p>
+    <p>A prayer.</p>
+    <p>A meditation.</p>
+    <p>A meal shared with someone we love.</p>
+    <p>The sound of the ocean.</p>
+    <p>The mountains.</p>
+    <p>A sunset.</p>
+    <p>A grateful heart.</p>
+    <p>When we are constantly stimulating the senses, we can lose our ability to appreciate simple things.</p>
+    <p>Self-Control restores sensitivity.</p>
+    <p>It teaches us that we do not have to consume the entire world in order to enjoy being alive.</p>
+    <p>There is another kind of self-control that may be even more important: controlling the ego's need to be right.</p>
+    <p>We have already spoken about this throughout the Seven Power Virtues.</p>
+    <p>The ego wants the last word.</p>
+    <p>It wants to win.</p>
+    <p>It wants recognition.</p>
+    <p>It wants revenge.</p>
+    <p>It wants everyone to understand our side.</p>
+    <p>But sometimes peace is more valuable than victory.</p>
+    <p>Sometimes we can simply say, "We disagree."</p>
+    <p>Sometimes we can walk away.</p>
+    <p>Sometimes we can let someone else have the last word.</p>
+    <p>This is not surrender.</p>
+    <p>It is choosing where to place our energy.</p>
+    <p>Every argument costs something.</p>
+    <p>Every resentment costs something.</p>
+    <p>Every grudge occupies space in the mind.</p>
+    <p>Self-Control asks, "Is this worth my peace?"</p>
+    <p>Sometimes the answer is yes.</p>
+    <p>Sometimes we must stand our ground.</p>
+    <p>But many times, the answer is no.</p>
+    <p>And when the answer is no, let it go.</p>
+    <p>This is where Self-Control connects with Forgiveness, even though Forgiveness is not one of the Seven Power Virtues themselves but remains one of the central teachings of my spiritual path. Forgiveness requires the ability to stop feeding the emotional pattern that keeps us attached to what happened.</p>
+    <p>We do not forgive because what happened was necessarily acceptable.</p>
+    <p>We forgive because we do not want the past to continue controlling the present.</p>
+    <p>That is Self-Control at a very deep level.</p>
+    <p>The same principle applies to fear.</p>
+    <p>Fear will always offer us reasons not to move forward.</p>
+    <p>Sometimes those reasons are useful. Fear can warn us of genuine danger.</p>
+    <p>But fear can also become a prison.</p>
+    <p>Self-Control does not mean ignoring fear.</p>
+    <p>It means listening carefully and then deciding consciously.</p>
+    <p>Is this a real danger?</p>
+    <p>Or is this an old pattern?</p>
+    <p>Is this wisdom?</p>
+    <p>Or is this anxiety?</p>
+    <p>Is this intuition?</p>
+    <p>Or is this ego?</p>
+    <p>The more truthful we become, the easier these distinctions can become.</p>
+    <p>The more courageous we become, the more willing we are to act.</p>
+    <p>And the more self-controlled we become, the less likely we are to be dragged around by every passing emotion.</p>
+    <p>This is the freedom the Eastern traditions have been pointing toward.</p>
+    <p>Not freedom to do whatever we want.</p>
+    <p>Freedom from being controlled by whatever we want.</p>
+    <p>There is tremendous power in that distinction.</p>
+    <p>The person who can control their appetite is freer than the person controlled by food.</p>
+    <p>The person who can control their anger is freer than the person controlled by rage.</p>
+    <p>The person who can control their attention is freer than the person controlled by every notification.</p>
+    <p>The person who can control their speech is freer than the person who must always be heard.</p>
+    <p>The person who can control their desires is freer than the person who must satisfy every desire.</p>
+    <p>The person who can sit quietly with themselves is freer than the person who constantly needs distraction.</p>
+    <p>This is not about becoming less alive.</p>
+    <p>It is about becoming more alive.</p>
+    <p>When the senses are no longer constantly demanding our attention, we begin to notice the subtler dimensions of existence.</p>
+    <p>The quiet.</p>
+    <p>The breath.</p>
+    <p>The heart.</p>
+    <p>The presence of another human being.</p>
+    <p>The Divine.</p>
+    <p>And perhaps this is where the Seven Power Virtues begin to come together in another way.</p>
+    <p>Humility teaches us that the ego is not the center.</p>
+    <p>Loyalty teaches us to remain faithful to what is higher.</p>
+    <p>Courage teaches us to face what frightens us.</p>
+    <p>Positive Living teaches us to keep turning toward the Light.</p>
+    <p>Truthfulness teaches us to see ourselves honestly.</p>
+    <p>Self-Control teaches us to become responsible for what we do with what we have seen.</p>
+    <p>Then we are no longer merely reacting to life.</p>
+    <p>We are participating consciously in it.</p>
+    <p>That is spiritual maturity.</p>
+    <p>It is not perfection.</p>
+    <p>It is mastery of direction.</p>
+    <p>We may still stumble.</p>
+    <p>We may still lose our temper.</p>
+    <p>We may still overeat.</p>
+    <p>We may still waste time.</p>
+    <p>We may still become distracted.</p>
+    <p>We may still fall into old habits.</p>
+    <p>But we become quicker at noticing.</p>
+    <p>Quicker at returning.</p>
+    <p>Quicker at saying, "This is not who I want to be."</p>
+    <p>And then we begin again.</p>
+    <p>That is the practice.</p>
+    <p>Not control for the sake of control.</p>
+    <p>Self-Control for the sake of freedom.</p>
+    <p>Freedom to Love.</p>
+    <p>Freedom to Serve.</p>
+    <p>Freedom to be present.</p>
+    <p>Freedom to choose.</p>
+    <p>Freedom to live from the Divine rather than from every impulse of the small self.</p>
+    <p>And perhaps the deepest form of Self-Control is learning to surrender control where control was never ours to begin with.</p>
+    <p>We cannot control other people.</p>
+    <p>We cannot control the past.</p>
+    <p>We cannot control every circumstance.</p>
+    <p>We cannot control aging.</p>
+    <p>We cannot control death.</p>
+    <p>We cannot control everything that happens in the world.</p>
+    <p>But we can work with ourselves.</p>
+    <p>We can choose our response.</p>
+    <p>We can choose what we consume.</p>
+    <p>We can choose what we dwell upon.</p>
+    <p>We can choose what we say.</p>
+    <p>We can choose what we do next.</p>
+    <p>And sometimes the greatest control is the ability to let go.</p>
+    <p>To breathe.</p>
+    <p>To trust.</p>
+    <p>To accept.</p>
+    <p>To allow the Divine to work through what we cannot fix.</p>
+    <p>That is not weakness.</p>
+    <p>That is surrender without defeat.</p>
+    <p>Humility teaches us to bow.</p>
+    <p>Loyalty teaches us to remain faithful.</p>
+    <p>Courage teaches us to stand.</p>
+    <p>Positive Living teaches us to keep our hearts open.</p>
+    <p>Truthfulness teaches us to see clearly.</p>
+    <p>And Self-Control teaches us to become the master of our response rather than the servant of every impulse.</p>
+    <p>The goal is not to become a person who never desires, never feels anger, never makes mistakes or never loses balance.</p>
+    <p>The goal is to become conscious enough that we can choose.</p>
+    <p>To choose Love over anger.</p>
+    <p>Peace over reaction.</p>
+    <p>Health over abuse.</p>
+    <p>Presence over distraction.</p>
+    <p>Truth over impulse.</p>
+    <p>Service over selfishness.</p>
+    <p>And the Divine over the demands of the ego.</p>
+    <p>That is the power of Self-Control.</p>
+    <p>And that is freedom.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="related-pillars">
+    <span class="k">Related Pillars</span>
+    <div class="chips">
+      <a href="../../healing-full.html">Healing</a>
+      <a href="../../service-full.html">Service</a>
+    </div>
+  </div>
+</section>
+
+<section class="carry-question" style="margin-bottom:0; margin-top:-2rem;">
+  <div class="k">A Question to Carry With You</div>
+  <p>Where could creating a moment of space between impulse and action give you greater freedom?</p>
+</section>
+
+<section class="continue-journey">
+  <div class="head"><h2 class="display">Continue the Journey</h2></div>
+  <div class="continue-grid"><div class="continue-card"><a href="../purity/"><div class="k">Next Virtue</div><h3>Purity</h3></a></div>
+      <div class="continue-card"><a href="../../healing-full.html"><div class="k">Related Pillar</div><h3>Healing</h3></a></div>
+      <div class="continue-card"><a href="../../reflections/can-you-change-your-karma/"><div class="k">Related Seeker Question</div><h3>Can You Change Your Karma?</h3></a></div></div>
+</section>
+
+<section class="back-link">
+  <a href="../">&larr; All Seven Virtues</a>
+</section>
+
+</main>
+<footer>
+  <div class="fname">Rev. Bill McDonald</div>
+  <div class="fpillars">Love &middot; Forgiveness &middot; Gratitude &middot; Healing &middot; Oneness &middot; Service</div>
+  <nav class="fnav">
+    <a href="../../index.html">Home</a>
+    <a href="../../journey.html">Journey</a>
+    <a href="../../six-pillars.html">Teachings</a>
+    <a href="../../seven-power-virtues/">Seven Power Virtues</a>
+    <a href="../../authored-by-rev-bill/">Books</a>
+    <a href="../../index.html#watch">Watch &amp; Listen</a>
+    <a href="../../reflections/">Reflections</a>
+    <a href="../../resources-for-seekers.html">Resources</a>
+    <a href="../../index.html#legacy">Legacy</a>
+    <a href="../../contact-bill/">Contact</a>
+    <a href="../../donate-to-bills-mission/">Donate</a>
+  </nav>
+  <div class="fsocial">
+    <a href="mailto:Huey576@gmail.com">Email</a>
+    <a href="https://www.youtube.com/@rev.billmcdonald576" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.facebook.com/profile.php?id=100049901892095" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <div class="fcredit">Website Strategy &amp; Digital Experience by <a href="https://lightmirrorfield.com/ragini-mishra-digital" target="_blank" rel="noopener">Ragini Mishra</a><br>Supporting Conscious Leaders, Teachers &amp; Changemakers</div>
+  <div class="flegal">
+    <a href="../../privacy-policy.html">Privacy Policy</a>
+    <a href="../../disclaimer.html">Disclaimer</a>
+    <a href="../../terms-of-use.html">Terms of Use</a>
+  </div>
+  <div class="fcopy">&copy; 2026 Rev. Bill McDonald / Spiritual Warrior Ministries. All Rights Reserved.</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Self-Control: The Freedom to Choose Our Response",
+  "description": "Rev. Bill McDonald reframes self-control as freedom rather than repression — mastering impulse, anger, attention and desire to choose our response instead of reacting.",
+  "image": "https://revbillmcdonald.com/images/creek-blessing.jpg",
+  "author": {"@type": "Person", "name": "Rev. Bill McDonald"},
+  "publisher": {"@type": "Organization", "name": "Rev. Bill McDonald"},
+  "datePublished": "2026-09-30",
+  "mainEntityOfPage": "https://revbillmcdonald.com/seven-power-virtues/self-control/",
+  "isPartOf": {"@type": "CreativeWorkSeries", "name": "The Seven Power Virtues"}
+}
+</script>
+<script>
+  var navToggleBtn = document.getElementById('navToggle');
+  var navLinksList = document.getElementById('navLinks');
+  if (navToggleBtn && navLinksList) {
+    navToggleBtn.addEventListener('click', function(){
+      var isOpen = navLinksList.classList.toggle('open');
+      navToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinksList.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinksList.classList.remove('open'); navToggleBtn.setAttribute('aria-expanded','false'); });
+    });
+  }
+</script>
+</body>
+</html>
