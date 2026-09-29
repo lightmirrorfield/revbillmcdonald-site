@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mount Shasta Spiritual Retreat 2026 — Going Deeper</title>
 <meta name="description" content="Join Rev. Bill McDonald for a five-day ashram-style spiritual retreat at Mount Shasta, November 6–10, 2026 — meditation, sacred fire, spiritual teachings, and community in the heart of nature.">
@@ -39,7 +40,7 @@
     --card-deep:#10192B;
     --on-card:#F8F4EC;
     --line:rgba(24,35,56,0.12);
-    --max-w:680px;
+    --max-w:680px; color-scheme: light;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -105,6 +106,8 @@
     .nav-links .submenu{ display:none !important; }
     .nav-links .submenu-toggle .caret-right{ display:none; }
   }
+  .nav-links li.has-dropdown.js-open > .dropdown-menu{ display:block; }
+  .nav-links li.has-submenu.js-open > .submenu{ display:block; }
   @media (max-width:720px){
     .nav-toggle{ display:flex; }
     .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--bg); padding:1.4rem 2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.12); opacity:1; }
@@ -384,7 +387,17 @@
     <li class="has-dropdown">
       <a href="../six-pillars.html" class="dropdown-toggle">Teachings <span class="caret">&#9662;</span></a>
       <ul class="dropdown-menu">
-        <li><a href="../six-pillars.html">Six Pillars</a></li>
+        <li class="has-submenu">
+          <a href="../six-pillars.html" class="submenu-toggle">Six Pillars <span class="caret-right">&#9656;</span></a>
+          <ul class="submenu">
+            <li><a href="../love-full.html">Love</a></li>
+            <li><a href="../forgiveness-full.html">Forgiveness</a></li>
+            <li><a href="../gratitude-full.html">Gratitude</a></li>
+            <li><a href="../healing-full.html">Healing</a></li>
+            <li><a href="../oneness-full.html">Oneness</a></li>
+            <li><a href="../service-full.html">Service</a></li>
+          </ul>
+        </li>
         <li class="has-submenu">
           <a href="../seven-power-virtues/" class="submenu-toggle">Seven Power Virtues <span class="caret-right">&#9656;</span></a>
           <ul class="submenu">
@@ -399,14 +412,29 @@
         </li>
       </ul>
     </li>
-    <li><a href="../workshops-%26-events/">Events &amp; Retreats</a></li>
-    <li><a href="../mount-shasta-2026/">Mount Shasta 2026</a></li>
-    <li><a href="../authored-by-rev-bill/">Authored by Rev Bill</a></li>
-    <li><a href="../reflections/">Reflections</a></li>
-    <li><a href="../resources-for-seekers.html">Resources for Seekers</a></li>
+    <li class="has-dropdown">
+      <a href="../workshops-%26-events/" class="dropdown-toggle">Events &amp; Retreats <span class="caret">&#9662;</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="../workshops-%26-events/">Events &amp; Retreats</a></li>
+        <li><a href="../mount-shasta-2026/">Mount Shasta 2026</a></li>
+      </ul>
+    </li>
+    <li class="has-dropdown">
+      <a href="../reflections/" class="dropdown-toggle">Explore <span class="caret">&#9662;</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="../reflections/">Reflections</a></li>
+        <li><a href="../authored-by-rev-bill/">Authored by Rev Bill</a></li>
+        <li><a href="../resources-for-seekers.html">Resources for Seekers</a></li>
+      </ul>
+    </li>
     <li><a href="../contact-bill/">Contact Bill</a></li>
-    <li><a href="../support/">Support the Work</a></li>
-    <li><a href="../donate-to-bills-mission/">Donate</a></li>
+    <li class="has-dropdown">
+      <a href="../support/" class="dropdown-toggle">Support the Work <span class="caret">&#9662;</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="../support/">Support the Work</a></li>
+        <li><a href="../donate-to-bills-mission/">Donate</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -650,5 +678,30 @@
   setInterval(tick, 1000);
 </script>
 
+<script>
+  (function(){
+    function isDesktopNav(){ return window.matchMedia('(min-width:901px)').matches; }
+    var toggles = document.querySelectorAll('.dropdown-toggle, .submenu-toggle');
+    toggles.forEach(function(toggle){
+      toggle.addEventListener('click', function(e){
+        if (!isDesktopNav()) return;
+        var parentLi = toggle.parentElement;
+        if (!parentLi.classList.contains('js-open')) {
+          e.preventDefault();
+          document.querySelectorAll('.has-dropdown.js-open, .has-submenu.js-open').forEach(function(li){
+            if (li !== parentLi && !li.contains(parentLi) && !parentLi.contains(li)) li.classList.remove('js-open');
+          });
+          parentLi.classList.add('js-open');
+        }
+      });
+    });
+    document.addEventListener('click', function(e){
+      if (!isDesktopNav()) return;
+      if (!e.target.closest('.has-dropdown')) {
+        document.querySelectorAll('.has-dropdown.js-open, .has-submenu.js-open').forEach(function(li){ li.classList.remove('js-open'); });
+      }
+    });
+  })();
+</script>
 </body>
 </html>

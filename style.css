@@ -12,7 +12,7 @@
     --label:#8A4E22;       /* legible warm brown for small caption labels, on light backgrounds */
     --label-bg:rgba(183,147,85,0.14);
     --line:rgba(24,35,56,0.12);
-    --max-w:700px;
+    --max-w:700px; color-scheme: light;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -52,6 +52,8 @@
     .nav-links .submenu{ display:none !important; }
     .nav-links .submenu-toggle .caret-right{ display:none; }
   }
+  .nav-links li.has-dropdown.js-open > .dropdown-menu{ display:block; }
+  .nav-links li.has-submenu.js-open > .submenu{ display:block; }
   @media (max-width:900px){
     .nav-toggle{ display:flex; }
     .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--ivory); padding:1.4rem 2.2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.2); }
