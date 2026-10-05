@@ -23,6 +23,8 @@ Source of truth: the three .docx files as read from Google Drive. The published 
 - Spiritual Performance: "But opening the door is not the same thing as walking through it." / "Life itself becomes the ashram." / "The goal is not to become spiritually special. The goal is to become real."
 - The Chosen One Trap: the "very subtle line" paragraph / "The savior says, 'Follow me.' The servant says, 'Discover what is true within yourself.'" / "We are here to do our part."
 
+**"In brief" summary added (editorial, 39 to 44 words each, labelled as not part of Rev. Bill's text, also stored as `abstract` in the Article structured data):** YES, on all three.
+
 **Reflection question added (editorial, not attributed to Rev. Bill):** YES, one on Shakti and Spiritual Performance, two on The Chosen One Trap.
 
 ## IMAGES
