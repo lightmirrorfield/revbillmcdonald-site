@@ -44,27 +44,6 @@
   .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
   .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
   .nav-links a:hover{ color:var(--amber); }
-  .nav-links li.has-dropdown{ position:relative; }
-  .nav-links .dropdown-menu{ display:none; position:absolute; top:100%; left:0; background:var(--ivory); border:1px solid var(--line); border-radius:10px; box-shadow:0 16px 30px rgba(24,35,56,0.14); padding:0.9rem 0 0.5rem; margin-top:0; list-style:none; min-width:210px; z-index:100; }
-  .nav-links li.has-dropdown:hover .dropdown-menu, .nav-links li.has-dropdown:focus-within .dropdown-menu{ display:block; }
-  .nav-links .dropdown-menu li{ display:block; }
-  .nav-links .dropdown-menu a{ display:block; padding:0.6rem 1.2rem; white-space:nowrap; font-size:0.62rem; }
-  @media (max-width:900px){
-    .nav-links .dropdown-menu{ display:block; position:static; box-shadow:none; border:none; background:none; margin-top:0.4rem; padding-left:1rem; }
-    .nav-links li.has-dropdown{ position:static; }
-  }
-  .nav-links .dropdown-toggle .caret, .nav-links .submenu-toggle .caret-right{ font-size:0.6em; opacity:0.7; }
-  .nav-links li.has-submenu{ position:relative; }
-  .nav-links .submenu{ display:none; position:absolute; top:-0.5rem; left:100%; background:var(--ivory); border:1px solid var(--line); border-radius:10px; box-shadow:0 16px 30px rgba(24,35,56,0.14); padding:0.5rem 0 0.5rem 0.4rem; margin-left:0; list-style:none; min-width:190px; z-index:110; }
-  .nav-links li.has-submenu:hover .submenu, .nav-links li.has-submenu:focus-within .submenu{ display:block; }
-  .nav-links .submenu li{ display:block; }
-  .nav-links .submenu a{ display:block; padding:0.55rem 1.1rem; white-space:nowrap; font-size:0.62rem; }
-  @media (max-width:900px){
-    .nav-links .submenu{ display:none !important; }
-    .nav-links .submenu-toggle .caret-right{ display:none; }
-  }
-  .nav-links li.has-dropdown.js-open > .dropdown-menu{ display:block; }
-  .nav-links li.has-submenu.js-open > .submenu{ display:block; }
   @media (max-width:900px){
     .nav-toggle{ display:flex; }
     .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--ivory); padding:1.4rem 2.2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.12); }
@@ -208,57 +187,13 @@
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul class="nav-links" id="navLinks">
     <li><a href="../../index.html">Home</a></li>
-    <li class="has-dropdown">
-      <a href="../../six-pillars.html" class="dropdown-toggle">Teachings <span class="caret">&#9662;</span></a>
-      <ul class="dropdown-menu">
-        <li class="has-submenu">
-          <a href="../../six-pillars.html" class="submenu-toggle">Six Pillars <span class="caret-right">&#9656;</span></a>
-          <ul class="submenu">
-            <li><a href="../../love-full.html">Love</a></li>
-            <li><a href="../../forgiveness-full.html">Forgiveness</a></li>
-            <li><a href="../../gratitude-full.html">Gratitude</a></li>
-            <li><a href="../../healing-full.html">Healing</a></li>
-            <li><a href="../../oneness-full.html">Oneness</a></li>
-            <li><a href="../../service-full.html">Service</a></li>
-          </ul>
-        </li>
-        <li class="has-submenu">
-          <a href="../../seven-power-virtues/" class="submenu-toggle">Seven Power Virtues <span class="caret-right">&#9656;</span></a>
-          <ul class="submenu">
-            <li><a href="../../seven-power-virtues/humility/">Humility</a></li>
-            <li><a href="../../seven-power-virtues/loyalty/">Loyalty</a></li>
-            <li><a href="../../seven-power-virtues/courage/">Courage</a></li>
-            <li><a href="../../seven-power-virtues/positive-living/">Positive Living</a></li>
-            <li><a href="../../seven-power-virtues/truthfulness/">Truthfulness</a></li>
-            <li><a href="../../seven-power-virtues/self-control/">Self-Control</a></li>
-            <li><a href="../../seven-power-virtues/purity/">Purity</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <a href="../../workshops-%26-events/" class="dropdown-toggle">Events &amp; Retreats <span class="caret">&#9662;</span></a>
-      <ul class="dropdown-menu">
-        <li><a href="../../workshops-%26-events/">Events &amp; Retreats</a></li>
-        <li><a href="../../mount-shasta-2026/">Mount Shasta 2026</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <a href="../../reflections/" class="dropdown-toggle">Explore <span class="caret">&#9662;</span></a>
-      <ul class="dropdown-menu">
-        <li><a href="../../reflections/">Reflections</a></li>
-        <li><a href="../../authored-by-rev-bill/">Authored by Rev Bill</a></li>
-        <li><a href="../../resources-for-seekers.html">Resources for Seekers</a></li>
-      </ul>
-    </li>
+    <li><a href="../../six-pillars.html">Six Pillars</a></li>
+    <li><a href="../../seven-power-virtues/">Seven Power Virtues</a></li>
+    <li><a href="../../reflections/">Reflections</a></li>
+    <li><a href="../../workshops-%26-events/">Events &amp; Retreats</a></li>
+    <li><a href="../../resources-for-seekers.html">Resources for Seekers</a></li>
     <li><a href="../../contact-bill/">Contact Bill</a></li>
-    <li class="has-dropdown">
-      <a href="../../support/" class="dropdown-toggle">Support the Work <span class="caret">&#9662;</span></a>
-      <ul class="dropdown-menu">
-        <li><a href="../../support/">Support the Work</a></li>
-        <li><a href="../../donate-to-bills-mission/">Donate</a></li>
-      </ul>
-    </li>
+    <li><a href="../../support/">Support the Work</a></li>
   </ul>
 </nav>
 
@@ -370,31 +305,6 @@
       a.addEventListener('click', function(){ navLinksList.classList.remove('open'); navToggleBtn.setAttribute('aria-expanded','false'); });
     });
   }
-</script>
-<script>
-  (function(){
-    function isDesktopNav(){ return window.matchMedia('(min-width:901px)').matches; }
-    var toggles = document.querySelectorAll('.dropdown-toggle, .submenu-toggle');
-    toggles.forEach(function(toggle){
-      toggle.addEventListener('click', function(e){
-        if (!isDesktopNav()) return;
-        var parentLi = toggle.parentElement;
-        if (!parentLi.classList.contains('js-open')) {
-          e.preventDefault();
-          document.querySelectorAll('.has-dropdown.js-open, .has-submenu.js-open').forEach(function(li){
-            if (li !== parentLi && !li.contains(parentLi) && !parentLi.contains(li)) li.classList.remove('js-open');
-          });
-          parentLi.classList.add('js-open');
-        }
-      });
-    });
-    document.addEventListener('click', function(e){
-      if (!isDesktopNav()) return;
-      if (!e.target.closest('.has-dropdown')) {
-        document.querySelectorAll('.has-dropdown.js-open, .has-submenu.js-open').forEach(function(li){ li.classList.remove('js-open'); });
-      }
-    });
-  })();
 </script>
 </body>
 </html>
