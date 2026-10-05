@@ -25,8 +25,8 @@ Source of truth: the three .docx files as read from Google Drive. The published 
 
 **Reflection question added (editorial, not attributed to Rev. Bill):** YES, one on Shakti and Spiritual Performance, two on The Chosen One Trap.
 
-## IMAGES CREATED
-Hero art for each article (JPG + WebP, 1600x900), drawn with code in the agreed palettes. No faces, no symbols, no Sanskrit. The Canva generator was tried first but only returned thumbnails, so the fallback was used (see ARTICLE-IMAGE-PROMPTS.md).
+## IMAGES
+Hero images are the three photographs supplied for these reflections (resized to 1600x900, JPG + WebP). They contain no likeness of Rev. Bill. Alt text describes each photograph (see ARTICLE-IMAGE-PROMPTS.md).
 
 ## SOCIAL ASSETS CREATED (in /social-assets/)
 Per article: Open Graph (1200x630), Instagram portrait (1080x1350), Reel/Story cover (1080x1920), quote card (1080x1080). Extra optional quote cards: Spiritual Performance ("Life itself becomes the ashram.") and The Chosen One Trap ("We can walk beside someone without believing we must walk in front of them."). Captions for Instagram, Facebook/LinkedIn, Reels, plus a one-line teaser, in SOCIAL-CAPTIONS.md (word counts checked).
