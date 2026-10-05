@@ -44,6 +44,24 @@
   .nav-links{ display:flex; align-items:center; flex-wrap:wrap; justify-content:flex-end; gap:0.9rem 1.6rem; list-style:none; }
   .nav-links a{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; }
   .nav-links a:hover{ color:var(--amber); }
+  /* simple click-to-expand groups */
+  .nav-links summary{ font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.09em; text-transform:uppercase; cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:0.35em; transition:color 0.25s ease; }
+  .nav-links summary{ color:#4E5A72; }
+  .nav-links summary::-webkit-details-marker{ display:none; }
+  .nav-links summary:hover, .nav-links details[open] > summary{ color:#C97A44 !important; }
+  .nav-links summary .caret{ font-size:0.7em; opacity:0.7; }
+  .nav-links details{ position:relative; }
+  .nav-links .nav-panel{ position:absolute; top:calc(100% + 0.7rem); left:0; min-width:200px; list-style:none; background:#F8F4EC; border:1px solid rgba(24,35,56,0.12); border-radius:8px; box-shadow:0 10px 24px rgba(24,35,56,0.12); padding:0.35rem 0; z-index:100; }
+  .nav-links > li:last-child .nav-panel{ left:auto; right:0; }
+  .nav-links .nav-panel a{ display:block; padding:0.6rem 1.1rem; white-space:nowrap; color:#4E5A72 !important; }
+  .nav-links .nav-panel a:hover{ color:#C97A44 !important; }
+  @media (max-width:900px){
+    .nav-links summary{ color:#4E5A72 !important; }
+    .nav-links details{ width:100%; }
+    .nav-links .nav-panel{ position:static; min-width:0; background:none; border:none; box-shadow:none; padding:0.2rem 0 0 1rem; }
+    .nav-links > li:last-child .nav-panel{ right:auto; }
+    .nav-links .nav-panel a{ padding:0.55rem 0; }
+  }
   @media (max-width:900px){
     .nav-toggle{ display:flex; }
     .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:1.1rem; background:var(--ivory); padding:1.4rem 2.2rem 1.8rem; border-bottom:1px solid var(--line); box-shadow:0 16px 30px rgba(24,35,56,0.12); }
@@ -187,13 +205,36 @@
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <ul class="nav-links" id="navLinks">
     <li><a href="../../index.html">Home</a></li>
-    <li><a href="../../six-pillars.html">Six Pillars</a></li>
-    <li><a href="../../seven-power-virtues/">Seven Power Virtues</a></li>
+    <li><details>
+      <summary>Teachings <span class="caret">&#9662;</span></summary>
+      <ul class="nav-panel">
+          <li><a href="../../six-pillars.html">Six Pillars</a></li>
+          <li><a href="../../seven-power-virtues/">Seven Power Virtues</a></li>
+      </ul>
+    </details></li>
     <li><a href="../../reflections/">Reflections</a></li>
-    <li><a href="../../workshops-%26-events/">Events &amp; Retreats</a></li>
-    <li><a href="../../resources-for-seekers.html">Resources for Seekers</a></li>
+    <li><details>
+      <summary>Events &amp; Retreats <span class="caret">&#9662;</span></summary>
+      <ul class="nav-panel">
+          <li><a href="../../workshops-%26-events/">All Events &amp; Retreats</a></li>
+          <li><a href="../../mount-shasta-2026/">Mount Shasta 2026</a></li>
+      </ul>
+    </details></li>
+    <li><details>
+      <summary>Books &amp; Resources <span class="caret">&#9662;</span></summary>
+      <ul class="nav-panel">
+          <li><a href="../../authored-by-rev-bill/">Authored by Rev Bill</a></li>
+          <li><a href="../../resources-for-seekers.html">Resources for Seekers</a></li>
+      </ul>
+    </details></li>
     <li><a href="../../contact-bill/">Contact Bill</a></li>
-    <li><a href="../../support/">Support the Work</a></li>
+    <li><details>
+      <summary>Support the Work <span class="caret">&#9662;</span></summary>
+      <ul class="nav-panel">
+          <li><a href="../../support/">Support the Work</a></li>
+          <li><a href="../../donate-to-bills-mission/">Donate</a></li>
+      </ul>
+    </details></li>
   </ul>
 </nav>
 
@@ -562,6 +603,14 @@
       a.addEventListener('click', function(){ navLinksList.classList.remove('open'); navToggleBtn.setAttribute('aria-expanded','false'); });
     });
   }
+</script>
+<script>
+  (function(){
+    var groups = document.querySelectorAll('.nav-links details');
+    function closeAll(except){ groups.forEach(function(d){ if (d !== except) d.removeAttribute('open'); }); }
+    document.addEventListener('click', function(e){ closeAll(e.target.closest('.nav-links details')); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeAll(null); });
+  })();
 </script>
 </body>
 </html>
