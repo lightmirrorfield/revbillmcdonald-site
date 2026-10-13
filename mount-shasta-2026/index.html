@@ -301,6 +301,19 @@
   }
 
   /* ---------- gallery ---------- */
+  .retreat-video{ background:var(--bg-alt); text-align:center; }
+  .retreat-video .inner{ max-width:900px; }
+  .retreat-video h2{ font-size:clamp(1.9rem, 4vw, 2.6rem); color:var(--ink); margin-bottom:0.6rem; }
+  .retreat-video .sub{ font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--rose); margin-bottom:2.4rem; }
+  .retreat-video .credit{ font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-soft); margin-top:1.2rem; }
+  .watch-frame{ position:relative; display:block; width:100%; margin:0; padding:0; padding-top:56.25%; background:#3A3733; border:none; border-radius:12px; overflow:hidden; box-shadow:0 22px 48px -22px rgba(30,26,61,0.45); cursor:pointer; font:inherit; }
+  .watch-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .watch-frame img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+  .watch-frame .play-btn{ position:absolute; inset:0; margin:auto; width:68px; height:68px; border-radius:50%; background:rgba(24,35,56,0.55); border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; transition:background 0.25s ease, transform 0.25s ease; }
+  .watch-frame .play-btn::after{ content:''; border-style:solid; border-width:10px 0 10px 17px; border-color:transparent transparent transparent var(--bg); margin-left:4px; }
+  .watch-frame:hover .play-btn, .watch-frame:focus-visible .play-btn{ background:var(--gold); transform:scale(1.08); }
+  .watch-frame:hover .play-btn::after, .watch-frame:focus-visible .play-btn::after{ border-left-color:var(--ink); }
+
   .gallery{ background:var(--bg); }
   .gallery .inner{ max-width:960px; }
   .gallery h2{ font-size:clamp(1.9rem, 4vw, 2.6rem); color:var(--ink); margin-bottom:0.6rem; text-align:center; }
@@ -446,6 +459,19 @@
     <p>Not another inspirational weekend. Not simply another collection of teachings. Not a temporary escape from ordinary life.</p>
     <p>Sometimes we are called to step away from the familiar and enter a quieter place where the deeper questions can finally be heard.</p>
     <p>This is for those who feel ready to go beneath the surface. To meditate longer. To listen more deeply. To open more fully to love, and become more conscious of the sacred energy moving through our lives.</p>
+  </div>
+</section>
+
+<section class="retreat-video" id="video">
+  <div class="inner reveal">
+    <div class="eyebrow">Watch</div>
+    <h2 class="display">An Invitation in Motion</h2>
+    <p class="sub">Rev. Bill&rsquo;s 2nd spiritual family retreat &middot; November 6&ndash;10, 2026</p>
+    <button class="watch-frame" data-video-id="1qSqTiHuDfM" aria-label="Play video: Rev Bill&rsquo;s 2nd spiritual family retreat, Nov 6&ndash;10, 2026">
+      <img src="https://i.ytimg.com/vi/1qSqTiHuDfM/maxresdefault.jpg" alt="A sacred fire gathering at night, with people seated around the flames, from a spiritual family retreat" width="1280" height="720" loading="lazy" />
+      <span class="play-btn" aria-hidden="true"></span>
+    </button>
+    <p class="credit">Video by Angelic Sound Therapy</p>
   </div>
 </section>
 
@@ -661,6 +687,41 @@
     document.addEventListener('click', function(e){ closeAll(e.target.closest('.nav-links details')); });
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeAll(null); });
   })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Rev Bill’s 2nd spiritual family retreat: Nov 6-10, 2026",
+  "description": "A short video announcing Rev. Bill McDonald’s 2nd spiritual family retreat, November 6–10, 2026.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/1qSqTiHuDfM/maxresdefault.jpg",
+  "uploadDate": "2026-06-30T17:24:34-07:00",
+  "duration": "PT1M17S",
+  "embedUrl": "https://www.youtube.com/embed/1qSqTiHuDfM",
+  "contentUrl": "https://www.youtube.com/watch?v=1qSqTiHuDfM",
+  "inLanguage": "en",
+  "creator": {
+    "@type": "Organization",
+    "name": "Angelic Sound Therapy"
+  },
+  "mainEntityOfPage": "https://revbillmcdonald.com/mount-shasta-2026/"
+}
+</script>
+<script>
+  document.querySelectorAll('.watch-frame[data-video-id]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-video-id');
+      var wrap = document.createElement('div');
+      wrap.className = 'watch-frame';
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+      iframe.title = btn.getAttribute('aria-label') || 'YouTube video';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      wrap.appendChild(iframe);
+      btn.replaceWith(wrap);
+    });
+  });
 </script>
 </body>
 </html>
