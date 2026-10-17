@@ -65,5 +65,21 @@ YES. Every internal link and image on the three pages and the Reflections page r
 
 Notes: two Householder lines that the brief suggested as pull quotes ("The home could become a small temple" and "What makes an action spiritual is the consciousness with which we perform it") sit inside longer paragraphs. They were not used because that would repeat the sentence. The "Letters From the Journey" signup was left out because the site has no email list.
 
-## NOT YET PUBLISHED
-**My Seven Sacred Mountains** (Version A, the "revised and re-edited" version, as confirmed) is built and its text verified (1,921 words, identical to the manuscript apart from "R\&R" becoming "R&R"), but it is held back until the seven mountain photographs are supplied.
+## MY SEVEN SACRED MOUNTAINS (Version A, the "revised and re-edited" version, as confirmed)
+| | |
+|---|---|
+| Original text preserved | YES (128 of 128 paragraphs; 1,921 of 1,921 words) |
+| Material rewrites | None |
+| Corrections made | "R\&R" to "R&R" (a conversion artefact). Nothing else needed changing. |
+| Left out | The note "Revised and re-edited version with reference to Earth's Chakras" at the top of the file. It is a manuscript note, not part of the article. His chakra discussion and his "not scientific fact" qualification are kept exactly. |
+| Editorial headings added | None. Rev. Bill's own nine headings are kept as written. |
+| Jump menu | Shasta, Mauna Kea, Fuji, Kailash, Everest, Kilimanjaro, Etna (editorial navigation) |
+| Pull quotes used | "Sometimes we know something before we understand it."; "Some sacred things are not meant to be conquered. They are meant to be approached with humility."; "The highest summit is not measured in meters. It is measured in awareness."; "We are not visitors here. We are part of it." |
+| Reflection question | Yes (editorial) |
+| Hero and mountain photos | Hero plus one photo for each of the seven mountains (`/images/sacred-mountains-*.webp`), about 1.7 MB in total, lazy-loaded below the hero |
+| Social assets | OG, Instagram, Reel, three quote cards (`/social-assets/sacred-mountains/`) |
+| SEO complete | YES |
+| Mobile tested | YES (375px emulation: no sideways scrolling, jump menu wraps cleanly) |
+| Links tested | YES |
+
+Not included: the optional map, because no base map was available.

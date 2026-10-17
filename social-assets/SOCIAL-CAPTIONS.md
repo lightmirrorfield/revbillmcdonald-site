@@ -193,3 +193,37 @@ https://revbillmcdonald.com/reflections/spiritual-householder/
 
 ### Reel caption (55 words)
 You do not have to escape the world to live a spiritual life. Rev. Bill McDonald reflects on the spiritual householder: marriage, children and work as part of the path itself. The meditation cushion is only the beginning. The householder learns to carry the temple within. Read the full reflection at the link in bio.
+
+## My Seven Sacred Mountains
+Link: https://revbillmcdonald.com/reflections/my-seven-sacred-mountains/
+
+### One-line teaser (16 words)
+Rev. Bill McDonald shares the seven mountains that have touched his life, from Shasta to Etna.
+
+### Instagram caption (109 words)
+Rev. Bill McDonald does not offer an official list of the world’s sacred mountains. He offers his own seven: Mount Shasta, Mauna Kea, Mount Fuji, Mount Kailash, Mount Everest, Mount Kilimanjaro and Mount Etna.
+
+He has stood before some, walked upon some, healed in the presence of some, and dreamed of others. Together they became seven chapters of his own life, and a spiritual way of seeing the Earth that he is careful not to present as scientific fact.
+
+“Some sacred things are not meant to be conquered. They are meant to be approached with humility.”
+
+Read the full reflection at the link in bio.
+
+#SacredMountains #MountShasta #SpiritualJourney #RevBillMcDonald
+
+### Facebook caption (172 words)
+There are mountains throughout the world that human beings have considered sacred, and Rev. Bill McDonald is clear that he is not trying to create an official list of them.
+
+In My Seven Sacred Mountains, he shares the seven that have touched his own life, imagination and consciousness: Mount Shasta, the mountain he knows most intimately; Mauna Kea, the mountain of his youth in Hawaii; Mount Fuji, which he first saw while recovering from war wounds; Mount Kailash, which he knows through dreams and inner journeys rather than by having been there; Mount Everest, the mountain of aspiration; Mount Kilimanjaro, the mountain of Earth; and Mount Etna, the mountain of fire.
+
+He offers the idea that these might be imagined as seven points in the body of the planet, and he is honest that this is not scientific fact. It is a spiritual way of seeing the Earth.
+
+“Mountains don’t have to be conquered. They don’t even have to be climbed. Sometimes they simply have to be encountered.”
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/my-seven-sacred-mountains/
+
+### Reel caption (61 words)
+Seven mountains. Seven relationships. Rev. Bill McDonald shares the mountains that became part of his inner life, from Mount Shasta, the one he knows, to Mount Kailash, the one he knows without having been there. Some sacred things are not meant to be conquered. They are meant to be approached with humility. Read the full reflection at the link in bio.
+
+(A LinkedIn caption was not written for this piece because it is a personal, spiritual reflection rather than a professional topic.)
