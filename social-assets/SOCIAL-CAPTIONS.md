@@ -107,3 +107,89 @@ https://revbillmcdonald.com/reflections/the-chosen-one-trap/
 
 ### Reel caption (57 words)
 Called to serve, or chosen to feel special? Rev. Bill McDonald writes about the subtle line between a genuine calling and spiritual ego. The savior needs someone to save. The servant simply serves. Never confuse being useful with being superior. Read the full reflection at the link in bio, and sit with the questions.
+
+---
+
+# Added October 17, 2026: Frequency and Householder
+
+Counts shown so each caption sits inside the requested range (Instagram 80–150, Facebook 150–250, LinkedIn short, Reel 50–100, teaser 10–20). Quotations are Rev. Bill’s exact words.
+
+## 10 Things That Raise Your Spiritual Frequency
+Link: https://revbillmcdonald.com/reflections/raise-your-spiritual-frequency/
+
+### One-line teaser (15 words)
+Rev. Bill McDonald on ten practices that move us from my will toward Divine Will.
+
+### Instagram caption (104 words)
+What if “raising your frequency” is not about becoming higher than anyone else, but about becoming less divided within ourselves?
+
+In this reflection, Rev. Bill McDonald explains that he uses frequency as a spiritual way of describing the quality of consciousness we live from, not something a scientific instrument can measure. He offers ten practices, from entering silence and accepting what is, to choosing peace over being right and moving from my will to Divine Will.
+
+“God does not need to speak louder. We need to become quiet enough to listen.”
+
+Read the full reflection at the link in bio.
+
+#SpiritualPractice #Surrender #Stillness #RevBillMcDonald
+
+### Facebook caption (157 words)
+What if “raising your frequency” is not about becoming higher than anyone else, but about becoming less divided within ourselves?
+
+In his reflection, 10 Things That Raise Your Spiritual Frequency, Rev. Bill McDonald is careful about the word. When he says frequency, he is not referring to something that can be measured with a scientific instrument. He is using it as a spiritual way of describing the quality of consciousness from which we are living, and he is clear that it is not a spiritual ranking system.
+
+He then offers ten practices: entering silence and stillness, accepting what is and flowing with life, purifying what we put into our consciousness, living our dharma, gathering our scattered energy, releasing the need to become somebody, surrendering the fruits of our actions, choosing peace over being right, practicing surrender, and moving from my will to Divine Will.
+
+“Surrender is not giving up. It is giving over.”
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/raise-your-spiritual-frequency/
+
+### LinkedIn caption (84 words)
+Rev. Bill McDonald offers a different way to think about “raising your frequency.” He uses the word as a spiritual description of the quality of consciousness we live from, and he is explicit that it is not a scientific measurement or a ranking of people.
+
+His ten practices include gathering our scattered attention, releasing the need to become somebody, and choosing peace over being right. They are practical in an ordinary working week as much as on a meditation cushion.
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/raise-your-spiritual-frequency/
+
+### Reel caption (64 words)
+What does it really mean to raise your spiritual frequency? Rev. Bill McDonald says it is not about being higher than anyone else. It is about becoming less divided within ourselves, through ten practices from silence and acceptance to surrender. God does not need to speak louder. We need to become quiet enough to listen. Read the full reflection at the link in bio.
+
+## Being a Spiritual Householder
+Link: https://revbillmcdonald.com/reflections/spiritual-householder/
+
+### One-line teaser (15 words)
+Rev. Bill McDonald on why spiritual life does not require us to escape ordinary life.
+
+### Instagram caption (105 words)
+What if the deeper challenge of spiritual life is not escaping the world, but living in it without allowing the world to live inside of us?
+
+In Being a Spiritual Householder, Rev. Bill McDonald reflects on marriage, children, work and everyday responsibility as part of the path itself. He draws on Lahiri Mahasaya, a husband, father and working man whom Yogananda presented as an illumined master, and asks whether we can carry the stillness of meditation into the kitchen, the workplace and the family.
+
+“The householder learns to carry the temple within.”
+
+Read the full reflection at the link in bio.
+
+#SpiritualHouseholder #FamilyLife #Meditation #RevBillMcDonald
+
+### Facebook caption (164 words)
+What if the deeper challenge of spiritual life is not escaping the world, but living in it without allowing the world to live inside of us?
+
+Rev. Bill McDonald’s reflection, Being a Spiritual Householder, begins with a common misunderstanding: that the serious seeker must leave ordinary life behind for an ashram, a monastery or a cave. He recalls the ancient Indian view of the householder, where the home itself could become a place of dharma, discipline, love and service, and the example of Lahiri Mahasaya, a married man, a father and an employee who practiced and taught the highest principles of yoga.
+
+Rev. Bill asks whether marriage can become a school of patience, children teachers of unconditional love, and work an opportunity for service. And he reminds us that meditation does not end when the eyes open.
+
+“Perhaps the greatest gift we can give the next generation is not another lesson about spirituality. Perhaps it is to become spiritual ourselves.”
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/spiritual-householder/
+
+### LinkedIn caption (75 words)
+Rev. Bill McDonald reflects on the spiritual householder: the person who raises a family, earns a living and meets everyday pressure, and treats all of it as part of the path rather than an interruption to it.
+
+He asks whether work can be an opportunity for service, whether disagreements can teach humility, and whether we can carry the peace we find in meditation into the marketplace, the marriage and the community.
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/spiritual-householder/
+
+### Reel caption (55 words)
+You do not have to escape the world to live a spiritual life. Rev. Bill McDonald reflects on the spiritual householder: marriage, children and work as part of the path itself. The meditation cushion is only the beginning. The householder learns to carry the temple within. Read the full reflection at the link in bio.

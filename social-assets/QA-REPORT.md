@@ -41,3 +41,29 @@ YES, in a 375px-wide responsive emulation: no horizontal scroll, 19px serif body
 
 ## LINKS TESTED
 YES. Every internal link and image on the three pages and the Reflections page resolves. The Spiritual Performance and Chosen One pages link to each other. Not tested: Facebook/LinkedIn share previews, which need the pages live first.
+
+---
+
+# Added October 17, 2026: 10 Things That Raise Your Spiritual Frequency, and Being a Spiritual Householder
+
+## CONTENT PRESERVATION
+| | 10 Things That Raise Your Spiritual Frequency | Being a Spiritual Householder |
+|---|---|---|
+| Original text preserved | YES (137 of 137 paragraphs) | YES (96 of 96 paragraphs) |
+| Words in source / on page | 1,935 / 1,935 | 3,044 / 3,044 |
+| Material rewrites | None | None |
+| Corrections made | The manuscript's numbering marks ("1\.") were conversion artefacts and now display as 01 to 10. | None. The lowercase "by" in the source byline was shown as "By" like every other page. |
+| Editorial headings added | None. Rev. Bill's own ten headings are kept as written. | 14 |
+| Pull quotes used | "God does not need to speak louder..."; "Presence gathers the scattered pieces of ourselves."; "The ego wants to become larger. Consciousness becomes clearer when the ego becomes quieter."; "Surrender is not giving up. It is giving over." | "This is much harder than escaping to a cave."; "The spiritual householder's meditation does not end when the eyes open."; "Perhaps the greatest gift we can give the next generation..."; "The householder learns to carry the temple within." |
+| Reflection question | Yes (editorial) | Yes (editorial) |
+| "In brief" summary | Yes (editorial, labelled) | Yes (editorial, labelled) |
+| Hero image | `/images/frequency-rev-bill-hero.webp` | `/images/householder-rev-bill-hero.webp` |
+| Social assets | OG, Instagram, Reel, quote card (`/social-assets/frequency/`) | OG, Instagram, Reel, two quote cards (`/social-assets/householder/`) |
+| SEO complete | YES | YES |
+| Mobile tested | YES (375px emulation) | YES (375px emulation) |
+| Links tested | YES | YES |
+
+Notes: two Householder lines that the brief suggested as pull quotes ("The home could become a small temple" and "What makes an action spiritual is the consciousness with which we perform it") sit inside longer paragraphs. They were not used because that would repeat the sentence. The "Letters From the Journey" signup was left out because the site has no email list.
+
+## NOT YET PUBLISHED
+**My Seven Sacred Mountains** (Version A, the "revised and re-edited" version, as confirmed) is built and its text verified (1,921 words, identical to the manuscript apart from "R\&R" becoming "R&R"), but it is held back until the seven mountain photographs are supplied.
