@@ -83,3 +83,19 @@ Notes: two Householder lines that the brief suggested as pull quotes ("The home 
 | Links tested | YES |
 
 Not included: the optional map, because no base map was available.
+
+## PREPARING THE HEART FOR A SPIRITUAL RETREAT: EMPTYING THE CUP
+| | |
+|---|---|
+| Original text preserved | YES (2,496 words; checked against the manuscript word for word) |
+| Material rewrites | None |
+| Corrections made | Two punctuation fixes, as approved: "disagree with us." to "disagree with us?" and "prove ourselves, right?" to "prove ourselves right?" |
+| Left out | The opening note at the top of the manuscript (a manuscript note, not part of the article) and the copyright line at the end |
+| Kept | The sign-off ("LOVE. FORGIVENESS. GRATITUDE.") as a closing line |
+| Editorial headings added | Eight section headings (e.g. "Emptying the Cup", "Ten Ways to Prepare"); the ten practices are set as numbered headings taken from his own first sentences |
+| Pull quotes used | Lines taken from his own paragraphs, set in place with no repetition; "Come as you are..." set as the closing pull quote |
+| Internal links | The six pillar names in his sentence link to the six pillar pages |
+| Retreat CTA | Links to the Retreats & Gatherings page; no dates stated |
+| Hero and social images | Hero (handmade bowl at a mountain overlook), OG, Instagram, Reel, two quote cards (`/social-assets/retreat/`) |
+| SEO complete | YES (title, description, canonical, OG/Twitter, Article + BreadcrumbList schema, sitemap) |
+| Links tested | YES (no broken links or anchors) |

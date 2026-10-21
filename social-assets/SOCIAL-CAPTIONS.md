@@ -227,3 +227,44 @@ https://revbillmcdonald.com/reflections/my-seven-sacred-mountains/
 Seven mountains. Seven relationships. Rev. Bill McDonald shares the mountains that became part of his inner life, from Mount Shasta, the one he knows, to Mount Kailash, the one he knows without having been there. Some sacred things are not meant to be conquered. They are meant to be approached with humility. Read the full reflection at the link in bio.
 
 (A LinkedIn caption was not written for this piece because it is a personal, spiritual reflection rather than a professional topic.)
+
+
+---
+
+## PREPARING THE HEART FOR A SPIRITUAL RETREAT: EMPTYING THE CUP
+Link: https://revbillmcdonald.com/reflections/preparing-for-spiritual-retreat/
+Images: `/social-assets/retreat/` (OG, Instagram, Reel, two quote cards)
+
+### One-line teaser (17 words)
+A spiritual retreat begins long before we arrive. Rev. Bill reflects on emptying the cup and coming as we are.
+
+### Instagram caption
+A spiritual retreat does not begin when we arrive.
+
+In Preparing the Heart for a Spiritual Retreat, Rev. Bill McDonald shares ten ways to prepare: emptying the cup, quieting the mind, caring for the body, practicing honesty, and letting go of the need to become someone special.
+
+“Come as you are. Come willing. Come with an open heart.”
+
+Read the full reflection at the link in bio.
+
+#SpiritualRetreat #EmptyingTheCup #SpiritualPractice #RevBillMcDonald
+
+### Facebook caption
+A spiritual retreat does not begin when we arrive. It begins in the way we live before we get there.
+
+In this reflection, Rev. Bill McDonald offers ten ways to prepare the heart: letting go of expectations, quieting the mind, simplifying, caring for the body, practicing honesty and humility, and keeping our discernment. He also reminds us that the retreat does not end when we return home.
+
+“Come as you are. Come willing. Come with an open heart.”
+
+Read the full reflection:
+https://revbillmcdonald.com/reflections/preparing-for-spiritual-retreat/
+
+### LinkedIn caption
+Before any retreat, workshop or season of deep reflection, the real preparation is inward.
+
+Rev. Bill McDonald offers ten simple practices for arriving with honesty, humility and an open mind, and for carrying what we receive back into everyday life.
+
+https://revbillmcdonald.com/reflections/preparing-for-spiritual-retreat/
+
+### Reel caption
+Before the retreat, empty the cup. Rev. Bill McDonald shares ten ways to prepare your heart for a spiritual retreat. Come as you are. Come willing. Come with an open heart. Read the full reflection at the link in bio.
