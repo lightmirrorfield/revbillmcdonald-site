@@ -99,3 +99,40 @@ Not included: the optional map, because no base map was available.
 | Hero and social images | Hero (handmade bowl at a mountain overlook), OG, Instagram, Reel, two quote cards (`/social-assets/retreat/`) |
 | SEO complete | YES (title, description, canonical, OG/Twitter, Article + BreadcrumbList schema, sitemap) |
 | Links tested | YES (no broken links or anchors) |
+
+## EMBRACING THE DIVINE MASCULINE
+| | |
+|---|---|
+| Title preserved | YES (“Embracing the Divine Masculine”) |
+| Subtitle preserved | YES (“Discovering the Strength, Wisdom, and Sacred Balance Within Us All”) |
+| Original body preserved | YES (2,247 of 2,247 words, compared against the manuscript word for word; only apostrophes are typeset as curly) |
+| Paragraphs removed | NONE in the article body. Left off the page: the manuscript note “Add my personal lived experience throughout” and the copyright line |
+| Paragraphs rewritten | NONE |
+| Editorial headings added | Beyond Male and Female; The Sacred Gifts of the Divine Masculine; The Courage to Protect Without Hatred; When Strength Becomes Distorted; Power Without the Heart; The Problem Is Not Strength. It Is Imbalance.; Strength in Relationship With Love; Love Needs a Backbone; Shiva and Shakti: Consciousness and Creative Power; The Invitation Toward Inner Balance; The Warrior and Right Action; The Real Battlefield; Strength Requires Humility; When Mind and Heart Work Together; The Balance We Seek; Becoming More Fully Human; Strength That Serves Love; Beyond Masculine and Feminine: Toward Oneness; Let Strength Kneel Before Love |
+| Pull quotes used | “The problem is not masculine energy. The problem is masculine energy operating without balance.”; “The Divine Masculine gives our love a backbone.”; “And what good is strength if it does not serve love?”; “The real battlefield is often within us.”; “But let your strength kneel before love.” |
+| Typographic treatments (no wording changed) | The seven distortions (“Strength can become domination…”) set as a quiet list; the three “What good is…?” questions spaced out; “Perhaps this is one of the great lessons…” set as one large passage; the seven “Embrace your strength…” sentences stacked, then a large gap before “But let your strength kneel before love.” |
+| Inline links (words unchanged) | “Divine Feminine” to the Shakti reflection; “humility” to the Humility virtue; “Oneness” to the Oneness pillar |
+| Personal-experience placeholders | Five suggested places (below). Nothing is on the live page |
+| Personal experiences invented | NO |
+| Companion Shakti link added | YES (on the Shakti page, replacing the Love pillar card so the module stays at three) |
+| Hero image | `/images/embracing-divine-masculine-hero.jpg` and `.webp` (1600 x 900, no text) |
+| OG image | `/images/embracing-divine-masculine-og.jpg` (1200 x 630) |
+| Instagram | `/social-assets/divine-masculine/embracing-divine-masculine-instagram.jpg` (1080 x 1350) |
+| Reel cover | `/social-assets/divine-masculine/embracing-divine-masculine-reel.jpg` (1080 x 1920) |
+| Quote cards | `embracing-divine-masculine-quote-kneel-before-love.jpg` (main) and `embracing-divine-masculine-quote-backbone.jpg` (both in `/social-assets/divine-masculine/`) |
+| SEO | Complete: title, description, canonical, OG/Twitter, Article + BreadcrumbList schema, sitemap entry, Reflections archive card |
+| Mobile tested | YES (375 px emulation: no sideways scrolling) |
+| Links tested | YES (no broken links or anchors) |
+
+Photos: the hero, OG, Instagram, Reel and quote cards use the photos Rev. Bill’s team supplied in the “Retreat Photos” Drive folder (golden-hour mountain photo and the stream-and-mountains portrait). No deity imagery was used or generated.
+
+Boundary notes: “We should not ask men to abandon their strength…” opens “Strength in Relationship With Love”, and “A woman may embody the courage of a warrior…” opens “Becoming More Fully Human”, following the structure in the brief. The closing line of the manuscript reads “…and let every power you possess…”, and the page keeps that wording.
+
+### Where Rev. Bill could add his own experience (questions for him; no answers written)
+| Place in the article | Question |
+|---|---|
+| After “I have known something of war…” (The Courage to Protect Without Hatred) | Is there a moment from Vietnam when courage meant protecting someone, carrying responsibility, or refusing hatred, more than fighting? |
+| After “He may know how to lead an army but not how to sit quietly beside his wife…” (Power Without the Heart) | Was there a time when you learned that strength also meant admitting fear, asking for help, or grieving? |
+| After “Let your leadership be made humble through service” (Let Strength Kneel Before Love) | Did something in your decades of veterans’ work or ministry change how you understand leadership? |
+| After the Shiva and Shakti paragraph | Did anything you experienced in India deepen your understanding of Shiva, Shakti, or Oneness? |
+| After “The real battlefield is often within us.” | Has your idea of being a warrior changed as you have grown older? |

@@ -268,3 +268,55 @@ https://revbillmcdonald.com/reflections/preparing-for-spiritual-retreat/
 
 ### Reel caption
 Before the retreat, empty the cup. Rev. Bill McDonald shares ten ways to prepare your heart for a spiritual retreat. Come as you are. Come willing. Come with an open heart. Read the full reflection at the link in bio.
+
+
+---
+
+## EMBRACING THE DIVINE MASCULINE
+Link: https://revbillmcdonald.com/reflections/divine-masculine/
+Images: `/social-assets/divine-masculine/` (OG, Instagram, Reel cover, two quote cards)
+Companion to: Shakti: Awakening the Divine Feminine Within Us
+
+### Archive excerpt (43 words)
+Rev. Bill explores the Divine Masculine not as a gender role, but as strength, courage, discernment, responsibility and disciplined action in service to Love. The deeper spiritual invitation is balance: allowing power and compassion, reason and intuition, strength and tenderness to become one.
+
+### One-line teaser (19 words)
+Strength is not meant to become hardness. Rev. Bill reflects on the Divine Masculine as strength that serves Love.
+
+### Instagram caption (110 words)
+What good is strength if it does not serve Love?
+
+Rev. Bill McDonald’s new reflection explores the Divine Masculine not as a gender role, but as the qualities of courage, discernment, responsibility, discipline and protection that live within every human being.
+
+He is clear that this is not about men becoming more masculine or women becoming more feminine. It is about integration: strength that serves Love, and courage guided by compassion. Strength, wisdom and tenderness are not the property of one gender. They are gifts to be brought into balance.
+
+“But let your strength kneel before love.”
+
+Read the full reflection at the link in bio.
+
+#DivineMasculine #SpiritualGrowth #Oneness #RevBillMcDonald
+
+### Facebook caption (159 words)
+What good is strength if it does not serve love?
+
+In Embracing the Divine Masculine, Rev. Bill McDonald offers a companion to his reflection on Shakti and the Divine Feminine. He is clear that this is not about men becoming more masculine or women becoming more feminine. The qualities he describes (strength, courage, discernment, discipline, responsibility and the willingness to stand firm) belong to every human soul.
+
+He also names what happens when those gifts lose touch with the heart: strength becomes domination, and leadership becomes control. His answer is not less strength, but strength in relationship with Love. That means courage guided by compassion, reason joined with intuition, and power offered in service rather than used to dominate.
+
+“The Divine Masculine gives our love a backbone.”
+
+The reflection moves through Shiva and Shakti, the warrior and right action, and the real battlefield within us, and closes with a call toward Oneness.
+
+Read the full reflection at RevBillMcDonald.com:
+https://revbillmcdonald.com/reflections/divine-masculine/
+
+### Reel caption (43 words)
+Can strength and tenderness exist together? Rev. Bill McDonald reflects on the Divine Masculine as strength that serves Love: courage guided by compassion, power offered in service. “But let your strength kneel before love.” Read the full reflection at the link in bio.
+
+### Questions for a video conversation with Rev. Bill (no answers written)
+1. What does Divine Masculine mean to you beyond gender?
+2. What is the difference between strength and domination?
+3. Can compassion become unhealthy when it has no boundaries?
+4. Why do you say the Divine Masculine gives Love a backbone?
+5. How has your understanding of being a warrior changed through your life?
+6. What does it mean to let strength kneel before Love?
