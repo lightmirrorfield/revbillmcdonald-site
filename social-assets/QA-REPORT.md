@@ -124,7 +124,7 @@ Not included: the optional map, because no base map was available.
 | Mobile tested | YES (375 px emulation: no sideways scrolling) |
 | Links tested | YES (no broken links or anchors) |
 
-Photos: the hero, OG, Instagram, Reel and quote cards use the photos Rev. Bill’s team supplied in the “Retreat Photos” Drive folder (golden-hour mountain photo and the stream-and-mountains portrait). No deity imagery was used or generated.
+Photos: the hero, OG image and main quote card use the window portrait supplied by Rev. Bill’s team, with its wall tones extended to fit the wide format. The Instagram, Reel and second quote card use the stream-and-mountains portrait from the “Retreat Photos” Drive folder. No deity imagery was used or generated.
 
 Boundary notes: “We should not ask men to abandon their strength…” opens “Strength in Relationship With Love”, and “A woman may embody the courage of a warrior…” opens “Becoming More Fully Human”, following the structure in the brief. The closing line of the manuscript reads “…and let every power you possess…”, and the page keeps that wording.
 
