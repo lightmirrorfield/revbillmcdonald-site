@@ -174,6 +174,7 @@
     display:block; margin-top:0.4rem; font-family:'IBM Plex Mono', monospace; font-size:0.6rem;
     letter-spacing:0.14em; text-transform:uppercase; color:#D8CFE8;
   }
+  .countdown .passed{ font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.3rem; color:#F0E6D0; }
   .countdown .sep{ color:rgba(255,255,255,0.35); font-size:1.4rem; align-self:flex-start; margin-top:0.15rem; }
 
   .hero-cta{ margin-top:3rem; opacity:0; animation:riseIn 1.3s ease forwards 1.55s; }
@@ -406,7 +407,7 @@
       <summary>Events &amp; Retreats <span class="caret">&#9662;</span></summary>
       <ul class="nav-panel">
           <li><a href="../workshops-%26-events/">All Events &amp; Retreats</a></li>
-          <li><a href="../mount-shasta-2026/">Mount Shasta 2026</a></li>
+          <li><a href="../mount-shasta-retreat-2027/">Mount Shasta 2027</a></li>
       </ul>
     </details></li>
     <li><details>
@@ -449,7 +450,7 @@
     <div class="unit"><span class="num" id="cd-secs">00</span><span class="lbl">Sec</span></div>
   </div>
 
-  <div class="hero-cta"><a href="#logistics">How to Join &darr;</a></div>
+  <div class="hero-cta"><a href="../mount-shasta-retreat-2027/">See the Next Gathering: April 30 &ndash; May 4, 2027 &rarr;</a></div>
 </section>
 
 <section class="invitation">
@@ -665,6 +666,7 @@
   const target = new Date('2026-11-06T00:00:00-08:00').getTime();
   function tick(){
     const now = Date.now();
+    if (now >= target){ const c = document.getElementById('countdown'); if (c){ c.innerHTML = '<div class="passed">This gathering took place November 6&ndash;10, 2026.</div>'; } return; }
     const diff = Math.max(0, target - now);
     const d = Math.floor(diff / 86400000);
     const h = Math.floor((diff % 86400000) / 3600000);

@@ -136,3 +136,37 @@ Boundary notes: “We should not ask men to abandon their strength…” opens �
 | After “Let your leadership be made humble through service” (Let Strength Kneel Before Love) | Did something in your decades of veterans’ work or ministry change how you understand leadership? |
 | After the Shiva and Shakti paragraph | Did anything you experienced in India deepen your understanding of Shiva, Shakti, or Oneness? |
 | After “The real battlefield is often within us.” | Has your idea of being a warrior changed as you have grown older? |
+
+## MOUNT SHASTA RETREAT 2027: AWAKENING THE SACRED LIGHT WITHIN
+| | |
+|---|---|
+| Page created | YES: `/mount-shasta-retreat-2027/` |
+| Rev. Bill's copy preserved | YES. Every sentence of his retreat copy was checked against the page word for word |
+| Material copy changes | None to his sentences. Layout only: his paragraphs were divided into sections; "Imagine the silence. / The warmth of the fire. / The stillness of the morning." is set as a large pause; his questions are spaced across lines without changing a word. His line "The mountain is the setting. The heart is the destination." appears once, as the signature statement, instead of again after "That is where the healing begins." |
+| Editorial copy (not his) | Hero lines, quick bar, the four Experience summaries, the six Healing topics, the Past Retreats introduction, section headings, the "Five Days. One Sacred Mountain…" heading (title case as in the brief), the fee note "Attendance is intentionally limited…", and the registration intro. The line "You simply need a willingness to look inward, an open mind, and a heart that is ready to receive." keeps his wording (the brief's shortened version was not used) |
+| Hero image | `/images/mount-shasta-retreat-2027-hero.jpg` and `.webp` (1920 x 1080, no text). Built from the real photograph `shasta-clouds-peak.jpg`, cropped to the mountain and clouds, with its edges blended into midnight blue |
+| Photos used on the page | Rev. Bill speaking (`mount-shasta-retreat-2027-rev-bill.webp`); participants meditating around the fire (`...-sacred-fire.webp`); Rev. Bill with the offering plate (`...-rev-bill-fire.webp`); `gallery-shasta-group.jpg`; `retreat-setting.jpg` (signature background); host photos from the site's existing profiles |
+| Gallery images (10, from the November 2026 retreat) | `/images/past-retreats/2026-11/`: group-portrait, rev-bill-speaking, hike-group, harmonium, creek, deck-friends, fork-laughter, trees-selfie, tree-hug, fire-pit (each as a 1800 px and a 900 px WebP). Editorial layout, lazy-loaded, with an accessible lightbox (arrow keys, Esc, focus returns to the photo) |
+| Hosts added | Rev. Bill McDonald (host); Kana Koinuma; Dr. Pontea Dianati; Ragini Mishra; Danielle Vaden Barr; Tammy Lee Anderson; George Collord; Todd Eachus; Eric Starwalker. Names only; no roles or biographies added. Photos for five (existing site profile photos); monograms for Danielle Vaden Barr, George Collord and Todd Eachus |
+| Registration emails | Dr. Pontea `ponteadianati@icloud.com`; Kana `kanakoinuma@gmail.com`; mailto links with the subject "Mount Shasta Retreat April 30 – May 4, 2027". Buttons read "Registration opens December 10" and switch on automatically on December 10, 2026 (Pacific) |
+| Fee displayed | $525, "for the retreat only" (his words) |
+| Cancellation note | "$125 is non-refundable if you cancel" (nothing added) |
+| Homepage section | YES: the Mount Shasta section is now the "Next Mount Shasta Gathering" teaser |
+| Events card | YES: featured card; the vague "May 2027" card was removed; a "Past Gatherings" strip links to the 2026 page |
+| Other site updates | "Mount Shasta 2027" in the nav on all 52 pages; contact page registration line; Six Pillars and Sacred Mountains links; sitemap; the 2026 page now says the gathering took place and links to 2027 (its countdown is replaced) |
+| SEO | Title "Awakening the Sacred Light Within | Mount Shasta Retreat 2027", description, canonical, OG/Twitter, Event + BreadcrumbList schema (no street address, no availability claims), sitemap |
+| Social assets | OG (`/images/mount-shasta-retreat-2027-og.jpg`), Instagram, Reel cover, quote card in `/social-assets/mount-shasta-2027/` |
+| Mobile / tablet / desktop | Tested at 375, 768 and desktop widths: no horizontal page scroll; gallery, hosts and registration stack; headline 33 px on phone |
+| Accessibility | One H1; logical headings; alt text on every image; skip link; keyboard-operable gallery/lightbox; visible focus states; labelled buttons |
+| Broken links | NONE |
+
+### Outstanding confirmations
+1. **[CONFIRM EXACTLY WHAT THE $525 INCLUDES]**: lodging, meals, transport, materials. The page says only "for the retreat only".
+2. Retreat venue and whether it is again Wisdom of the Heart Center (the page says "retreat house", no address).
+3. Payment process (the copy says only "contact" the two hosts) and any cancellation rules beyond the $125.
+4. Roles for the nine hosts (none shown); photos for Danielle Vaden Barr, George Collord and Todd Eachus.
+5. Permission to show the identifiable participants in the gallery photos.
+6. A higher-resolution Mount Shasta photograph for the hero (the current one is built from a 1000 px photo).
+7. Dr. Pontea's email: the 2026 page lists `@gmail.com`; the 2027 copy says `@icloud.com`.
+8. `sacred-mountains-shasta.jpg` (used on the Sacred Mountains article) looks computer-generated, not photographic. It was not used on this page.
+9. No participant voices section: no testimonials with permission were provided.

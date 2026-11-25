@@ -320,3 +320,46 @@ Can strength and tenderness exist together? Rev. Bill McDonald reflects on the D
 4. Why do you say the Divine Masculine gives Love a backbone?
 5. How has your understanding of being a warrior changed through your life?
 6. What does it mean to let strength kneel before Love?
+
+
+---
+
+## MOUNT SHASTA RETREAT 2027: AWAKENING THE SACRED LIGHT WITHIN
+Link: https://revbillmcdonald.com/mount-shasta-retreat-2027/
+Images: `/social-assets/mount-shasta-2027/` (OG, Instagram, Reel cover, quote card)
+Note: registration opens December 10, 2026. Do not describe registration as open before then.
+
+### One-line teaser (20 words)
+Five days at the base of Mount Shasta: stillness, sacred fire, healing, and remembrance. April 30 – May 4, 2027.
+
+### Instagram caption (110 words)
+The mountain is the setting. The heart is the destination.
+
+Rev. Bill McDonald invites you to Awakening the Sacred Light Within, a five-day retreat at Mount Shasta, April 30 – May 4, 2027.
+
+Imagine the silence. The warmth of the fire. The stillness of the morning. Five days of meditation, sacred fire, healing, reflection, Love, forgiveness, gratitude, and the remembrance of Oneness, shared with a gathering of spiritual teachers, healers, and fellow seekers.
+
+“You simply need a willingness to look inward, an open mind, and a heart that is ready to receive.”
+
+Attendance will be intentionally limited. Registration opens December 10.
+
+Read more at the link in bio.
+
+#MountShasta #SpiritualRetreat #SacredFire #RevBillMcDonald
+
+### Facebook caption (149 words)
+There are places in this world that seem to reach beyond the ordinary. Mount Shasta is one of them.
+
+Rev. Bill McDonald invites you to join him, April 30 – May 4, 2027, for Awakening the Sacred Light Within, a five-day retreat at the base of Mount Shasta in California.
+
+Each day begins before sunrise around the sacred fire in the retreat house, in meditation, as the first light finds its way through the windows. The days that follow make room for stillness, nature, spiritual conversation, and the deeper kind of healing that comes from forgiveness, self-love, and gratitude.
+
+“The mountain is the setting. The heart is the destination.”
+
+Rev. Bill is joined by a gathering of spiritual teachers, healers, and fellow seekers. The retreat fee is $525, and attendance will be intentionally limited. Registration opens December 10.
+
+Read more and see photographs from past retreats at RevBillMcDonald.com:
+https://revbillmcdonald.com/mount-shasta-retreat-2027/
+
+### Reel caption (36 words)
+The mountain is calling. The fire is waiting. Rev. Bill McDonald invites you to five days at Mount Shasta, April 30 – May 4, 2027. Registration opens December 10. Read more at the link in bio.
