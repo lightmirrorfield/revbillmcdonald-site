@@ -205,11 +205,13 @@
   .carry .heal{ font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(2rem,5vw,3.3rem); line-height:1.2; color:var(--ink); margin-top:3.4rem; padding-top:2rem; border-top:1px solid var(--gold); display:inline-block; }
 
   /* heart */
-  .heart{ background:var(--parchment); text-align:center; }
+  .heart{ background:var(--parchment); }
+  .heart-grid{ display:grid; grid-template-columns:5fr 6fr; gap:3.2rem; align-items:center; max-width:1060px; margin:0 auto; }
+  .heart .photo-frame{ aspect-ratio:3/4; box-shadow:0 26px 50px -26px rgba(14,23,48,.5); }
+  .heart .photo-frame img{ object-position:center 30%; }
   .pillars{ font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-deep); margin:2.2rem 0 1.4rem; line-height:2.2; }
   .pillars a{ color:inherit; text-decoration:none; border-bottom:1px solid rgba(183,147,85,.5); }
   .pillars a:hover{ color:var(--amber); border-color:var(--amber); }
-  .heart .prose p{ text-align:left; }
   .heart .big{ font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(1.9rem,4.4vw,2.8rem); line-height:1.25; color:var(--ink); margin:1rem 0 1.6rem; }
 
   /* hosts */
@@ -232,9 +234,12 @@
   .gallery{ max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:.75rem; }
   .g-row{ display:grid; gap:.75rem; }
   .g-row.r1{ grid-template-columns:2fr 1fr; grid-template-rows:1fr 1fr; }
-  .g-row.r1 .g-large{ grid-row:1 / span 2; aspect-ratio:3/2; }
+  .g-row.r1 .g-large{ grid-row:1 / span 2; aspect-ratio:16/9; }
+  .g-row.r1 .g-item:not(.g-large) .g-btn{ position:absolute; inset:0; }
   .g-row.three{ grid-template-columns:repeat(3,1fr); }
   .g-row.three .g-item{ aspect-ratio:4/5; }
+  .g-row.two{ grid-template-columns:1fr 1fr; }
+  .g-row.two .g-item{ aspect-ratio:3/2; }
   .g-row.wide .g-item{ aspect-ratio:21/9; }
   .g-item{ position:relative; margin:0; overflow:hidden; border-radius:6px; background:#1B2747; min-height:0; }
   .g-btn{ display:block; width:100%; height:100%; padding:0; border:0; background:none; cursor:zoom-in; }
@@ -280,9 +285,9 @@
 
   /* final */
   .final{ background:var(--midnight); color:var(--ivory); }
-  .final-grid{ display:grid; grid-template-columns:5fr 6fr; gap:3.2rem; align-items:center; max-width:1080px; margin:0 auto; }
-  .final .photo-frame{ aspect-ratio:3/4; box-shadow:0 30px 60px -24px rgba(0,0,0,.7); }
-  .final .photo-frame img{ object-position:center 30%; }
+  .final-photo{ max-width:920px; margin:0 auto 3.4rem; border-radius:10px; overflow:hidden; box-shadow:0 30px 60px -24px rgba(0,0,0,.7); }
+  .final-photo img{ width:100%; height:auto; display:block; }
+  .final .lets{ max-width:760px; margin:0 auto; text-align:center; }
   .final .lets p{ font-family:'Cormorant Garamond',serif; font-size:1.35rem; line-height:1.7; color:#E9E3D6; margin:0 0 .5rem; }
   .final .lets p.first{ margin-bottom:1.4rem; }
   .final .call{ font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(2rem,4.6vw,3.2rem); line-height:1.22; color:var(--ivory); margin:2.4rem 0 1.6rem; }
@@ -295,9 +300,9 @@
   @media (max-width:900px){
     :root{ --anchor-top:56px; }
     section{ padding:4.2rem 1.4rem; }
-    .invite-grid, .fire-grid, .final-grid{ grid-template-columns:1fr; gap:2.2rem; }
+    .invite-grid, .fire-grid, .heart-grid{ grid-template-columns:1fr; gap:2.2rem; }
     .invite .photo-frame{ max-width:380px; margin:0 auto; }
-    .fire .photo-frame, .final .photo-frame{ max-width:380px; margin:0 auto; }
+    .fire .photo-frame, .heart .photo-frame{ max-width:380px; margin:0 auto; }
     .quickbar ul{ grid-template-columns:repeat(2,1fr); gap:1rem 0; }
     .quickbar li:nth-child(odd){ border-left:0; } .quickbar li:nth-child(even){ border-left:1px solid rgba(235,203,146,.28); }
     .quickbar li:last-child{ grid-column:1 / -1; border-left:0; }
@@ -314,6 +319,7 @@
     .g-row.r1 .g-large{ grid-column:1 / -1; grid-row:auto; }
     .g-row.r1 .g-item:not(.g-large){ aspect-ratio:1/1; }
     .g-row.three{ grid-template-columns:1fr 1fr; } .g-row.three .g-item:last-child{ grid-column:1 / -1; aspect-ratio:3/2; }
+    .g-row.two{ grid-template-columns:1fr; }
     .g-row.wide .g-item{ aspect-ratio:16/9; }
     .reg-cards{ grid-template-columns:1fr; }
     .six{ grid-template-columns:1fr; }
@@ -560,16 +566,19 @@
 </section>
 
 <section class="heart" id="heart-of-the-work">
-  <div class="wrap">
-    <div class="k">The Heart of the Work</div>
-    <h2 class="display">Love. Forgiveness. Gratitude.</h2>
-    <div class="prose">
-      <p>Ultimately, this is what my ministry has always been about. Teaching LOVE. Practicing FORGIVENESS. Living in GRATITUDE.</p>
-      <p>Not as beautiful words to be repeated, but as spiritual principles to be lived every day.</p>
-      <p>Because the Divine is not something we need to find somewhere outside ourselves. The Divine is already present within us, within one another, and throughout all of creation. Our journey is learning to recognize that presence and allowing it to guide the way we live.</p>
+  <div class="heart-grid">
+    <div class="photo-frame"><img src="../images/mount-shasta-retreat-2027-rev-bill-fire.webp" width="975" height="1300" alt="Rev. Bill McDonald holding a lit offering plate before a candlelit altar at the retreat house" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="k">The Heart of the Work</div>
+      <h2 class="display">Love. Forgiveness. Gratitude.</h2>
+      <div class="prose">
+        <p>Ultimately, this is what my ministry has always been about. Teaching LOVE. Practicing FORGIVENESS. Living in GRATITUDE.</p>
+        <p>Not as beautiful words to be repeated, but as spiritual principles to be lived every day.</p>
+        <p>Because the Divine is not something we need to find somewhere outside ourselves. The Divine is already present within us, within one another, and throughout all of creation. Our journey is learning to recognize that presence and allowing it to guide the way we live.</p>
+      </div>
+      <p class="pillars"><a href="../love-full.html">Love</a> &middot; <a href="../forgiveness-full.html">Forgiveness</a> &middot; <a href="../gratitude-full.html">Gratitude</a> &middot; <a href="../healing-full.html">Healing</a> &middot; <a href="../oneness-full.html">Oneness</a> &middot; <a href="../service-full.html">Service</a></p>
+      <a class="textlink" href="../six-pillars.html">Explore the Six Pillars &rarr;</a>
     </div>
-    <p class="pillars"><a href="../love-full.html">Love</a> &middot; <a href="../forgiveness-full.html">Forgiveness</a> &middot; <a href="../gratitude-full.html">Gratitude</a> &middot; <a href="../healing-full.html">Healing</a> &middot; <a href="../oneness-full.html">Oneness</a> &middot; <a href="../service-full.html">Service</a></p>
-    <a class="textlink" href="../six-pillars.html">Explore the Six Pillars &rarr;</a>
   </div>
 </section>
 
@@ -603,19 +612,23 @@
   </div>
   <div class="gallery" id="gallery" role="group" aria-label="Photographs from the November 2026 retreat">
     <div class="g-row r1">
-      <figure class="g-item g-large"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/group-portrait.webp" data-cap="Gathered in the retreat house" aria-label="Open photo: Gathered in the retreat house"><img src="../images/past-retreats/2026-11/group-portrait-sm.webp" alt="Retreat participants and hosts gathered for a group portrait by candlelight inside the retreat house" loading="lazy" decoding="async"></button><figcaption>Gathered in the retreat house</figcaption></figure>
+      <figure class="g-item g-large"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/trail-group.webp" data-cap="A gathering on the mountain trail" aria-label="Open photo: A gathering on the mountain trail"><img src="../images/past-retreats/2026-11/trail-group-sm.webp" alt="Twelve retreat participants standing arm in arm on a mountain trail among evergreen trees" loading="lazy" decoding="async"></button><figcaption>A gathering on the mountain trail</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/group-portrait.webp" data-cap="Gathered in the retreat house" aria-label="Open photo: Gathered in the retreat house"><img src="../images/past-retreats/2026-11/group-portrait-sm.webp" alt="Retreat participants and hosts gathered for a group portrait by candlelight inside the retreat house" loading="lazy" decoding="async" style="object-position:center 45%"></button><figcaption>Gathered in the retreat house</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/altar-group.webp" data-cap="A moment of stillness together" aria-label="Open photo: A moment of stillness together"><img src="../images/past-retreats/2026-11/altar-group-sm.webp" alt="Five participants kneeling together with hands in prayer beside the altar at the retreat house" loading="lazy" decoding="async" style="object-position:center 72%"></button><figcaption>A moment of stillness together</figcaption></figure>
+    </div>
+    <div class="g-row three">
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/dinner-table.webp" data-cap="Sharing meals and conversation" aria-label="Open photo: Sharing meals and conversation"><img src="../images/past-retreats/2026-11/dinner-table-sm.webp" alt="Participants laughing together around a dinner table at the retreat house" loading="lazy" decoding="async" style="object-position:center 55%"></button><figcaption>Sharing meals and conversation</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/cave-group.webp" data-cap="Exploring together" aria-label="Open photo: Exploring together"><img src="../images/past-retreats/2026-11/cave-group-sm.webp" alt="A group of participants gathered inside a rocky cave beside the trail" loading="lazy" decoding="async" style="object-position:center 40%"></button><figcaption>Exploring together</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/tall-trees.webp" data-cap="Tall trees beneath open sky" aria-label="Open photo: Tall trees beneath open sky"><img src="../images/past-retreats/2026-11/tall-trees-sm.webp" alt="Tall evergreen trees reaching up into a blue sky" loading="lazy" decoding="async"></button><figcaption>Tall trees beneath open sky</figcaption></figure>
+    </div>
+    <div class="g-row three">
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/pine-group.webp" data-cap="Smiles among the trees" aria-label="Open photo: Smiles among the trees"><img src="../images/past-retreats/2026-11/pine-group-sm.webp" alt="Five participants smiling together in the forest beside a pine tree" loading="lazy" decoding="async" style="object-position:center 40%"></button><figcaption>Smiles among the trees</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/mountain-view.webp" data-cap="The mountain in the distance" aria-label="Open photo: The mountain in the distance"><img src="../images/past-retreats/2026-11/mountain-view-sm.webp" alt="Two participants smiling with a snow-capped mountain visible through the trees behind them" loading="lazy" decoding="async" style="object-position:center 30%"></button><figcaption>The mountain in the distance</figcaption></figure>
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/foggy-meadow.webp" data-cap="Walking together in the mist" aria-label="Open photo: Walking together in the mist"><img src="../images/past-retreats/2026-11/foggy-meadow-sm.webp" alt="Retreat participants walking together across a misty mountain meadow" loading="lazy" decoding="async"></button><figcaption>Walking together in the mist</figcaption></figure>
+    </div>
+    <div class="g-row two">
+      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/hike-group.webp" data-cap="Walking together in nature" aria-label="Open photo: Walking together in nature"><img src="../images/past-retreats/2026-11/hike-group-sm.webp" alt="Five participants smiling together beside a wooden fence on a forest trail" loading="lazy" decoding="async" style="object-position:center 35%"></button><figcaption>Walking together in nature</figcaption></figure>
       <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/rev-bill-speaking.webp" data-cap="Rev. Bill with the circle" aria-label="Open photo: Rev. Bill with the circle"><img src="../images/past-retreats/2026-11/rev-bill-speaking-sm.webp" alt="Rev. Bill speaking with a microphone to participants seated around the living room" loading="lazy" decoding="async"></button><figcaption>Rev. Bill with the circle</figcaption></figure>
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/hike-group.webp" data-cap="Walking together in nature" aria-label="Open photo: Walking together in nature"><img src="../images/past-retreats/2026-11/hike-group-sm.webp" alt="Five participants smiling together beside a wooden fence on a forest trail" loading="lazy" decoding="async"></button><figcaption>Walking together in nature</figcaption></figure>
-    </div>
-    <div class="g-row three">
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/harmonium.webp" data-cap="Music among the autumn leaves" aria-label="Open photo: Music among the autumn leaves"><img src="../images/past-retreats/2026-11/harmonium-sm.webp" alt="A participant playing a harmonium outdoors among autumn leaves" loading="lazy" decoding="async"></button><figcaption>Music among the autumn leaves</figcaption></figure>
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/creek.webp" data-cap="A quiet moment by the water" aria-label="Open photo: A quiet moment by the water"><img src="../images/past-retreats/2026-11/creek-sm.webp" alt="A participant resting on boulders beside a mountain stream and looking up at the trees" loading="lazy" decoding="async"></button><figcaption>A quiet moment by the water</figcaption></figure>
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/deck-friends.webp" data-cap="" aria-label="Open photo: Four participants in soft blue and turquoise clothing on a wooden deck among tall trees"><img src="../images/past-retreats/2026-11/deck-friends-sm.webp" alt="Four participants in soft blue and turquoise clothing on a wooden deck among tall trees" loading="lazy" decoding="async"></button></figure>
-    </div>
-    <div class="g-row three">
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/fork-laughter.webp" data-cap="Sharing meals and laughter" aria-label="Open photo: Sharing meals and laughter"><img src="../images/past-retreats/2026-11/fork-laughter-sm.webp" alt="Four men laughing with forks raised in the retreat kitchen" loading="lazy" decoding="async"></button><figcaption>Sharing meals and laughter</figcaption></figure>
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/trees-selfie.webp" data-cap="" aria-label="Open photo: Three participants looking up through tall forest trees"><img src="../images/past-retreats/2026-11/trees-selfie-sm.webp" alt="Three participants looking up through tall forest trees" loading="lazy" decoding="async"></button></figure>
-      <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/tree-hug.webp" data-cap="" aria-label="Open photo: A participant embracing a large pine tree beside a stream"><img src="../images/past-retreats/2026-11/tree-hug-sm.webp" alt="A participant embracing a large pine tree beside a stream" loading="lazy" decoding="async"></button></figure>
     </div>
     <div class="g-row wide">
       <figure class="g-item"><button type="button" class="g-btn" data-full="../images/past-retreats/2026-11/fire-pit.webp" data-cap="The fire at the heart of the retreat house" aria-label="Open photo: The fire at the heart of the retreat house"><img src="../images/past-retreats/2026-11/fire-pit-sm.webp" alt="Retreat participants gathered around the fire pit inside the retreat house" loading="lazy" decoding="async"></button><figcaption>The fire at the heart of the retreat house</figcaption></figure>
@@ -650,20 +663,18 @@
 </section>
 
 <section class="final dark" id="final">
-  <div class="final-grid">
-    <div class="photo-frame"><img src="../images/mount-shasta-retreat-2027-rev-bill-fire.webp" width="975" height="1300" alt="Rev. Bill McDonald holding a lit offering plate before a candlelit altar at the retreat house" loading="lazy" decoding="async"></div>
-    <div class="lets">
-      <p class="first">You may arrive as an individual seeker, but you will become part of something much larger than yourself.</p>
-      <p>Let us gather in LOVE.</p>
-      <p>Let us heal through FORGIVENESS.</p>
-      <p>Let us awaken through GRATITUDE.</p>
-      <p>And let us remember the ONENESS that has always connected us.</p>
-      <p class="call"><span>The mountain is calling.</span><span>The fire is waiting.</span><span>And perhaps this is the moment to answer.</span></p>
-      <div class="sign">With LOVE,</div>
-      <div class="name">Rev. Bill McDonald</div>
-      <div class="trio">LOVE &middot; FORGIVENESS &middot; GRATITUDE</div>
-      <a class="btn btn-gold" href="#register">Register for the Retreat &rarr;</a>
-    </div>
+  <figure class="final-photo"><img src="../images/past-retreats/2026-11/group-portrait.webp" width="1800" height="1350" alt="Retreat participants and hosts gathered for a group portrait by candlelight inside the retreat house" loading="lazy" decoding="async"></figure>
+  <div class="lets">
+    <p class="first">You may arrive as an individual seeker, but you will become part of something much larger than yourself.</p>
+    <p>Let us gather in LOVE.</p>
+    <p>Let us heal through FORGIVENESS.</p>
+    <p>Let us awaken through GRATITUDE.</p>
+    <p>And let us remember the ONENESS that has always connected us.</p>
+    <p class="call"><span>The mountain is calling.</span><span>The fire is waiting.</span><span>And perhaps this is the moment to answer.</span></p>
+    <div class="sign">With LOVE,</div>
+    <div class="name">Rev. Bill McDonald</div>
+    <div class="trio">LOVE &middot; FORGIVENESS &middot; GRATITUDE</div>
+    <a class="btn btn-gold" href="#register">Register for the Retreat &rarr;</a>
   </div>
 </section>
 
