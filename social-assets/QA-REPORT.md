@@ -155,7 +155,7 @@ Boundary notes: “We should not ask men to abandon their strength…” opens �
 | Events card | YES: featured card; the vague "May 2027" card was removed; a "Past Gatherings" strip links to the 2026 page |
 | Other site updates | "Mount Shasta 2027" in the nav on all 52 pages; contact page registration line; Six Pillars and Sacred Mountains links; sitemap; the 2026 page now says the gathering took place and links to 2027 (its countdown is replaced) |
 | SEO | Title "Awakening the Sacred Light Within | Mount Shasta Retreat 2027", description, canonical, OG/Twitter, Event + BreadcrumbList schema (no street address, no availability claims), sitemap |
-| Social assets | OG (`/images/mount-shasta-retreat-2027-og.jpg`), Instagram, Reel cover, quote card in `/social-assets/mount-shasta-2027/` |
+| Social assets | OG (`/images/mount-shasta-retreat-2027-og-2.jpg`), Instagram, Reel cover, quote card in `/social-assets/mount-shasta-2027/` |
 | Mobile / tablet / desktop | Tested at 375, 768 and desktop widths: no horizontal page scroll; gallery, hosts and registration stack; headline 33 px on phone |
 | Accessibility | One H1; logical headings; alt text on every image; skip link; keyboard-operable gallery/lightbox; visible focus states; labelled buttons |
 | Broken links | NONE |
