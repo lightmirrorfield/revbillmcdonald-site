@@ -132,6 +132,15 @@
   .hero .practical{ font-family:'IBM Plex Mono',monospace; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:#DDE3EC; margin-top:2rem; line-height:1.9; }
   .hero .limited{ font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.05rem; color:#EBCB92; margin-top:.2rem; }
 
+  .countdown{ margin-top:2.4rem; padding-top:1.6rem; border-top:1px solid rgba(235,203,146,.35); display:inline-block; min-width:min(100%,420px); }
+  .cd-k{ font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:#EBCB92; margin-bottom:.9rem; }
+  .cd-row{ display:flex; justify-content:center; align-items:flex-start; gap:1.1rem; }
+  .cd-u{ text-align:center; min-width:3.2rem; }
+  .cd-n{ display:block; font-family:'Work Sans',sans-serif; font-weight:300; font-size:clamp(1.9rem,5.6vw,2.7rem); line-height:1; color:var(--ivory); font-variant-numeric:tabular-nums; text-shadow:0 2px 14px rgba(0,0,0,.45); }
+  .cd-l{ display:block; font-family:'IBM Plex Mono',monospace; font-size:.58rem; letter-spacing:.16em; text-transform:uppercase; color:#C9D4E3; margin-top:.5rem; }
+  .cd-s{ color:rgba(235,203,146,.5); font-size:1.6rem; line-height:1; margin-top:.15rem; }
+  .countdown.is-live .cd-row, .countdown.is-over .cd-row{ display:none; }
+  .countdown .cd-msg{ font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.5rem; color:var(--ivory); }
   .quickbar{ background:var(--midnight-2); color:var(--ivory); padding:1.4rem 1.5rem; }
   .quickbar ul{ list-style:none; max-width:1000px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:1rem; text-align:center; }
   .quickbar li{ font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; }
@@ -425,6 +434,18 @@
     </div>
     <p class="practical">April 30 &ndash; May 4, 2027 &middot; Mount Shasta, California &middot; $525 Retreat Fee</p>
     <p class="limited">Attendance will be intentionally limited.</p>
+    <div class="countdown" id="countdown" role="timer" aria-label="Time until the retreat begins on April 30, 2027">
+      <div class="cd-k" id="cdLabel">The Retreat Begins In</div>
+      <div class="cd-row" id="cdRow">
+        <div class="cd-u"><span class="cd-n" id="cdD">000</span><span class="cd-l">Days</span></div>
+        <span class="cd-s" aria-hidden="true">&middot;</span>
+        <div class="cd-u"><span class="cd-n" id="cdH">00</span><span class="cd-l">Hours</span></div>
+        <span class="cd-s" aria-hidden="true">&middot;</span>
+        <div class="cd-u"><span class="cd-n" id="cdM">00</span><span class="cd-l">Min</span></div>
+        <span class="cd-s" aria-hidden="true">&middot;</span>
+        <div class="cd-u"><span class="cd-n" id="cdS">00</span><span class="cd-l">Sec</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -757,6 +778,22 @@
     }
     btns.forEach(function(b){ b.addEventListener('click', function(e){ if (b.getAttribute('aria-disabled') === 'true') e.preventDefault(); }); });
     settle();
+
+    /* countdown to the retreat (Pacific time) */
+    var start = new Date('2027-04-30T00:00:00-07:00').getTime(), end = new Date('2027-05-04T23:59:59-07:00').getTime();
+    var cd = document.getElementById('countdown'), lab = document.getElementById('cdLabel');
+    var eD = document.getElementById('cdD'), eH = document.getElementById('cdH'), eM = document.getElementById('cdM'), eS = document.getElementById('cdS');
+    function pad(n, w){ n = String(n); while (n.length < w) n = '0' + n; return n; }
+    function tick(){
+      var now = Date.now();
+      if (now >= end){ cd.classList.add('is-over'); lab.innerHTML = '<span class="cd-msg">This gathering has taken place.</span>'; return false; }
+      if (now >= start){ cd.classList.add('is-live'); lab.innerHTML = '<span class="cd-msg">The retreat is under way.</span>'; return false; }
+      var d = start - now;
+      eD.textContent = pad(Math.floor(d / 86400000), 3); eH.textContent = pad(Math.floor(d % 86400000 / 3600000), 2);
+      eM.textContent = pad(Math.floor(d % 3600000 / 60000), 2); eS.textContent = pad(Math.floor(d % 60000 / 1000), 2);
+      return true;
+    }
+    if (tick()){ var iv = setInterval(function(){ if (!tick()) clearInterval(iv); }, 1000); }
 
     /* anchor nav highlight */
     var links = [].slice.call(document.querySelectorAll('.anchor-nav a'));
