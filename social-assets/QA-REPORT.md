@@ -147,7 +147,7 @@ Boundary notes: “We should not ask men to abandon their strength…” opens �
 | Hero image | `/images/mount-shasta-retreat-2027-hero.jpg` and `.webp` (1920 x 1080, no text). Built from the real photograph `shasta-clouds-peak.jpg`, cropped to the mountain and clouds, with its edges blended into midnight blue |
 | Photos used on the page | Rev. Bill speaking (`mount-shasta-retreat-2027-rev-bill.webp`, Invitation); participants meditating around the fire (`...-sacred-fire.webp`, Sacred Fire); Rev. Bill with the offering plate (`...-rev-bill-fire.webp`, Heart of the Work); the candlelit group portrait (final section); `gallery-shasta-group.jpg`; `retreat-setting.jpg` (signature background); host photos from the site's existing profiles |
 | Gallery images (13, from the November 2026 retreat; groups and nature, no solo portraits) | `/images/past-retreats/2026-11/`: trail-group (12 people on the mountain trail), group-portrait, altar-group, dinner-table, cave-group, tall-trees, pine-group, mountain-view, foggy-meadow, hike-group, rev-bill-speaking, fire-meditation, fire-flames (each as a 1800 px and a 900 px WebP). Editorial layout, lazy-loaded, with an accessible lightbox (arrow keys, Esc, focus returns to the photo) |
-| Hosts added | Rev. Bill McDonald (host); Kana Koinuma; Dr. Pontea Dianati; Ragini Mishra; Danielle Vaden Barr; Tammy Lee Anderson; George Collord; Todd Eachus; Eric Starwalker. Names only; no roles or biographies added. Photos for five (existing site profile photos); monograms for Danielle Vaden Barr, George Collord and Todd Eachus |
+| Hosts added | Rev. Bill McDonald (host); Kana Koinuma; Dr. Pontea Dianati; Ragini Mishra; Danielle Vaden Barr; Tammy Lee Anderson; George Frenier; Todd Eachus; Eric Starwalker. Names only; no roles or biographies added. Photos for six (existing site profile photos plus new portraits for Dr. Pontea Dianati and George Frenier); monograms for Danielle Vaden Barr and Todd Eachus |
 | Registration emails | Dr. Pontea `ponteadianati@icloud.com`; Kana `kanakoinuma@gmail.com`; mailto links with the subject "Mount Shasta Retreat April 30 – May 4, 2027". Buttons read "Registration opens December 10" and switch on automatically on December 10, 2026 (Pacific) |
 | Fee displayed | $525, "for the retreat only" (his words) |
 | Cancellation note | "$125 is non-refundable if you cancel" (nothing added) |
@@ -164,7 +164,7 @@ Boundary notes: “We should not ask men to abandon their strength…” opens �
 1. **[CONFIRM EXACTLY WHAT THE $525 INCLUDES]**: lodging, meals, transport, materials. The page says only "for the retreat only".
 2. Retreat venue and whether it is again Wisdom of the Heart Center (the page says "retreat house", no address).
 3. Payment process (the copy says only "contact" the two hosts) and any cancellation rules beyond the $125.
-4. Roles for the nine hosts (none shown); photos for Danielle Vaden Barr, George Collord and Todd Eachus.
+4. Roles for the nine hosts (none shown); photos for Danielle Vaden Barr and Todd Eachus.
 5. Permission to show the identifiable participants in the gallery photos.
 6. A higher-resolution Mount Shasta photograph for the hero (the current one is built from a 1000 px photo).
 7. Dr. Pontea's email: the 2026 page lists `@gmail.com`; the 2027 copy says `@icloud.com`.
